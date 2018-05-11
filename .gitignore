@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+
+# An attempt to exclude "everything.sdf"
+*.sdf
