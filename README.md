@@ -1,6 +1,6 @@
 # Full-Life: The RPG (Source SDK 2013)
 
-##Introduction
+## Introduction
 Based off of *Half-Life 2*, ***Full-Life*** is designed to add more RPG-style
 elements to the main mechanics of the former.
 
