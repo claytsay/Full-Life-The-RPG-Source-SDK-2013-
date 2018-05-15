@@ -21,28 +21,28 @@
 // memdbgon must be the last include file in a .cpp file!!!
 #include "tier0/memdbgon.h"
 
-#define	PISTOL_FASTEST_REFIRE_TIME		0.1f
-#define	PISTOL_FASTEST_DRY_REFIRE_TIME	0.2f
+#define	PISTOL2_FASTEST_REFIRE_TIME		0.1f
+#define	PISTOL2_FASTEST_DRY_REFIRE_TIME	0.2f
 
 // Increased the rate at which penalty is dealt out
-#define	PISTOL_ACCURACY_SHOT_PENALTY_TIME		0.3f	// Applied amount of time each shot adds to the time we must recover from
+#define	PISTOL2_ACCURACY_SHOT_PENALTY_TIME		0.3f	// Applied amount of time each shot adds to the time we must recover from
 // Increased the maximum penalty dealt out
-#define	PISTOL_ACCURACY_MAXIMUM_PENALTY_TIME	4.5f	// Maximum penalty to deal out
+#define	PISTOL2_ACCURACY_MAXIMUM_PENALTY_TIME	4.5f	// Maximum penalty to deal out
 
-ConVar	pistol_use_new_accuracy( "pistol_use_new_accuracy", "1" );
+ConVar	pistol2_use_new_accuracy( "pistol2_use_new_accuracy", "1" );
 
 //-----------------------------------------------------------------------------
-// CWeaponPistol
+// CWeaponPistol2
 //-----------------------------------------------------------------------------
 
-class CWeaponPistol : public CBaseHLCombatWeapon
+class CWeaponPistol2 : public CBaseHLCombatWeapon
 {
 	DECLARE_DATADESC();
 
 public:
-	DECLARE_CLASS( CWeaponPistol, CBaseHLCombatWeapon );
+	DECLARE_CLASS( CWeaponPistol2, CBaseHLCombatWeapon );
 
-	CWeaponPistol(void);
+	CWeaponPistol2(void);
 
 	DECLARE_SERVERCLASS();
 
@@ -71,11 +71,11 @@ public:
 			
 		static Vector cone;
 
-		if ( pistol_use_new_accuracy.GetBool() )
+		if ( pistol2_use_new_accuracy.GetBool() )
 		{
 			float ramp = RemapValClamped(	m_flAccuracyPenalty, 
 											0.0f, 
-											PISTOL_ACCURACY_MAXIMUM_PENALTY_TIME, 
+											PISTOL2_ACCURACY_MAXIMUM_PENALTY_TIME, 
 											0.0f, 
 											1.0f ); 
 
@@ -117,13 +117,13 @@ private:
 };
 
 
-IMPLEMENT_SERVERCLASS_ST(CWeaponPistol, DT_WeaponPistol)
+IMPLEMENT_SERVERCLASS_ST(CWeaponPistol2, DT_WeaponPistol2)
 END_SEND_TABLE()
 
-LINK_ENTITY_TO_CLASS( weapon_pistol, CWeaponPistol );
-PRECACHE_WEAPON_REGISTER( weapon_pistol );
+LINK_ENTITY_TO_CLASS( weapon_pistol2, CWeaponPistol2 );
+PRECACHE_WEAPON_REGISTER( weapon_pistol2 );
 
-BEGIN_DATADESC( CWeaponPistol )
+BEGIN_DATADESC( CWeaponPistol2 )
 
 	DEFINE_FIELD( m_flSoonestPrimaryAttack, FIELD_TIME ),
 	DEFINE_FIELD( m_flLastAttackTime,		FIELD_TIME ),
@@ -132,7 +132,7 @@ BEGIN_DATADESC( CWeaponPistol )
 
 END_DATADESC()
 
-acttable_t	CWeaponPistol::m_acttable[] = 
+acttable_t	CWeaponPistol2::m_acttable[] = 
 {
 	{ ACT_IDLE,						ACT_IDLE_PISTOL,				true },
 	{ ACT_IDLE_ANGRY,				ACT_IDLE_ANGRY_PISTOL,			true },
@@ -151,12 +151,12 @@ acttable_t	CWeaponPistol::m_acttable[] =
 };
 
 
-IMPLEMENT_ACTTABLE( CWeaponPistol );
+IMPLEMENT_ACTTABLE( CWeaponPistol2 );
 
 //-----------------------------------------------------------------------------
 // Purpose: Constructor
 //-----------------------------------------------------------------------------
-CWeaponPistol::CWeaponPistol( void )
+CWeaponPistol2::CWeaponPistol2( void )
 {
 	m_flSoonestPrimaryAttack = gpGlobals->curtime;
 	m_flAccuracyPenalty = 0.0f;
@@ -172,7 +172,7 @@ CWeaponPistol::CWeaponPistol( void )
 //-----------------------------------------------------------------------------
 // Purpose: ???
 //-----------------------------------------------------------------------------
-void CWeaponPistol::Precache( void )
+void CWeaponPistol2::Precache( void )
 {
 	BaseClass::Precache();
 }
@@ -182,7 +182,7 @@ void CWeaponPistol::Precache( void )
 // Input  : ???
 // Output : ???
 //-----------------------------------------------------------------------------
-void CWeaponPistol::Operator_HandleAnimEvent( animevent_t *pEvent, CBaseCombatCharacter *pOperator )
+void CWeaponPistol2::Operator_HandleAnimEvent( animevent_t *pEvent, CBaseCombatCharacter *pOperator )
 {
 	switch( pEvent->event )
 	{
@@ -213,19 +213,19 @@ void CWeaponPistol::Operator_HandleAnimEvent( animevent_t *pEvent, CBaseCombatCh
 //-----------------------------------------------------------------------------
 // Purpose: ???
 //-----------------------------------------------------------------------------
-void CWeaponPistol::DryFire( void )
+void CWeaponPistol2::DryFire( void )
 {
 	WeaponSound( EMPTY );
 	SendWeaponAnim( ACT_VM_DRYFIRE );
 	
-	m_flSoonestPrimaryAttack	= gpGlobals->curtime + PISTOL_FASTEST_DRY_REFIRE_TIME;
+	m_flSoonestPrimaryAttack	= gpGlobals->curtime + PISTOL2_FASTEST_DRY_REFIRE_TIME;
 	m_flNextPrimaryAttack		= gpGlobals->curtime + SequenceDuration();
 }
 
 //-----------------------------------------------------------------------------
 // Purpose: ???
 //-----------------------------------------------------------------------------
-void CWeaponPistol::PrimaryAttack( void )
+void CWeaponPistol2::PrimaryAttack( void )
 {
 	if ( ( gpGlobals->curtime - m_flLastAttackTime ) > 0.5f )
 	{
@@ -237,7 +237,7 @@ void CWeaponPistol::PrimaryAttack( void )
 	}
 
 	m_flLastAttackTime = gpGlobals->curtime;
-	m_flSoonestPrimaryAttack = gpGlobals->curtime + PISTOL_FASTEST_REFIRE_TIME;
+	m_flSoonestPrimaryAttack = gpGlobals->curtime + PISTOL2_FASTEST_REFIRE_TIME;
 	CSoundEnt::InsertSound( SOUND_COMBAT, GetAbsOrigin(), SOUNDENT_VOLUME_PISTOL, 0.2, GetOwner() );
 
 	CBasePlayer *pOwner = ToBasePlayer( GetOwner() );
@@ -254,7 +254,7 @@ void CWeaponPistol::PrimaryAttack( void )
 	BaseClass::PrimaryAttack();
 
 	// Add an accuracy penalty which can move past our maximum penalty time if we're really spastic
-	m_flAccuracyPenalty += PISTOL_ACCURACY_SHOT_PENALTY_TIME;
+	m_flAccuracyPenalty += PISTOL2_ACCURACY_SHOT_PENALTY_TIME;
 
 	m_iPrimaryAttacks++;
 	gamestats->Event_WeaponFired( pOwner, true, GetClassname() );
@@ -263,7 +263,7 @@ void CWeaponPistol::PrimaryAttack( void )
 //-----------------------------------------------------------------------------
 // Purpose: 
 //-----------------------------------------------------------------------------
-void CWeaponPistol::UpdatePenaltyTime( void )
+void CWeaponPistol2::UpdatePenaltyTime( void )
 {
 	CBasePlayer *pOwner = ToBasePlayer( GetOwner() );
 
@@ -274,14 +274,14 @@ void CWeaponPistol::UpdatePenaltyTime( void )
 	if ( ( ( pOwner->m_nButtons & IN_ATTACK ) == false ) && ( m_flSoonestPrimaryAttack < gpGlobals->curtime ) )
 	{
 		m_flAccuracyPenalty -= gpGlobals->frametime;
-		m_flAccuracyPenalty = clamp( m_flAccuracyPenalty, 0.0f, PISTOL_ACCURACY_MAXIMUM_PENALTY_TIME );
+		m_flAccuracyPenalty = clamp( m_flAccuracyPenalty, 0.0f, PISTOL2_ACCURACY_MAXIMUM_PENALTY_TIME );
 	}
 }
 
 //-----------------------------------------------------------------------------
 // Purpose: 
 //-----------------------------------------------------------------------------
-void CWeaponPistol::ItemPreFrame( void )
+void CWeaponPistol2::ItemPreFrame( void )
 {
 	UpdatePenaltyTime();
 
@@ -289,9 +289,9 @@ void CWeaponPistol::ItemPreFrame( void )
 }
 
 //-----------------------------------------------------------------------------
-// Purpose: 
+// Purpose: ???
 //-----------------------------------------------------------------------------
-void CWeaponPistol::ItemBusyFrame( void )
+void CWeaponPistol2::ItemBusyFrame( void )
 {
 	UpdatePenaltyTime();
 
@@ -301,7 +301,7 @@ void CWeaponPistol::ItemBusyFrame( void )
 //-----------------------------------------------------------------------------
 // Purpose: Allows firing as fast as button is pressed
 //-----------------------------------------------------------------------------
-void CWeaponPistol::ItemPostFrame( void )
+void CWeaponPistol2::ItemPostFrame( void )
 {
 	BaseClass::ItemPostFrame();
 
@@ -328,7 +328,7 @@ void CWeaponPistol::ItemPostFrame( void )
 // Purpose: ???
 // Output : int
 //-----------------------------------------------------------------------------
-Activity CWeaponPistol::GetPrimaryAttackActivity( void )
+Activity CWeaponPistol2::GetPrimaryAttackActivity( void )
 {
 	if ( m_nNumShotsFired < 1 )
 		return ACT_VM_PRIMARYATTACK;
@@ -344,7 +344,7 @@ Activity CWeaponPistol::GetPrimaryAttackActivity( void )
 
 //-----------------------------------------------------------------------------
 //-----------------------------------------------------------------------------
-bool CWeaponPistol::Reload( void )
+bool CWeaponPistol2::Reload( void )
 {
 	bool fRet = DefaultReload( GetMaxClip1(), GetMaxClip2(), ACT_VM_RELOAD );
 	if ( fRet )
@@ -358,7 +358,7 @@ bool CWeaponPistol::Reload( void )
 //-----------------------------------------------------------------------------
 // Purpose: ???
 //-----------------------------------------------------------------------------
-void CWeaponPistol::AddViewKick( void )
+void CWeaponPistol2::AddViewKick( void )
 {
 	CBasePlayer *pPlayer  = ToBasePlayer( GetOwner() );
 	

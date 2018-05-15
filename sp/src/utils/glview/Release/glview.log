@@ -1,5 +1,5 @@
-﻿Build started 2018-05-11 14:29:08.
-     1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\utils\glview\glview.vcxproj" on node 5 (Rebuild target(s)).
+﻿Build started 2018-05-14 23:14:52.
+     1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\utils\glview\glview.vcxproj" on node 4 (Rebuild target(s)).
      1>PreBuildEvent:
          if EXIST ..\..\..\game\bin\.\glview.exe for /f "delims=" %%A in ('attrib "..\..\..\game\bin\.\glview.exe"') do set valveTmpIsReadOnly="%%A"
          set valveTmpIsReadOnlyLetter=%valveTmpIsReadOnly:~6,1%
@@ -58,4 +58,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:14.91
+Time Elapsed 00:00:16.28

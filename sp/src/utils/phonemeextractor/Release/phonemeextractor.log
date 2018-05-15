@@ -1,5 +1,5 @@
-﻿Build started 2018-05-11 14:29:23.
-     1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\utils\phonemeextractor\phonemeextractor.vcxproj" on node 3 (Rebuild target(s)).
+﻿Build started 2018-05-14 23:15:36.
+     1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\utils\phonemeextractor\phonemeextractor.vcxproj" on node 4 (Rebuild target(s)).
      1>PreBuildEvent:
          if EXIST ..\..\..\game\bin\phonemeextractors\.\phonemeextractor.dll for /f "delims=" %%A in ('attrib "..\..\..\game\bin\phonemeextractors\.\phonemeextractor.dll"') do set valveTmpIsReadOnly="%%A"
          set valveTmpIsReadOnlyLetter=%valveTmpIsReadOnly:~6,1%
@@ -57,4 +57,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:14.36
+Time Elapsed 00:00:09.82

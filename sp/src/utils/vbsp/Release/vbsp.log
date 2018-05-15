@@ -1,4 +1,4 @@
-﻿Build started 2018-05-11 14:33:45.
+﻿Build started 2018-05-14 23:18:30.
      1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\utils\vbsp\vbsp.vcxproj" on node 5 (Rebuild target(s)).
      1>PreBuildEvent:
          if EXIST ..\..\..\game\bin\.\vbsp.exe for /f "delims=" %%A in ('attrib "..\..\..\game\bin\.\vbsp.exe"') do set valveTmpIsReadOnly="%%A"
@@ -151,4 +151,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:01:01.63
+Time Elapsed 00:01:08.07
