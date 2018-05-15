@@ -1819,6 +1819,11 @@ CAmmoDef *GetAmmoDef()
 		def.AddAmmoType("CombineCannon",	DMG_BULLET,					TRACER_LINE,			"sk_npc_dmg_gunship_to_plr", "sk_npc_dmg_gunship", NULL, 1.5 * 750 * 12, 0 ); // hit like a 1.5kg weight at 750 ft/s
 		def.AddAmmoType("AirboatGun",		DMG_AIRBOAT,				TRACER_LINE,			"sk_plr_dmg_airboat",		"sk_npc_dmg_airboat",		NULL,					BULLET_IMPULSE(10, 600), 0 );
 
+		// Ammo types that are supposed to represent resources, not ammunition per se
+		def.AddAmmoType("Scrap_Metal", DMG_BULLET, TRACER_LINE, NULL, NULL, 100, 0, 0);
+		def.AddAmmoType("Reclaimed_Metal", DMG_BULLET, TRACER_LINE, NULL, NULL, 100, 0, 0);
+		def.AddAmmoType("Refined_Metal", DMG_BULLET, TRACER_LINE, NULL, NULL, 100, 0, 0);
+
 		//=====================================================================
 		// STRIDER MINIGUN DAMAGE - Pull up a chair and I'll tell you a tale.
 		//
