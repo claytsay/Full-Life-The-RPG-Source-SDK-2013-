@@ -1,5 +1,5 @@
-﻿Build started 2018-05-14 23:15:47.
-     1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\utils\qc_eyes\qc_eyes.vcxproj" on node 5 (Rebuild target(s)).
+﻿Build started 2018-05-15 22:24:51.
+     1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\utils\qc_eyes\qc_eyes.vcxproj" on node 4 (Rebuild target(s)).
      1>PreBuildEvent:
          if EXIST ..\..\..\game\bin\.\qc_eyes.exe for /f "delims=" %%A in ('attrib "..\..\..\game\bin\.\qc_eyes.exe"') do set valveTmpIsReadOnly="%%A"
          set valveTmpIsReadOnlyLetter=%valveTmpIsReadOnly:~6,1%
@@ -10,10 +10,10 @@
          :VCEnd
        CustomBuild:
          Compiling pointeroverride.asm
+          Assembling: C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\public\tier0\pointeroverride.asm
          Microsoft (R) Macro Assembler Version 12.00.40629.0
          Copyright (C) Microsoft Corporation.  All rights reserved.
          
-          Assembling: C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\public\tier0\pointeroverride.asm
          Running VPC CRC Check - qc_eyes.vpc
        ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\..\common /I..\..\public /I..\..\public\tier0 /I..\..\public\tier1 /Zi /nologo /W4 /WX /MP /O2 /Ob2 /Oi /Ot /Oy- /D VPC /D RAD_TELEMETRY_DISABLED /D WIN32 /D _WIN32 /D NDEBUG /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _ALLOW_RUNTIME_LIBRARY_MISMATCH /D _ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH /D _ALLOW_MSC_VER_MISMATCH /D _USING_V110_SDK71_ /D _MBCS /D COMPILER_MSVC32 /D COMPILER_MSVC32 /D COMPILER_MSVC /D EXENAME=qc_eyes /D _DLL_EXT=.dll /D BINK_VIDEO /D AVI_VIDEO /D WMV_VIDEO /D DEV_BUILD /D FRAME_POINTER_OMISSION_DISABLED /D NO_WARN_MBCS_MFC_DEPRECATION /D _EXTERNAL_DLL_EXT=.dll /D VPCGAMECAPS=VALVE /D "PROJECTDIR=C:\Users\Clay\Documents\School\2017-2018\AP Computer Science\Projects\Unit 10\FullLife-TheRPG-SDK2013\sp\src\utils\qc_eyes" /D _DLL_EXT=.dll /D SOURCE1=1 /D VPCGAME=valve /GF /Gm- /EHsc /MT /GS /Gy /arch:SSE /fp:fast /Zc:wchar_t /Zc:forScope /GR /openmp- /Yc"stdafx.h" /Fp"Debug/QC_Eyes.pch" /Fo".\Release\.\/" /Fd".\Release\.\/vc120.pdb" /Gd /TP /wd4316 /analyze- /FC /errorReport:prompt  /d2Zi+ /Gw StdAfx.cpp
@@ -52,4 +52,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:17.52
+Time Elapsed 00:00:18.83
