@@ -1,0 +1,14 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/reclaimedmetal/reclaimedmetal.vtf"
+	"$translucent" 0
+	"$reflecttint" "[1 1 1]"
+	"$reflectamount" 1.0
+	$phong 1
+//	$phongexponent 33
+	$phongexponenttexture lightwarps/pyro_lightwarp
+	$phongboost	6
+	$phongfresnelranges	"[0.05 0.5 1]"
+}
+
+}

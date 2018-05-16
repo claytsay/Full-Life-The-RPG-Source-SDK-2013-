@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/reclaimed/reclaimed.vtf"
+	"$translucent" 0
+	"$reflecttint" "[1 1 1]"
+	"$reflectamount" 1.0
+}

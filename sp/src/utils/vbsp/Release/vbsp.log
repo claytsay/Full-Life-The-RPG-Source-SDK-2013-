@@ -1,5 +1,5 @@
-﻿Build started 2018-05-11 14:33:45.
-     1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\utils\vbsp\vbsp.vcxproj" on node 5 (Rebuild target(s)).
+﻿Build started 2018-05-15 22:28:31.
+     1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\utils\vbsp\vbsp.vcxproj" on node 2 (Rebuild target(s)).
      1>PreBuildEvent:
          if EXIST ..\..\..\game\bin\.\vbsp.exe for /f "delims=" %%A in ('attrib "..\..\..\game\bin\.\vbsp.exe"') do set valveTmpIsReadOnly="%%A"
          set valveTmpIsReadOnlyLetter=%valveTmpIsReadOnly:~6,1%
@@ -9,11 +9,11 @@
          
          :VCEnd
        CustomBuild:
-         Compiling pointeroverride.asm
-          Assembling: C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\public\tier0\pointeroverride.asm
          Microsoft (R) Macro Assembler Version 12.00.40629.0
          Copyright (C) Microsoft Corporation.  All rights reserved.
          
+         Compiling pointeroverride.asm
+          Assembling: C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\public\tier0\pointeroverride.asm
          Running VPC CRC Check - vbsp.vpc
        ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\..\common /I..\..\public /I..\..\public\tier0 /I..\..\public\tier1 /I..\common /I..\vmpi /Zi /nologo /W4 /WX /MP /O2 /Ob2 /Oi /Ot /Oy- /D VPC /D RAD_TELEMETRY_DISABLED /D WIN32 /D _WIN32 /D NDEBUG /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _ALLOW_RUNTIME_LIBRARY_MISMATCH /D _ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH /D _ALLOW_MSC_VER_MISMATCH /D _USING_V110_SDK71_ /D _MBCS /D COMPILER_MSVC32 /D COMPILER_MSVC32 /D COMPILER_MSVC /D EXENAME=vbsp /D _DLL_EXT=.dll /D DEV_BUILD /D FRAME_POINTER_OMISSION_DISABLED /D MACRO_MATHLIB /D PROTECTED_THINGS_DISABLE /D _EXTERNAL_DLL_EXT=.dll /D VPCGAMECAPS=VALVE /D "PROJECTDIR=C:\Users\Clay\Documents\School\2017-2018\AP Computer Science\Projects\Unit 10\FullLife-TheRPG-SDK2013\sp\src\utils\vbsp" /D _DLL_EXT=.dll /D VPCGAME=valve /D SOURCE1=1 /GF /Gm- /MT /GS /Gy /arch:SSE /fp:fast /Zc:wchar_t /Zc:forScope /GR /openmp- /Fo".\Release\.\/" /Fd".\Release\.\/vc120.pdb" /Gd /TP /wd4316 /analyze- /FC /errorReport:prompt  /d2Zi+ /Gw boundbox.cpp brushbsp.cpp ..\..\public\CollisionUtils.cpp csg.cpp cubemap.cpp detail.cpp detailObjects.cpp ..\..\public\disp_common.cpp disp_ivp.cpp ..\..\public\disp_powerinfo.cpp disp_vbsp.cpp faces.cpp glfile.cpp ivp.cpp leakfile.cpp ..\..\public\loadcmdline.cpp ..\..\public\lumpfiles.cpp manifest.cpp map.cpp materialpatch.cpp materialsub.cpp ..\..\public\tier0\memoverride.cpp ..\common\mstristrip.cpp nodraw.cpp normals.cpp overlay.cpp ..\common\physdll.cpp portals.cpp prtfile.cpp ..\..\public\ScratchPad3D.cpp ..\common\scratchpad_helpers.cpp StaticProp.cpp textures.cpp tree.cpp ..\common\utilmatlib.cpp vbsp.cpp worldvertextransitionfixup.cpp writebsp.cpp ..\..\public\zip_utils.cpp ..\common\bsplib.cpp ..\..\public\builddisp.cpp ..\..\public\ChunkFile.cpp ..\common\cmdlib.cpp ..\..\public\filesystem_helpers.cpp ..\..\public\filesystem_init.cpp ..\common\filesystem_tools.cpp ..\common\map_shared.cpp ..\common\pacifier.cpp ..\common\polylib.cpp ..\common\scriplib.cpp ..\common\threads.cpp ..\common\tools_minidump.cpp
@@ -151,4 +151,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:01:01.63
+Time Elapsed 00:01:03.97
