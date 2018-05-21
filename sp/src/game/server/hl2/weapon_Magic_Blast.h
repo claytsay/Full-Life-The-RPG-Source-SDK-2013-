@@ -1,9 +1,7 @@
 #ifndef GRENADE_FRAG_H
 #define GRENADE_FRAG_H
 #pragma once
-4
-​
-5
+
 class CBaseGrenade;
 struct edict_t;
 
