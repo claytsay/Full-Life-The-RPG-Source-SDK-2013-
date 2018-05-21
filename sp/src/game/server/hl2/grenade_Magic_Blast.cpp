@@ -288,33 +288,6 @@ void CGrenadeFrag::SetTimer( float detonateDelay, float warnDelay )
 	CreateEffects();
 }
 
-void CGrenadeFrag::OnPhysGunPickup( CBasePlayer *pPhysGunUser, PhysGunPickup_t reason )
-{
-	SetThrower( pPhysGunUser );
-
-#ifdef HL2MP
-	SetTimer( FRAG_GRENADE_GRACE_TIME_AFTER_PICKUP, FRAG_GRENADE_GRACE_TIME_AFTER_PICKUP / 2);
-
-	BlipSound();
-	m_flNextBlipTime = gpGlobals->curtime + FRAG_GRENADE_BLIP_FAST_FREQUENCY;
-	m_bHasWarnedAI = true;
-#else
-	if( IsX360() )
-	{
-		// Give 'em a couple of seconds to aim and throw. 
-		SetTimer( 2.0f, 1.0f);
-		BlipSound();
-		m_flNextBlipTime = gpGlobals->curtime + FRAG_GRENADE_BLIP_FAST_FREQUENCY;
-	}
-#endif
-
-#ifdef HL2_EPISODIC
-	SetPunted( true );
-#endif
-
-	BaseClass::OnPhysGunPickup( pPhysGunUser, reason );
-}
-
 void CGrenadeFrag::DelayThink() 
 {
 	if( gpGlobals->curtime > m_flDetonateTime )
@@ -357,17 +330,6 @@ void CGrenadeFrag::SetVelocity( const Vector &velocity, const AngularImpulse &an
 	}
 }
 
-int CGrenadeFrag::OnTakeDamage( const CTakeDamageInfo &inputInfo )
-{
-	// Manually apply vphysics because BaseCombatCharacter takedamage doesn't call back to CBaseEntity OnTakeDamage
-	VPhysicsTakeDamage( inputInfo );
-
-	// Grenades only suffer blast damage and burn damage.
-	if( !(inputInfo.GetDamageType() & (DMG_BLAST|DMG_BURN) ) )
-		return 0;
-
-	return BaseClass::OnTakeDamage( inputInfo );
-}
 
 #if defined(HL2_EPISODIC) && 0 // FIXME: HandleInteraction() is no longer called now that base grenade derives from CBaseAnimating
 extern int	g_interactionBarnacleVictimGrab; ///< usually declared in ai_interactions.h but no reason to haul all of that in here.
@@ -421,26 +383,4 @@ CBaseGrenade *Fraggrenade_Create( const Vector &position, const QAngle &angles, 
 	pGrenade->SetCombineSpawned( combineSpawned );
 
 	return pGrenade;
-}
-
-bool Fraggrenade_WasPunted( const CBaseEntity *pEntity )
-{
-	const CGrenadeFrag *pFrag = dynamic_cast<const CGrenadeFrag *>( pEntity );
-	if ( pFrag )
-	{
-		return pFrag->WasPunted();
-	}
-
-	return false;
-}
-
-bool Fraggrenade_WasCreatedByCombine( const CBaseEntity *pEntity )
-{
-	const CGrenadeFrag *pFrag = dynamic_cast<const CGrenadeFrag *>( pEntity );
-	if ( pFrag )
-	{
-		return pFrag->IsCombineSpawned();
-	}
-
-	return false;
 }
