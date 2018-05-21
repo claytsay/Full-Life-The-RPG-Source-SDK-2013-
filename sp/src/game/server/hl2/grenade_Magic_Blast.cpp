@@ -1,15 +1,12 @@
 #include "cbase.h"
 #include "basegrenade_shared.h"
-#include "grenade_frag.h"
+#include "grenade_Magic_Blast.h"
 #include "Sprite.h"
 #include "SpriteTrail.h"
 #include "soundent.h"
 
 // memdbgon must be the last include file in a .cpp file!!!
 #include "tier0/memdbgon.h"
-
-#define FRAG_GRENADE_BLIP_FREQUENCY			1.0f
-#define FRAG_GRENADE_BLIP_FAST_FREQUENCY	0.3f
 
 #define FRAG_GRENADE_GRACE_TIME_AFTER_PICKUP 1.5f
 #define FRAG_GRENADE_WARN_TIME 1.5f
@@ -41,14 +38,8 @@ public:
 	void	SetTimer( float detonateDelay, float warnDelay );
 	void	SetVelocity( const Vector &velocity, const AngularImpulse &angVelocity );
 	int		OnTakeDamage( const CTakeDamageInfo &inputInfo );
-	void	BlipSound() { EmitSound( "Grenade.Blip" ); }
 	void	DelayThink();
 	void	VPhysicsUpdate( IPhysicsObject *pPhysics );
-	void	OnPhysGunPickup( CBasePlayer *pPhysGunUser, PhysGunPickup_t reason );
-	void	SetCombineSpawned( bool combineSpawned ) { m_combineSpawned = combineSpawned; }
-	bool	IsCombineSpawned( void ) const { return m_combineSpawned; }
-	void	SetPunted( bool punt ) { m_punted = punt; }
-	bool	WasPunted( void ) const { return m_punted; }
 
 	// this function only used in episodic.
 #if defined(HL2_EPISODIC) && 0 // FIXME: HandleInteraction() is no longer called now that base grenade derives from CBaseAnimating
