@@ -54,8 +54,6 @@ protected:
 
 	float	m_flNextBlipTime;
 	bool	m_inSolid;
-	bool	m_combineSpawned;
-	bool	m_punted;
 };
 
 LINK_ENTITY_TO_CLASS( npc_grenade_frag, CGrenadeFrag );
@@ -67,8 +65,6 @@ BEGIN_DATADESC( CGrenadeFrag )
 	DEFINE_FIELD( m_pGlowTrail, FIELD_EHANDLE ),
 	DEFINE_FIELD( m_flNextBlipTime, FIELD_TIME ),
 	DEFINE_FIELD( m_inSolid, FIELD_BOOLEAN ),
-	DEFINE_FIELD( m_combineSpawned, FIELD_BOOLEAN ),
-	DEFINE_FIELD( m_punted, FIELD_BOOLEAN ),
 	
 	// Function Pointers
 	DEFINE_THINKFUNC( DelayThink ),
@@ -148,18 +144,6 @@ void CGrenadeFrag::CreateEffects( void )
 		m_pMainGlow->SetGlowProxySize( 4.0f );
 	}
 
-	// Start up the eye trail
-	m_pGlowTrail	= CSpriteTrail::SpriteTrailCreate( "sprites/bluelaser1.vmt", GetLocalOrigin(), false );
-
-	if ( m_pGlowTrail != NULL )
-	{
-		m_pGlowTrail->FollowEntity( this );
-		m_pGlowTrail->SetAttachment( this, nAttachment );
-		m_pGlowTrail->SetTransparency( kRenderTransAdd, 255, 0, 0, 255, kRenderFxNone );
-		m_pGlowTrail->SetStartWidth( 8.0f );
-		m_pGlowTrail->SetEndWidth( 1.0f );
-		m_pGlowTrail->SetLifeTime( 0.5f );
-	}
 }
 
 bool CGrenadeFrag::CreateVPhysics()
