@@ -94,8 +94,8 @@ void CGrenadeFrag::Spawn( void )
 
 	if( GetOwnerEntity() && GetOwnerEntity()->IsPlayer() )
 	{
-		m_flDamage		= sk_plr_dmg_fraggrenade.GetFloat();
-		m_DmgRadius		= sk_fraggrenade_radius.GetFloat();
+		m_flDamage		= sk_plr_dmg_fraggrenade.GetFloat() - 20;
+		m_DmgRadius		= sk_fraggrenade_radius.GetFloat() + 200;
 	}
 	else
 	{
@@ -110,13 +110,9 @@ void CGrenadeFrag::Spawn( void )
 	SetCollisionGroup( COLLISION_GROUP_WEAPON );
 	CreateVPhysics();
 
-	BlipSound();
-	m_flNextBlipTime = gpGlobals->curtime + FRAG_GRENADE_BLIP_FREQUENCY;
 
 	AddSolidFlags( FSOLID_NOT_STANDABLE );
-
-	m_combineSpawned	= false;
-	m_punted			= false;
+	
 
 	BaseClass::Spawn();
 }
