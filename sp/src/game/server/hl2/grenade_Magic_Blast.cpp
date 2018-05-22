@@ -99,9 +99,6 @@ void CGrenadeFrag::Spawn( void )
 		m_DmgRadius		= sk_fraggrenade_radius.GetFloat();
 	}
 
-	m_takedamage	= DAMAGE_YES;
-	m_iHealth		= 1;
-
 	SetSize( -Vector(4,4,4), Vector(4,4,4) );
 	SetCollisionGroup( COLLISION_GROUP_WEAPON );
 	CreateVPhysics();
@@ -187,7 +184,7 @@ protected:
 	int		m_collisionGroupAlreadyChecked;
 	int		m_newCollisionGroup;
 };
-
+/*
 void CGrenadeFrag::VPhysicsUpdate( IPhysicsObject *pPhysics )
 {
 	BaseClass::VPhysicsUpdate( pPhysics );
@@ -235,6 +232,7 @@ void CGrenadeFrag::VPhysicsUpdate( IPhysicsObject *pPhysics )
 		pPhysics->SetVelocity( &vel, &angVel );
 	}
 }
+*/
 
 //-----------------------------------------------------------------------------
 // The actual explosion 
@@ -287,7 +285,8 @@ void CGrenadeFrag::Explode( void )
 //-----------------------------------------------------------------------------
 // Purpose: 
 // Input  : *pOther - 
-//-----------------------------------------------------------------------------
+//----------------------------------------------------------------------------
+
 void CGrenadeFrag::BlastTouch( CBaseEntity *pOther )
 {
 	Assert( pOther );
@@ -316,15 +315,6 @@ void CGrenadeFrag::Precache( void )
 	BaseClass::Precache();
 }
 
-void CGrenadeFrag::SetTimer( float detonateDelay, float warnDelay )
-{
-	m_flDetonateTime = gpGlobals->curtime + detonateDelay;
-	m_flWarnAITime = gpGlobals->curtime + warnDelay;
-	SetThink( &CGrenadeFrag::DelayThink );
-	SetNextThink( gpGlobals->curtime );
-
-	CreateEffects();
-}
 
 void CGrenadeFrag::DelayThink() 
 {
@@ -415,11 +405,9 @@ CBaseGrenade *Fraggrenade_Create( const Vector &position, const QAngle &angles, 
 	// Don't set the owner here, or the player can't interact with grenades he's thrown
 	CGrenadeFrag *pGrenade = (CGrenadeFrag *)CBaseEntity::Create( "npc_grenade_frag", position, angles, pOwner );
 	
-	pGrenade->SetTimer( timer, timer - FRAG_GRENADE_WARN_TIME );
 	pGrenade->SetVelocity( velocity, angVelocity );
 	pGrenade->SetThrower( ToBaseCombatCharacter( pOwner ) );
 	pGrenade->m_takedamage = DAMAGE_EVENTS_ONLY;
-	pGrenade->SetCombineSpawned( combineSpawned );
 
 	return pGrenade;
 }
