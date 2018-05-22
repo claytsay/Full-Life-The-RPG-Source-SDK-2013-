@@ -236,6 +236,73 @@ void CGrenadeFrag::VPhysicsUpdate( IPhysicsObject *pPhysics )
 	}
 }
 
+//-----------------------------------------------------------------------------
+// The actual explosion 
+//-----------------------------------------------------------------------------
+void CGrenadeFrag::DoExplosion( void )
+{
+	// Explode
+	ExplosionCreate( GetAbsOrigin(), GetAbsAngles(), GetOwnerEntity(), GetDamage(), CMissile::EXPLOSION_RADIUS, 
+		SF_ENVEXPLOSION_NOSPARKS | SF_ENVEXPLOSION_NODLIGHTS | SF_ENVEXPLOSION_NOSMOKE, 0.0f, this);
+}
+
+
+//-----------------------------------------------------------------------------
+// Purpose: 
+//-----------------------------------------------------------------------------
+void CGrenadeFrag::Explode( void )
+{
+	// Don't explode against the skybox. Just pretend that 
+	// the missile flies off into the distance.
+	Vector forward;
+
+	GetVectors( &forward, NULL, NULL );
+
+	trace_t tr;
+	UTIL_TraceLine( GetAbsOrigin(), GetAbsOrigin() + forward * 16, MASK_SHOT, this, COLLISION_GROUP_NONE, &tr );
+
+	m_takedamage = DAMAGE_NO;
+	SetSolid( SOLID_NONE );
+	if( tr.fraction == 1.0 || !(tr.surface.flags & SURF_SKY) )
+	{
+		DoExplosion();
+	}
+
+	if( m_hRocketTrail )
+	{
+		m_hRocketTrail->SetLifetime(0.1f);
+		m_hRocketTrail = NULL;
+	}
+
+	if ( m_hOwner != NULL )
+	{
+		m_hOwner->NotifyRocketDied();
+		m_hOwner = NULL;
+	}
+
+	StopSound( "Missile.Ignite" );
+	UTIL_Remove( this );
+}
+
+//-----------------------------------------------------------------------------
+// Purpose: 
+// Input  : *pOther - 
+//-----------------------------------------------------------------------------
+void CGrenadeFrag::BlastTouch( CBaseEntity *pOther )
+{
+	Assert( pOther );
+	
+	// Don't touch triggers (but DO hit weapons)
+	if ( pOther->IsSolidFlagSet(FSOLID_TRIGGER|FSOLID_VOLUME_CONTENTS) && pOther->GetCollisionGroup() != COLLISION_GROUP_WEAPON )
+	{
+		// Some NPCs are triggers that can take damage (like antlion grubs). We should hit them.
+		if ( ( pOther->m_takedamage == DAMAGE_NO ) || ( pOther->m_takedamage == DAMAGE_EVENTS_ONLY ) )
+			return;
+	}
+
+	Explode();
+}
+
 
 void CGrenadeFrag::Precache( void )
 {
@@ -306,6 +373,7 @@ void CGrenadeFrag::SetVelocity( const Vector &velocity, const AngularImpulse &an
 extern int	g_interactionBarnacleVictimGrab; ///< usually declared in ai_interactions.h but no reason to haul all of that in here.
 extern int g_interactionBarnacleVictimBite;
 extern int g_interactionBarnacleVictimReleased;
+
 bool CGrenadeFrag::HandleInteraction(int interactionType, void *data, CBaseCombatCharacter* sourceEnt)
 {
 	// allow fragnades to be grabbed by barnacles. 
