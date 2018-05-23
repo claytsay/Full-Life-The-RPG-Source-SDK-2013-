@@ -1,4 +1,4 @@
-﻿Build started 2018-05-15 22:23:26.
+﻿Build started 2018-05-22 22:21:52.
      1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\vgui2\vgui_controls\vgui_controls.vcxproj" on node 2 (Rebuild target(s)).
      1>PreBuildEvent:
          if EXIST ..\..\lib\public\.\vgui_controls.lib ( for /f "delims=" %%A in ('attrib "..\..\lib\public\.\vgui_controls.lib"') do set valveTmpIsReadOnly="%%A"
@@ -177,4 +177,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:25.67
+Time Elapsed 00:00:30.22

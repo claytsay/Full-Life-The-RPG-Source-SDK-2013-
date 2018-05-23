@@ -1,5 +1,5 @@
-﻿Build started 2018-05-15 22:23:13.
-     1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\mathlib\mathlib.vcxproj" on node 4 (Rebuild target(s)).
+﻿Build started 2018-05-22 22:21:41.
+     1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\mathlib\mathlib.vcxproj" on node 3 (Rebuild target(s)).
      1>PreBuildEvent:
          if EXIST ..\lib\public\.\mathlib.lib ( for /f "delims=" %%A in ('attrib "..\lib\public\.\mathlib.lib"') do set valveTmpIsReadOnly="%%A"
          ) else ( if not EXIST ..\lib\public\. mkdir ..\lib\public\. )
@@ -67,4 +67,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:15.33
+Time Elapsed 00:00:12.51

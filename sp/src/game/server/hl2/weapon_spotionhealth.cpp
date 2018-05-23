@@ -21,7 +21,7 @@
 // memdbgon must be the last include file in a .cpp file!!!
 #include "tier0/memdbgon.h"
 
-// Health potion explodes instantly
+// Health potion (or whatever's thrown/lobbed) explodes instantly
 #define SPOTION_TIMER	0.0f // Seconds
 
 #define SPOTION_PAUSED_NO			0
@@ -90,7 +90,7 @@ acttable_t	CWeaponSpotionHealth::m_acttable[] =
 
 IMPLEMENT_ACTTABLE(CWeaponSpotionHealth);
 
-IMPLEMENT_SERVERCLASS_ST(CWeaponSpotionHealth, DT_WeaponFrag)
+IMPLEMENT_SERVERCLASS_ST(CWeaponSpotionHealth, DT_WeaponSpotionHealth)
 END_SEND_TABLE()
 
 LINK_ENTITY_TO_CLASS( weapon_spotionhealth, CWeaponSpotionHealth );
@@ -112,7 +112,8 @@ void CWeaponSpotionHealth::Precache( void )
 {
 	BaseClass::Precache();
 
-	UTIL_PrecacheOther( "npc_grenade_frag" );
+	// Not sure if this can be safely clommented out...
+	//UTIL_PrecacheOther( "npc_grenade_frag" );
 
 	PrecacheScriptSound( "WeaponFrag.Throw" );
 	PrecacheScriptSound( "WeaponFrag.Roll" );
@@ -137,7 +138,6 @@ bool CWeaponSpotionHealth::Holster( CBaseCombatWeapon *pSwitchingTo )
 {
 	m_bRedraw = false;
 	m_fDrawbackFinished = false;
-
 	return BaseClass::Holster( pSwitchingTo );
 }
 
