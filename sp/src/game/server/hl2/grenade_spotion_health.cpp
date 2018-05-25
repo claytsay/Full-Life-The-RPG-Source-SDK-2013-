@@ -1,7 +1,6 @@
 //========= Copyright Valve Corporation, All rights reserved. ============//
 //
 // Purpose: A grenade that does negative damage instead of positive damage.
-//			TODO: Refactor all of the names to avoid compiler errors
 //
 // $NoKeywords: $
 //=============================================================================//
@@ -17,19 +16,19 @@
 // memdbgon must be the last include file in a .cpp file!!!
 #include "tier0/memdbgon.h"
 
-#define FRAG_GRENADE_BLIP_FREQUENCY			1.0f
-#define FRAG_GRENADE_BLIP_FAST_FREQUENCY	0.3f
+#define SPOTION_HEALTH_BLIP_FREQUENCY			1.0f
+#define SPOTION_HEALTH_BLIP_FAST_FREQUENCY	0.3f
 
-#define FRAG_GRENADE_GRACE_TIME_AFTER_PICKUP 1.5f
-#define FRAG_GRENADE_WARN_TIME 1.5f
+#define SPOTION_HEALTH_GRACE_TIME_AFTER_PICKUP 1.5f
+#define SPOTION_HEALTH_WARN_TIME 1.5f
 
-const float GRENADE_COEFFICIENT_OF_RESTITUTION = 0.2f;
+const float SPOTION_HEALTH_COEFFICIENT_OF_RESTITUTION = 0.2f;
 
-ConVar sk_plr_dmg_fraggrenade	( "sk_plr_dmg_fraggrenade","0");
-ConVar sk_npc_dmg_fraggrenade	( "sk_npc_dmg_fraggrenade","0");
-ConVar sk_fraggrenade_radius	( "sk_fraggrenade_radius", "0");
+ConVar sk_plr_dmg_spotionhealth	( "sk_plr_dmg_spotionhealth","0");
+ConVar sk_npc_dmg_spotionhealth	( "sk_npc_dmg_spotionhealth","0");
+ConVar sk_spotionhealth_radius	( "sk_spotionhealth_radius", "0");
 
-#define GRENADE_MODEL "models/Weapons/w_grenade.mdl" // CHANGE!!!
+#define SPOTIONHEALTH_MODEL "models/Weapons/w_grenade.mdl" // CHANGE!!!
 
 class CGrenadeSpotionHealth : public CBaseGrenade
 {
@@ -76,9 +75,9 @@ protected:
 	bool	m_punted;
 };
 
-LINK_ENTITY_TO_CLASS( npc_grenade_frag, CGrenadeFrag );
+LINK_ENTITY_TO_CLASS( npc_spotion_health, CGrenadeSpotionHealth ); // TODO: fix this?
 
-BEGIN_DATADESC( CGrenadeFrag )
+BEGIN_DATADESC( CGrenadeSpotionHealth )
 
 	// Fields
 	DEFINE_FIELD( m_pMainGlow, FIELD_EHANDLE ),
@@ -100,25 +99,25 @@ END_DATADESC()
 //-----------------------------------------------------------------------------
 // Purpose: 
 //-----------------------------------------------------------------------------
-CGrenadeFrag::~CGrenadeFrag( void )
+CGrenadeSpotionHealth::~CGrenadeSpotionHealth( void )
 {
 }
 
-void CGrenadeFrag::Spawn( void )
+void CGrenadeSpotionHealth::Spawn( void )
 {
 	Precache( );
 
-	SetModel( GRENADE_MODEL );
+	SetModel( SPOTIONHEALTH_MODEL );
 
 	if( GetOwnerEntity() && GetOwnerEntity()->IsPlayer() )
 	{
-		m_flDamage		= sk_plr_dmg_fraggrenade.GetFloat();
-		m_DmgRadius		= sk_fraggrenade_radius.GetFloat();
+		m_flDamage		= sk_plr_dmg_spotionhealth.GetFloat();
+		m_DmgRadius		= sk_spotionhealth_radius.GetFloat();
 	}
 	else
 	{
-		m_flDamage		= sk_npc_dmg_fraggrenade.GetFloat();
-		m_DmgRadius		= sk_fraggrenade_radius.GetFloat();
+		m_flDamage		= sk_npc_dmg_spotionhealth.GetFloat();
+		m_DmgRadius		= sk_spotionhealth_radius.GetFloat();
 	}
 
 	m_takedamage	= DAMAGE_YES;
@@ -129,7 +128,7 @@ void CGrenadeFrag::Spawn( void )
 	CreateVPhysics();
 
 	BlipSound();
-	m_flNextBlipTime = gpGlobals->curtime + FRAG_GRENADE_BLIP_FREQUENCY;
+	m_flNextBlipTime = gpGlobals->curtime + SPOTION_HEALTH_BLIP_FREQUENCY;
 
 	AddSolidFlags( FSOLID_NOT_STANDABLE );
 
@@ -142,7 +141,7 @@ void CGrenadeFrag::Spawn( void )
 //-----------------------------------------------------------------------------
 // Purpose: 
 //-----------------------------------------------------------------------------
-void CGrenadeFrag::OnRestore( void )
+void CGrenadeSpotionHealth::OnRestore( void )
 {
 	// If we were primed and ready to detonate, put FX on us.
 	if (m_flDetonateTime > 0)
@@ -154,7 +153,7 @@ void CGrenadeFrag::OnRestore( void )
 //-----------------------------------------------------------------------------
 // Purpose: 
 //-----------------------------------------------------------------------------
-void CGrenadeFrag::CreateEffects( void )
+void CGrenadeSpotionHealth::CreateEffects( void )
 {
 	// Start up the eye glow
 	m_pMainGlow = CSprite::SpriteCreate( "sprites/redglow1.vmt", GetLocalOrigin(), false );
@@ -184,7 +183,7 @@ void CGrenadeFrag::CreateEffects( void )
 	}
 }
 
-bool CGrenadeFrag::CreateVPhysics()
+bool CGrenadeSpotionHealth::CreateVPhysics()
 {
 	// Create the object in the physics system
 	VPhysicsInitNormal( SOLID_BBOX, 0, false );
@@ -226,7 +225,7 @@ protected:
 	int		m_newCollisionGroup;
 };
 
-void CGrenadeFrag::VPhysicsUpdate( IPhysicsObject *pPhysics )
+void CGrenadeSpotionHealth::VPhysicsUpdate( IPhysicsObject *pPhysics )
 {
 	BaseClass::VPhysicsUpdate( pPhysics );
 	Vector vel;
@@ -238,7 +237,7 @@ void CGrenadeFrag::VPhysicsUpdate( IPhysicsObject *pPhysics )
 	CTraceFilterCollisionGroupDelta filter( this, GetCollisionGroup(), COLLISION_GROUP_NONE );
 	trace_t tr;
 
-	// UNDONE: Hull won't work with hitboxes - hits outer hull.  But the whole point of this test is to hit hitboxes.
+	// UNDONE: Hull won't work with hitboxes - hits outer hull. But the whole point of this test is to hit hitboxes.
 #if 0
 	UTIL_TraceHull( start, start + vel * gpGlobals->frametime, CollisionProp()->OBBMins(), CollisionProp()->OBBMaxs(), CONTENTS_HITBOX|CONTENTS_MONSTER|CONTENTS_SOLID, &filter, &tr );
 #else
@@ -249,7 +248,7 @@ void CGrenadeFrag::VPhysicsUpdate( IPhysicsObject *pPhysics )
 		if ( !m_inSolid )
 		{
 			// UNDONE: Do a better contact solution that uses relative velocity?
-			vel *= -GRENADE_COEFFICIENT_OF_RESTITUTION; // bounce backwards
+			vel *= -SPOTION_HEALTH_COEFFICIENT_OF_RESTITUTION; // bounce backwards
 			pPhysics->SetVelocity( &vel, NULL );
 		}
 		m_inSolid = true;
@@ -268,16 +267,16 @@ void CGrenadeFrag::VPhysicsUpdate( IPhysicsObject *pPhysics )
 		vel = -2.0f * tr.plane.normal * DotProduct(vel,tr.plane.normal) + vel;
 		
 		// absorb 80% in impact
-		vel *= GRENADE_COEFFICIENT_OF_RESTITUTION;
+		vel *= SPOTION_HEALTH_COEFFICIENT_OF_RESTITUTION;
 		angVel *= -0.5f;
 		pPhysics->SetVelocity( &vel, &angVel );
 	}
 }
 
 
-void CGrenadeFrag::Precache( void )
+void CGrenadeSpotionHealth::Precache( void )
 {
-	PrecacheModel( GRENADE_MODEL );
+	PrecacheModel( SPOTIONHEALTH_MODEL );
 
 	PrecacheScriptSound( "Grenade.Blip" );
 
@@ -287,17 +286,17 @@ void CGrenadeFrag::Precache( void )
 	BaseClass::Precache();
 }
 
-void CGrenadeFrag::SetTimer( float detonateDelay, float warnDelay )
+void CGrenadeSpotionHealth::SetTimer( float detonateDelay, float warnDelay )
 {
 	m_flDetonateTime = gpGlobals->curtime + detonateDelay;
 	m_flWarnAITime = gpGlobals->curtime + warnDelay;
-	SetThink( &CGrenadeFrag::DelayThink );
+	SetThink( &CGrenadeSpotionHealth::DelayThink );
 	SetNextThink( gpGlobals->curtime );
 
 	CreateEffects();
 }
 
-void CGrenadeFrag::OnPhysGunPickup( CBasePlayer *pPhysGunUser, PhysGunPickup_t reason )
+void CGrenadeSpotionHealth::OnPhysGunPickup( CBasePlayer *pPhysGunUser, PhysGunPickup_t reason )
 {
 	SetThrower( pPhysGunUser );
 
@@ -313,7 +312,7 @@ void CGrenadeFrag::OnPhysGunPickup( CBasePlayer *pPhysGunUser, PhysGunPickup_t r
 		// Give 'em a couple of seconds to aim and throw. 
 		SetTimer( 2.0f, 1.0f);
 		BlipSound();
-		m_flNextBlipTime = gpGlobals->curtime + FRAG_GRENADE_BLIP_FAST_FREQUENCY;
+		m_flNextBlipTime = gpGlobals->curtime + SPOTION_HEALTH_BLIP_FAST_FREQUENCY;
 	}
 #endif
 
@@ -324,7 +323,7 @@ void CGrenadeFrag::OnPhysGunPickup( CBasePlayer *pPhysGunUser, PhysGunPickup_t r
 	BaseClass::OnPhysGunPickup( pPhysGunUser, reason );
 }
 
-void CGrenadeFrag::DelayThink() 
+void CGrenadeSpotionHealth::DelayThink() 
 {
 	if( gpGlobals->curtime > m_flDetonateTime )
 	{
@@ -346,18 +345,18 @@ void CGrenadeFrag::DelayThink()
 		
 		if( m_bHasWarnedAI )
 		{
-			m_flNextBlipTime = gpGlobals->curtime + FRAG_GRENADE_BLIP_FAST_FREQUENCY;
+			m_flNextBlipTime = gpGlobals->curtime + SPOTION_HEALTH_BLIP_FAST_FREQUENCY;
 		}
 		else
 		{
-			m_flNextBlipTime = gpGlobals->curtime + FRAG_GRENADE_BLIP_FREQUENCY;
+			m_flNextBlipTime = gpGlobals->curtime + SPOTION_HEALTH_BLIP_FREQUENCY;
 		}
 	}
 
 	SetNextThink( gpGlobals->curtime + 0.1 );
 }
 
-void CGrenadeFrag::SetVelocity( const Vector &velocity, const AngularImpulse &angVelocity )
+void CGrenadeSpotionHealth::SetVelocity( const Vector &velocity, const AngularImpulse &angVelocity )
 {
 	IPhysicsObject *pPhysicsObject = VPhysicsGetObject();
 	if ( pPhysicsObject )
@@ -366,7 +365,7 @@ void CGrenadeFrag::SetVelocity( const Vector &velocity, const AngularImpulse &an
 	}
 }
 
-int CGrenadeFrag::OnTakeDamage( const CTakeDamageInfo &inputInfo )
+int CGrenadeSpotionHealth::OnTakeDamage( const CTakeDamageInfo &inputInfo )
 {
 	// Manually apply vphysics because BaseCombatCharacter takedamage doesn't call back to CBaseEntity OnTakeDamage
 	VPhysicsTakeDamage( inputInfo );
@@ -379,6 +378,7 @@ int CGrenadeFrag::OnTakeDamage( const CTakeDamageInfo &inputInfo )
 }
 
 #if defined(HL2_EPISODIC) && 0 // FIXME: HandleInteraction() is no longer called now that base grenade derives from CBaseAnimating
+// These don't need to be refactored, right?
 extern int	g_interactionBarnacleVictimGrab; ///< usually declared in ai_interactions.h but no reason to haul all of that in here.
 extern int g_interactionBarnacleVictimBite;
 extern int g_interactionBarnacleVictimReleased;
@@ -387,7 +387,7 @@ bool CGrenadeFrag::HandleInteraction(int interactionType, void *data, CBaseComba
 	// allow fragnades to be grabbed by barnacles. 
 	if ( interactionType == g_interactionBarnacleVictimGrab )
 	{
-		// give the grenade another five seconds seconds so the player can have the satisfaction of blowing up the barnacle with it
+		// give the grenade another five seconds so the player can have the satisfaction of blowing up the barnacle with it
 		float timer = m_flDetonateTime - gpGlobals->curtime + 5.0f;
 		SetTimer( timer, timer - FRAG_GRENADE_WARN_TIME );
 
@@ -413,17 +413,17 @@ bool CGrenadeFrag::HandleInteraction(int interactionType, void *data, CBaseComba
 }
 #endif
 
-void CGrenadeFrag::InputSetTimer( inputdata_t &inputdata )
+void CGrenadeSpotionHealth::InputSetTimer( inputdata_t &inputdata )
 {
-	SetTimer( inputdata.value.Float(), inputdata.value.Float() - FRAG_GRENADE_WARN_TIME );
+	SetTimer( inputdata.value.Float(), inputdata.value.Float() - SPOTION_HEALTH_WARN_TIME );
 }
 
-CBaseGrenade *Fraggrenade_Create( const Vector &position, const QAngle &angles, const Vector &velocity, const AngularImpulse &angVelocity, CBaseEntity *pOwner, float timer, bool combineSpawned )
+CBaseGrenade *Spotionhealth_Create( const Vector &position, const QAngle &angles, const Vector &velocity, const AngularImpulse &angVelocity, CBaseEntity *pOwner, float timer, bool combineSpawned )
 {
 	// Don't set the owner here, or the player can't interact with grenades he's thrown
-	CGrenadeFrag *pGrenade = (CGrenadeFrag *)CBaseEntity::Create( "npc_grenade_frag", position, angles, pOwner );
+	CGrenadeSpotionHealth *pGrenade = (CGrenadeSpotionHealth *)CBaseEntity::Create( "npc_spotion_health", position, angles, pOwner );
 	
-	pGrenade->SetTimer( timer, timer - FRAG_GRENADE_WARN_TIME );
+	pGrenade->SetTimer( timer, timer - SPOTION_HEALTH_WARN_TIME );
 	pGrenade->SetVelocity( velocity, angVelocity );
 	pGrenade->SetThrower( ToBaseCombatCharacter( pOwner ) );
 	pGrenade->m_takedamage = DAMAGE_EVENTS_ONLY;
@@ -432,7 +432,7 @@ CBaseGrenade *Fraggrenade_Create( const Vector &position, const QAngle &angles, 
 	return pGrenade;
 }
 
-bool Fraggrenade_WasPunted( const CBaseEntity *pEntity )
+/*bool Fraggrenade_WasPunted( const CBaseEntity *pEntity )
 {
 	const CGrenadeFrag *pFrag = dynamic_cast<const CGrenadeFrag *>( pEntity );
 	if ( pFrag )
@@ -441,9 +441,9 @@ bool Fraggrenade_WasPunted( const CBaseEntity *pEntity )
 	}
 
 	return false;
-}
+}/**/
 
-bool Fraggrenade_WasCreatedByCombine( const CBaseEntity *pEntity )
+/*bool Fraggrenade_WasCreatedByCombine( const CBaseEntity *pEntity )
 {
 	const CGrenadeFrag *pFrag = dynamic_cast<const CGrenadeFrag *>( pEntity );
 	if ( pFrag )
@@ -452,4 +452,4 @@ bool Fraggrenade_WasCreatedByCombine( const CBaseEntity *pEntity )
 	}
 
 	return false;
-}
+}/**/

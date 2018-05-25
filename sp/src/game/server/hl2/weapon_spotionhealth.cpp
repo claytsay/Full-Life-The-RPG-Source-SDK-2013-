@@ -1,7 +1,7 @@
 //========= Copyright Valve Corporation, All rights reserved. ============//
 //
 // Purpose: To implement a grenade that has negative damage that acts as a 
-//			"Splash Potion of Health" (credit to Mojang).
+//			"Splash Potion of Health" (credit to team--er, Mojang).
 //
 //=============================================================================//
 
@@ -9,8 +9,8 @@
 #include "basehlcombatweapon.h"
 #include "player.h"
 #include "gamerules.h"
-#include "grenade_frag.h"
-//#include "grenade_spotion.h" (?_?)
+// #include "grenade_frag.h" //(?_?)
+#include "grenade_spotion.h" //(?_?)
 #include "npcevent.h"
 #include "engine/IEngineSound.h"
 #include "items.h"
@@ -112,8 +112,8 @@ void CWeaponSpotionHealth::Precache( void )
 {
 	BaseClass::Precache();
 
-	// Not sure if this can be safely clommented out...
-	//UTIL_PrecacheOther( "npc_grenade_frag" );
+	// Not sure if this can be safely commented out...
+	UTIL_PrecacheOther( "npc_spotion_health" );
 
 	PrecacheScriptSound( "WeaponFrag.Throw" );
 	PrecacheScriptSound( "WeaponFrag.Roll" );
@@ -403,7 +403,7 @@ void CWeaponSpotionHealth::ThrowGrenade( CBasePlayer *pPlayer )
 	Vector vecThrow;
 	pPlayer->GetVelocity( &vecThrow, NULL );
 	vecThrow += vForward * 1200;
-	Fraggrenade_Create( vecSrc, vec3_angle, vecThrow, AngularImpulse(600,random->RandomInt(-1200,1200),0), pPlayer, SPOTION_TIMER, false );
+	Spotionhealth_Create( vecSrc, vec3_angle, vecThrow, AngularImpulse(600,random->RandomInt(-1200,1200),0), pPlayer, SPOTION_TIMER, false );
 
 	m_bRedraw = true;
 
@@ -429,7 +429,7 @@ void CWeaponSpotionHealth::LobGrenade( CBasePlayer *pPlayer )
 	Vector vecThrow;
 	pPlayer->GetVelocity( &vecThrow, NULL );
 	vecThrow += vForward * 350 + Vector( 0, 0, 50 );
-	Fraggrenade_Create( vecSrc, vec3_angle, vecThrow, AngularImpulse(200,random->RandomInt(-600,600),0), pPlayer, SPOTION_TIMER, false );
+	Spotionhealth_Create( vecSrc, vec3_angle, vecThrow, AngularImpulse(200,random->RandomInt(-600,600),0), pPlayer, SPOTION_TIMER, false );
 
 	WeaponSound( WPN_DOUBLE );
 
@@ -473,7 +473,7 @@ void CWeaponSpotionHealth::RollGrenade(CBasePlayer *pPlayer)
 	QAngle orientation(0,pPlayer->GetLocalAngles().y,-90);
 	// roll it
 	AngularImpulse rotSpeed(0,0,720);
-	Fraggrenade_Create( vecSrc, orientation, vecThrow, rotSpeed, pPlayer, SPOTION_TIMER, false );
+	Spotionhealth_Create( vecSrc, orientation, vecThrow, rotSpeed, pPlayer, SPOTION_TIMER, false );
 
 	WeaponSound( SPECIAL1 );
 

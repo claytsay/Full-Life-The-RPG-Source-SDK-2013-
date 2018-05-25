@@ -1,8 +1,15 @@
+//========= Well, erm ... Is this mod copyrighted? (?_?) ============//
+//
+// Purpose: Implement a magic blast "grenade" (?)
+// TODO: Fix this so that it actually works as intended
+//
+//=============================================================================//
+
 #include "cbase.h"
 #include "player.h"
 #include "ammodef.h"
 #include "gamerules.h"
-#include "grenade_Magic_Blast.h"
+#include "grenade_magic_blast.h"
 #include "weapon_brickbat.h"
 #include "soundent.h"
 #include "decals.h"
