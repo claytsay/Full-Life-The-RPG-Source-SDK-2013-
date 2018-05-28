@@ -1,4 +1,4 @@
-﻿Build started 2018-05-25 22:37:37.
+﻿Build started 2018-05-28 12:55:32.
      1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\utils\vtf2tga\vtf2tga.vcxproj" on node 3 (Rebuild target(s)).
      1>PreBuildEvent:
          if EXIST ..\..\..\game\bin\.\vtf2tga.exe for /f "delims=" %%A in ('attrib "..\..\..\game\bin\.\vtf2tga.exe"') do set valveTmpIsReadOnly="%%A"
@@ -50,4 +50,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:04.67
+Time Elapsed 00:00:05.96

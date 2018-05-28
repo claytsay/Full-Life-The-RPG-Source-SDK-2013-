@@ -1,4 +1,4 @@
-﻿Build started 2018-05-25 22:28:56.
+﻿Build started 2018-05-28 12:44:44.
      1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\fgdlib\fgdlib.vcxproj" on node 2 (Rebuild target(s)).
      1>PreBuildEvent:
          if EXIST ..\lib\public\.\fgdlib.lib ( for /f "delims=" %%A in ('attrib "..\lib\public\.\fgdlib.lib"') do set valveTmpIsReadOnly="%%A"
@@ -15,6 +15,7 @@
          :VCEnd
        CustomBuild:
          Running VPC CRC Check - fgdlib.vpc
+         The process cannot access the file because it is being used by another process.
        ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\common /I..\public /I..\public\tier0 /I..\public\tier1 /I..\utils\common /Z7 /nologo /W4 /WX /MP /O2 /Ob2 /Oi /Ot /Oy- /D VPC /D RAD_TELEMETRY_DISABLED /D WIN32 /D _WIN32 /D NDEBUG /D _LIB /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _ALLOW_RUNTIME_LIBRARY_MISMATCH /D _ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH /D _ALLOW_MSC_VER_MISMATCH /D _USING_V110_SDK71_ /D _MBCS /D COMPILER_MSVC32 /D COMPILER_MSVC32 /D COMPILER_MSVC /D _DLL_EXT=.dll /D LIBNAME=fgdlib /D BINK_VIDEO /D AVI_VIDEO /D WMV_VIDEO /D DEV_BUILD /D FRAME_POINTER_OMISSION_DISABLED /D _EXTERNAL_DLL_EXT=.dll /D VPCGAMECAPS=VALVE /D "PROJECTDIR=C:\Users\Clay\Documents\School\2017-2018\AP Computer Science\Projects\Unit 10\FullLife-TheRPG-SDK2013\sp\src\fgdlib" /D _DLL_EXT=.dll /D SOURCE1=1 /D VPCGAME=valve /GF /Gm- /MT /GS /Gy /arch:SSE /fp:fast /Zc:wchar_t /Zc:forScope /GR /openmp- /Fo".\Release\.\/" /Fd".\Release\.\/vc120.pdb" /Gd /TP /wd4316 /analyze- /FC /errorReport:prompt /d2Zi+ /Gw gamedata.cpp gdclass.cpp gdvar.cpp inputoutput.cpp wckeyvalues.cpp
          gamedata.cpp
@@ -33,4 +34,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:08.37
+Time Elapsed 00:00:14.69

@@ -1,4 +1,4 @@
-﻿Build started 2018-05-25 22:29:41.
+﻿Build started 2018-05-28 12:45:36.
      1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\game\client\client_hl2.vcxproj" on node 2 (Rebuild target(s)).
      1>PreBuildEvent:
          if EXIST ..\..\..\game\mod_hl2\bin\.\client.dll for /f "delims=" %%A in ('attrib "..\..\..\game\mod_hl2\bin\.\client.dll"') do set valveTmpIsReadOnly="%%A"
@@ -1051,4 +1051,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:08:23.10
+Time Elapsed 00:10:21.34
