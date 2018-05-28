@@ -60,7 +60,8 @@ void CTakeDamageInfo::Init( CBaseEntity *pInflictor, CBaseEntity *pAttacker, CBa
 	m_iDamagedOtherPlayers = 0;
 	m_iPlayerPenetrationCount = 0;
 	m_flDamageBonus = 0.f;
-	m_bForceFriendlyFire = false;
+	m_bForceFriendlyFire = false; // Does this regulate friendly fire?
+								  // Could be interesting to turn this to true...
 }
 
 CTakeDamageInfo::CTakeDamageInfo()

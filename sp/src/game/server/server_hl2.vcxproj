@@ -344,6 +344,7 @@ exit 1
     <ClInclude Include="..\..\public\ihltv.h" />
     <ClInclude Include="..\..\public\ihltvdirector.h" />
     <ClInclude Include="..\..\public\vstdlib\IKeyValuesSystem.h" />
+    <ClInclude Include="hl2\grenade_spotion_health.h" />
     <ClInclude Include="ilagcompensationmanager.h" />
     <ClInclude Include="..\..\public\vgui\ILocalize.h" />
     <ClInclude Include="..\..\public\materialsystem\imaterial.h" />
@@ -1051,6 +1052,7 @@ exit 1
     <ClCompile Include="globalstate.cpp" />
     <ClCompile Include="grenadethrown.cpp" />
     <ClCompile Include="guntarget.cpp" />
+    <ClCompile Include="hl2\grenade_spotion_health.cpp" />
     <ClCompile Include="hl2\weapon_pistol2.cpp" />
     <ClCompile Include="hl2\weapon_spotionhealth.cpp" />
     <ClCompile Include="h_ai.cpp" />

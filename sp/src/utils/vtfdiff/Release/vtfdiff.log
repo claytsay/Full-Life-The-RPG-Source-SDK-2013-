@@ -1,5 +1,5 @@
-﻿Build started 2018-05-22 22:29:20.
-     1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\utils\vtfdiff\vtfdiff.vcxproj" on node 4 (Rebuild target(s)).
+﻿Build started 2018-05-28 12:55:38.
+     1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\utils\vtfdiff\vtfdiff.vcxproj" on node 5 (Rebuild target(s)).
      1>PreBuildEvent:
          if EXIST ..\..\..\game\bin\.\vtfdiff.exe for /f "delims=" %%A in ('attrib "..\..\..\game\bin\.\vtfdiff.exe"') do set valveTmpIsReadOnly="%%A"
          set valveTmpIsReadOnlyLetter=%valveTmpIsReadOnly:~6,1%
@@ -49,4 +49,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:05.45
+Time Elapsed 00:00:05.07

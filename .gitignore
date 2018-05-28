@@ -36,6 +36,10 @@
 
 # Other files to exclude
 config.cfg
+Solution.VC.db
+Browse.VC.db
 **/.vs
+**/.vscode
 **/.idea
 **/save
+*.log
