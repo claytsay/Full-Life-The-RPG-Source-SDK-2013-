@@ -12,6 +12,7 @@
 #include "Sprite.h"
 #include "SpriteTrail.h"
 #include "soundent.h"
+//#include "item_healthkit.cpp"
 
 // memdbgon must be the last include file in a .cpp file!!!
 #include "tier0/memdbgon.h"
@@ -431,6 +432,22 @@ CBaseGrenade *Spotionhealth_Create( const Vector &position, const QAngle &angles
 
 	return pGrenade;
 }
+
+
+// Spawning a health kit
+/*CItem *Healthkit_Create(const Vector &position, const QAngle &angles, const Vector &velocity, const AngularImpulse &angVelocity)
+{
+	// Don't set the owner here, or the player can't interact with grenades he's thrown
+	CHealthKit *pHealthKit = (CHealthKit *)CBaseEntity::Create("item_healthkit", position, angles/*, pOwner);
+
+	//pGrenade->SetTimer(timer, timer - SPOTION_HEALTH_WARN_TIME);
+	//pHealthKit->SetVelocity(velocity, angVelocity);
+	//pGrenade->SetThrower(ToBaseCombatCharacter(pOwner));
+	//pGrenade->m_takedamage = DAMAGE_EVENTS_ONLY;
+	//pGrenade->SetCombineSpawned(combineSpawned);
+
+	return pHealthKit;
+}/**/
 
 /*bool Fraggrenade_WasPunted( const CBaseEntity *pEntity )
 {

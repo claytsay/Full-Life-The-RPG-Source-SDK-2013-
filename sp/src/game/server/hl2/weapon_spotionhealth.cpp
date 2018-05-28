@@ -10,7 +10,7 @@
 #include "player.h"
 #include "gamerules.h"
 // #include "grenade_frag.h" //(?_?)
-#include "grenade_spotion.h" //(?_?)
+#include "grenade_spotion_health.h" //(?_?)
 #include "npcevent.h"
 #include "engine/IEngineSound.h"
 #include "items.h"
@@ -19,7 +19,7 @@
 #include "gamestats.h"
 
 // Does this work?
-#include "item_healthkit.cpp"
+//#include "grenade_spotion_health.cpp"
 
 // memdbgon must be the last include file in a .cpp file!!!
 #include "tier0/memdbgon.h"
@@ -74,7 +74,7 @@ private:
 	int		m_AttackPaused;
 	bool	m_fDrawbackFinished;
 
-	CHealthKit	healthkit;
+	//CHealthKit	healthkit;
 
 	DECLARE_ACTTABLE();
 
@@ -408,8 +408,11 @@ void CWeaponSpotionHealth::ThrowGrenade( CBasePlayer *pPlayer )
 	Vector vecThrow;
 	pPlayer->GetVelocity( &vecThrow, NULL );
 	vecThrow += vForward * 1200;
+	
 	//Spotionhealth_Create( vecSrc, vec3_angle, vecThrow, AngularImpulse(600,random->RandomInt(-1200,1200),0), pPlayer, SPOTION_TIMER, false );
-	healthkit.Spawn;
+	//Healthkit_Create(vecSrc, vec3_angle, vecThrow, AngularImpulse(200, random->RandomInt(-600, 600), 0));
+	CItem healthKit;
+	healthKit.Spawn();
 
 	m_bRedraw = true;
 
@@ -435,8 +438,11 @@ void CWeaponSpotionHealth::LobGrenade( CBasePlayer *pPlayer )
 	Vector vecThrow;
 	pPlayer->GetVelocity( &vecThrow, NULL );
 	vecThrow += vForward * 350 + Vector( 0, 0, 50 );
+	
 	//Spotionhealth_Create( vecSrc, vec3_angle, vecThrow, AngularImpulse(200,random->RandomInt(-600,600),0), pPlayer, SPOTION_TIMER, false );
-	healthkit.Spawn;
+	//Healthkit_Create( vecSrc, vec3_angle, vecThrow, AngularImpulse(200,random->RandomInt(-600,600),0));
+	CItem healthKit;
+	healthKit.Spawn();
 
 	WeaponSound( WPN_DOUBLE );
 
@@ -480,8 +486,11 @@ void CWeaponSpotionHealth::RollGrenade(CBasePlayer *pPlayer)
 	QAngle orientation(0,pPlayer->GetLocalAngles().y,-90);
 	// roll it
 	AngularImpulse rotSpeed(0,0,720);
+
 	//Spotionhealth_Create( vecSrc, orientation, vecThrow, rotSpeed, pPlayer, SPOTION_TIMER, false );
-	healthkit.Spawn;
+	//Healthkit_Create(vecSrc, vec3_angle, vecThrow, AngularImpulse(200, random->RandomInt(-600, 600), 0));
+	CItem healthKit;
+	healthKit.Spawn();
 
 	WeaponSound( SPECIAL1 );
 

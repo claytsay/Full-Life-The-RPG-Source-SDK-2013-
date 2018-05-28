@@ -1,4 +1,4 @@
-﻿Build started 2018-05-22 22:27:17.
+﻿Build started 2018-05-25 22:35:18.
      1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\utils\tgadiff\tgadiff.vcxproj" on node 4 (Rebuild target(s)).
      1>PreBuildEvent:
          if EXIST ..\..\..\game\bin\.\tgadiff.exe for /f "delims=" %%A in ('attrib "..\..\..\game\bin\.\tgadiff.exe"') do set valveTmpIsReadOnly="%%A"
@@ -49,4 +49,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:05.49
+Time Elapsed 00:00:06.53

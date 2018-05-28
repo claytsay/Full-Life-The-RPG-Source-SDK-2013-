@@ -13,6 +13,7 @@ class CBaseGrenade;
 struct edict_t;
 
 CBaseGrenade *Spotionhealth_Create( const Vector &position, const QAngle &angles, const Vector &velocity, const AngularImpulse &angVelocity, CBaseEntity *pOwner, float timer, bool combineSpawned );
+//CItem *Healthkit_Create(const Vector &position, const QAngle &angles, const Vector &velocity, const AngularImpulse &angVelocity);
 
 // These two functions don't seem very relevant; however, commenting out could create problems...
 bool	Spotionhealth_WasPunted( const CBaseEntity *pEntity );
