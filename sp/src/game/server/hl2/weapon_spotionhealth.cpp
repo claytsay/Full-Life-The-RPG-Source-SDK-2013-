@@ -19,8 +19,7 @@
 #include "gamestats.h"
 
 // Does this work?
-//#include "item_healthkit.cpp"
-#include "datacache/imdlcache.h"
+#include "item_healthkit.cpp"
 
 // memdbgon must be the last include file in a .cpp file!!!
 #include "tier0/memdbgon.h"
@@ -77,7 +76,7 @@ private:
 
 	void	CreateHealthkit( void );
 
-	//CHealthKit	healthkit;
+	CHealthKit	healthkit;
 
 	DECLARE_ACTTABLE();
 
