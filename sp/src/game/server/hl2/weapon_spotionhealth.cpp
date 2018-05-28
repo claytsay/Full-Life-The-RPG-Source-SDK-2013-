@@ -1,7 +1,7 @@
 //========= Copyright Valve Corporation, All rights reserved. ============//
 //
 // Purpose: To implement a grenade that has negative damage that acts as a 
-//			"Splash Potion of Health" (credit to team--er, Mojang).
+//			"Splash Potion of Health" (CREDIT TO TEAM--er, Mojang).
 //
 //=============================================================================//
 
@@ -10,7 +10,7 @@
 #include "player.h"
 #include "gamerules.h"
 // #include "grenade_frag.h" //(?_?)
-#include "grenade_spotion_health.h" //(?_?)
+#include "grenade_spotion.h" //(?_?)
 #include "npcevent.h"
 #include "engine/IEngineSound.h"
 #include "items.h"
@@ -19,7 +19,7 @@
 #include "gamestats.h"
 
 // Does this work?
-//#include "grenade_spotion_health.cpp"
+#include "item_healthkit.cpp"
 
 // memdbgon must be the last include file in a .cpp file!!!
 #include "tier0/memdbgon.h"
@@ -74,7 +74,9 @@ private:
 	int		m_AttackPaused;
 	bool	m_fDrawbackFinished;
 
-	//CHealthKit	healthkit;
+	void	CreateHealthkit( void );
+
+	CHealthKit	healthkit;
 
 	DECLARE_ACTTABLE();
 
@@ -408,11 +410,9 @@ void CWeaponSpotionHealth::ThrowGrenade( CBasePlayer *pPlayer )
 	Vector vecThrow;
 	pPlayer->GetVelocity( &vecThrow, NULL );
 	vecThrow += vForward * 1200;
-	
 	//Spotionhealth_Create( vecSrc, vec3_angle, vecThrow, AngularImpulse(600,random->RandomInt(-1200,1200),0), pPlayer, SPOTION_TIMER, false );
-	//Healthkit_Create(vecSrc, vec3_angle, vecThrow, AngularImpulse(200, random->RandomInt(-600, 600), 0));
-	CItem healthKit;
-	healthKit.Spawn();
+	//healthkit.Spawn;
+	CreateHealthkit();
 
 	m_bRedraw = true;
 
@@ -438,11 +438,9 @@ void CWeaponSpotionHealth::LobGrenade( CBasePlayer *pPlayer )
 	Vector vecThrow;
 	pPlayer->GetVelocity( &vecThrow, NULL );
 	vecThrow += vForward * 350 + Vector( 0, 0, 50 );
-	
 	//Spotionhealth_Create( vecSrc, vec3_angle, vecThrow, AngularImpulse(200,random->RandomInt(-600,600),0), pPlayer, SPOTION_TIMER, false );
-	//Healthkit_Create( vecSrc, vec3_angle, vecThrow, AngularImpulse(200,random->RandomInt(-600,600),0));
-	CItem healthKit;
-	healthKit.Spawn();
+	//healthkit.Spawn;
+	CreateHealthkit();
 
 	WeaponSound( WPN_DOUBLE );
 
@@ -486,11 +484,9 @@ void CWeaponSpotionHealth::RollGrenade(CBasePlayer *pPlayer)
 	QAngle orientation(0,pPlayer->GetLocalAngles().y,-90);
 	// roll it
 	AngularImpulse rotSpeed(0,0,720);
-
 	//Spotionhealth_Create( vecSrc, orientation, vecThrow, rotSpeed, pPlayer, SPOTION_TIMER, false );
-	//Healthkit_Create(vecSrc, vec3_angle, vecThrow, AngularImpulse(200, random->RandomInt(-600, 600), 0));
-	CItem healthKit;
-	healthKit.Spawn();
+	//healthkit.Spawn;
+	CreateHealthkit();
 
 	WeaponSound( SPECIAL1 );
 
@@ -500,3 +496,76 @@ void CWeaponSpotionHealth::RollGrenade(CBasePlayer *pPlayer)
 	gamestats->Event_WeaponFired( pPlayer, true, GetClassname() );
 }
 
+//-----------------------------------------------------------------------------
+// Purpose: Spawns a healthkit (hopefully, where the player is standing)
+// Input  : void 
+//-----------------------------------------------------------------------------
+void CWeaponSpotionHealth::CreateHealthkit( void ) {
+	// Mostly copy-pasted from baseentity.cpp
+	
+	MDLCACHE_CRITICAL_SECTION();
+
+	CBasePlayer *pPlayer = UTIL_GetCommandClient();
+	if (!pPlayer)
+	{
+		return;
+	}
+
+	// Don't allow regular users to create point_servercommand entities for the same reason as blocking ent_fire
+	/*if ( !Q_stricmp( args[1], "point_servercommand" ) )
+	{
+		if ( engine->IsDedicatedServer() )
+		{
+			// We allow people with disabled autokick to do it, because they already have rcon.
+			if ( pPlayer->IsAutoKickDisabled() == false )
+				return;
+		}
+		else if ( gpGlobals->maxClients > 1 )
+		{
+			// On listen servers with more than 1 player, only allow the host to create point_servercommand.
+			CBasePlayer *pHostPlayer = UTIL_GetListenServerHost();
+			if ( pPlayer != pHostPlayer )
+				return;
+		}
+	}/**/
+
+	bool allowPrecache = CBaseEntity::IsPrecacheAllowed();
+	CBaseEntity::SetAllowPrecache( true );
+
+	// Try to create entity
+	//CBaseEntity *entity = dynamic_cast< CBaseEntity * >( CreateEntityByName(args[1]) );
+	const char *ENTITY_NAME = "item_healthkit";
+	CBaseEntity *entity = dynamic_cast< CBaseEntity * >( CreateEntityByName(ENTITY_NAME) );
+	if (entity)
+	{
+		entity->Precache();
+
+		// Pass in any additional parameters.
+		/*for ( int i = 2; i + 1 < args.ArgC(); i += 2 )
+		{
+			const char *pKeyName = args[i];
+			const char *pValue = args[i+1];
+			entity->KeyValue( pKeyName, pValue );
+		}/**/
+
+		DispatchSpawn(entity);
+
+		// Now attempt to drop into the world
+		trace_t tr;
+		Vector forward;
+		pPlayer->EyeVectors( &forward );
+		UTIL_TraceLine(pPlayer->EyePosition(),
+			pPlayer->EyePosition() + forward * MAX_TRACE_LENGTH,MASK_SOLID, 
+			pPlayer, COLLISION_GROUP_NONE, &tr );
+		if ( tr.fraction != 1.0 )
+		{
+			// Raise the end position a little up off the floor, place the npc and drop him down
+			tr.endpos.z += 12;
+			entity->Teleport( &tr.endpos, NULL, NULL );
+			UTIL_DropToFloor( entity, MASK_SOLID );
+		}
+
+		entity->Activate();
+	}
+	CBaseEntity::SetAllowPrecache( allowPrecache );
+}
