@@ -1,4 +1,4 @@
-﻿Build started 2018-05-28 12:45:12.
+﻿Build started 2018-05-25 22:29:20.
      1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\materialsystem\stdshaders\game_shader_dx9_hl2.vcxproj" on node 4 (Rebuild target(s)).
      1>PreBuildEvent:
          if EXIST ..\..\..\game\mod_hl2\bin\.\game_shader_dx9.dll for /f "delims=" %%A in ('attrib "..\..\..\game\mod_hl2\bin\.\game_shader_dx9.dll"') do set valveTmpIsReadOnly="%%A"
@@ -59,4 +59,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:47.22
+Time Elapsed 00:00:31.82

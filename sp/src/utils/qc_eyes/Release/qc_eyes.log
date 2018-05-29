@@ -1,4 +1,4 @@
-﻿Build started 2018-05-28 12:46:49.
+﻿Build started 2018-05-25 22:30:32.
      1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\utils\qc_eyes\qc_eyes.vcxproj" on node 4 (Rebuild target(s)).
      1>PreBuildEvent:
          if EXIST ..\..\..\game\bin\.\qc_eyes.exe for /f "delims=" %%A in ('attrib "..\..\..\game\bin\.\qc_eyes.exe"') do set valveTmpIsReadOnly="%%A"
@@ -52,4 +52,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:35.36
+Time Elapsed 00:00:28.26
