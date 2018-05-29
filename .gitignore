@@ -24,15 +24,21 @@
 *.lai
 *.la
 *.a
-*.lib
+//*.lib
 
 # Executables
-*.exe
+//*.exe
 *.out
 *.app
 
 # An attempt to exclude "everything.sdf"
 *.sdf
+
+# Excluding files with hard-coded directories
+*.vcxproj
+*.vpc_crc
+*.filters
+
 
 # Other files to exclude
 config.cfg
