@@ -1,7 +1,7 @@
 //========= Copyright Valve Corporation, All rights reserved. ============//
 //
-// Purpose: To implement a grenade that has negative damage that acts as a 
-//			"Splash Potion of Health" (CREDIT TO TEAM--er, Mojang).
+// Purpose: Implement a "splash potion of harming" to the game.
+//			Again, credit to Mojang.
 //
 //=============================================================================//
 
@@ -9,8 +9,7 @@
 #include "basehlcombatweapon.h"
 #include "player.h"
 #include "gamerules.h"
-// #include "grenade_frag.h" //(?_?)
-#include "grenade_spotion.h" //(?_?)
+#include "grenade_frag.h" // This will need to be changed
 #include "npcevent.h"
 #include "engine/IEngineSound.h"
 #include "items.h"
@@ -18,34 +17,28 @@
 #include "soundent.h"
 #include "gamestats.h"
 
-// Does this work?
-// #include "item_healthkit.cpp"
-
 // memdbgon must be the last include file in a .cpp file!!!
 #include "tier0/memdbgon.h"
 
-// Health potion (or whatever's thrown/lobbed) explodes instantly
-// This probably is not needed later, depending on how the weapon is implemented
-#define SPOTION_TIMER	0.0f // Seconds
+#define SPOTION_HARMING_TIMER	3.0f //Seconds
 
-#define SPOTION_PAUSED_NO			0
-#define SPOTION_PAUSED_PRIMARY		1
-#define SPOTION_PAUSED_SECONDARY	2
+#define SPOTION_HARMING_PAUSED_NO			0
+#define SPOTION_HARMING_PAUSED_PRIMARY		1
+#define SPOTION_HARMING_PAUSED_SECONDARY	2
 
-// Is this really in inches?
-#define SPOTION_RADIUS	4.0f // inches
+#define SPOTION_HARMING_RADIUS	4.0f // inches
 
 //-----------------------------------------------------------------------------
-// Splash Potions: Health
+// Fragmentation grenades
 //-----------------------------------------------------------------------------
-class CWeaponSpotionHealth: public CBaseHLCombatWeapon
+class CWeaponSpotionHarming: public CBaseHLCombatWeapon
 {
-	DECLARE_CLASS( CWeaponSpotionHealth, CBaseHLCombatWeapon );
+	DECLARE_CLASS( CWeaponSpotionHarming, CBaseHLCombatWeapon );
 public:
 	DECLARE_SERVERCLASS();
 
 public:
-	CWeaponSpotionHealth();
+	CWeaponSpotionHarming();
 
 	void	Precache( void );
 	void	Operator_HandleAnimEvent( animevent_t *pEvent, CBaseCombatCharacter *pOperator );
@@ -75,39 +68,34 @@ private:
 	int		m_AttackPaused;
 	bool	m_fDrawbackFinished;
 
-	void	CreateHealthkit( void );
-	void	GiveHealthkit( CBasePlayer *pPlayer );
-
-	//CHealthKit	healthkit;
-
 	DECLARE_ACTTABLE();
 
 	DECLARE_DATADESC();
 };
 
 
-BEGIN_DATADESC( CWeaponSpotionHealth )
+BEGIN_DATADESC( CWeaponSpotionHarming )
 	DEFINE_FIELD( m_bRedraw, FIELD_BOOLEAN ),
 	DEFINE_FIELD( m_AttackPaused, FIELD_INTEGER ),
 	DEFINE_FIELD( m_fDrawbackFinished, FIELD_BOOLEAN ),
 END_DATADESC()
 
-acttable_t	CWeaponSpotionHealth::m_acttable[] = 
+acttable_t	CWeaponSpotionHarming::m_acttable[] = 
 {
 	{ ACT_RANGE_ATTACK1, ACT_RANGE_ATTACK_SLAM, true },
 };
 
-IMPLEMENT_ACTTABLE(CWeaponSpotionHealth);
+IMPLEMENT_ACTTABLE(CWeaponSpotionHarming);
 
-IMPLEMENT_SERVERCLASS_ST(CWeaponSpotionHealth, DT_WeaponSpotionHealth)
+IMPLEMENT_SERVERCLASS_ST(CWeaponSpotionHarming, DT_WeaponSpotionHarming)
 END_SEND_TABLE()
 
-LINK_ENTITY_TO_CLASS( weapon_spotionhealth, CWeaponSpotionHealth );
-PRECACHE_WEAPON_REGISTER(weapon_spotionhealth);
+LINK_ENTITY_TO_CLASS( weapon_spotionharming, CWeaponSpotionHarming );
+PRECACHE_WEAPON_REGISTER(weapon_spotionharming);
 
 
 
-CWeaponSpotionHealth::CWeaponSpotionHealth() :
+CWeaponSpotionHarming::CWeaponSpotionHarming() :
 	CBaseHLCombatWeapon(),
 	m_bRedraw( false )
 {
@@ -117,12 +105,12 @@ CWeaponSpotionHealth::CWeaponSpotionHealth() :
 //-----------------------------------------------------------------------------
 // Purpose: 
 //-----------------------------------------------------------------------------
-void CWeaponSpotionHealth::Precache( void )
+void CWeaponSpotionHarming::Precache( void )
 {
 	BaseClass::Precache();
 
-	// Not sure if this can be safely commented out...
-	UTIL_PrecacheOther( "npc_spotion_health" );
+	// Necessary?
+	// UTIL_PrecacheOther( "npc_grenade_frag" );
 
 	PrecacheScriptSound( "WeaponFrag.Throw" );
 	PrecacheScriptSound( "WeaponFrag.Roll" );
@@ -131,7 +119,7 @@ void CWeaponSpotionHealth::Precache( void )
 //-----------------------------------------------------------------------------
 // Purpose: 
 //-----------------------------------------------------------------------------
-bool CWeaponSpotionHealth::Deploy( void )
+bool CWeaponSpotionHarming::Deploy( void )
 {
 	m_bRedraw = false;
 	m_fDrawbackFinished = false;
@@ -143,10 +131,11 @@ bool CWeaponSpotionHealth::Deploy( void )
 // Purpose: 
 // Output : Returns true on success, false on failure.
 //-----------------------------------------------------------------------------
-bool CWeaponSpotionHealth::Holster( CBaseCombatWeapon *pSwitchingTo )
+bool CWeaponSpotionHarming::Holster( CBaseCombatWeapon *pSwitchingTo )
 {
 	m_bRedraw = false;
 	m_fDrawbackFinished = false;
+
 	return BaseClass::Holster( pSwitchingTo );
 }
 
@@ -155,7 +144,7 @@ bool CWeaponSpotionHealth::Holster( CBaseCombatWeapon *pSwitchingTo )
 // Input  : *pEvent - 
 //			*pOperator - 
 //-----------------------------------------------------------------------------
-void CWeaponSpotionHealth::Operator_HandleAnimEvent( animevent_t *pEvent, CBaseCombatCharacter *pOperator )
+void CWeaponSpotionHarming::Operator_HandleAnimEvent( animevent_t *pEvent, CBaseCombatCharacter *pOperator )
 {
 	CBasePlayer *pOwner = ToBasePlayer( GetOwner() );
 	bool fThrewGrenade = false;
@@ -197,7 +186,6 @@ void CWeaponSpotionHealth::Operator_HandleAnimEvent( animevent_t *pEvent, CBaseC
 		m_flTimeWeaponIdle = FLT_MAX; //NOTE: This is set once the animation has finished up!
 
 		// Make a sound designed to scare snipers back into their holes!
-		// TODO: Is this necessary to keep, or should it be removed?
 		CBaseCombatCharacter *pOwner = GetOwner();
 
 		if( pOwner )
@@ -220,7 +208,7 @@ void CWeaponSpotionHealth::Operator_HandleAnimEvent( animevent_t *pEvent, CBaseC
 // Purpose: 
 // Output : Returns true on success, false on failure.
 //-----------------------------------------------------------------------------
-bool CWeaponSpotionHealth::Reload( void )
+bool CWeaponSpotionHarming::Reload( void )
 {
 	if ( !HasPrimaryAmmo() )
 		return false;
@@ -245,7 +233,7 @@ bool CWeaponSpotionHealth::Reload( void )
 //-----------------------------------------------------------------------------
 // Purpose: 
 //-----------------------------------------------------------------------------
-void CWeaponSpotionHealth::SecondaryAttack( void )
+void CWeaponSpotionHarming::SecondaryAttack( void )
 {
 	if ( m_bRedraw )
 		return;
@@ -264,7 +252,7 @@ void CWeaponSpotionHealth::SecondaryAttack( void )
 		return;
 
 	// Note that this is a secondary attack and prepare the grenade attack to pause.
-	m_AttackPaused = SPOTION_PAUSED_SECONDARY;
+	m_AttackPaused = SPOTION_HARMING_PAUSED_SECONDARY;
 	SendWeaponAnim( ACT_VM_PULLBACK_LOW );
 
 	// Don't let weapon idle interfere in the middle of a throw!
@@ -281,7 +269,7 @@ void CWeaponSpotionHealth::SecondaryAttack( void )
 //-----------------------------------------------------------------------------
 // Purpose: 
 //-----------------------------------------------------------------------------
-void CWeaponSpotionHealth::PrimaryAttack( void )
+void CWeaponSpotionHarming::PrimaryAttack( void )
 {
 	if ( m_bRedraw )
 		return;
@@ -299,7 +287,7 @@ void CWeaponSpotionHealth::PrimaryAttack( void )
 		return;
 
 	// Note that this is a primary attack and prepare the grenade attack to pause.
-	m_AttackPaused = SPOTION_PAUSED_PRIMARY;
+	m_AttackPaused = SPOTION_HARMING_PAUSED_PRIMARY;
 	SendWeaponAnim( ACT_VM_PULLBACK_HIGH );
 	
 	// Put both of these off indefinitely. We do not know how long
@@ -318,7 +306,7 @@ void CWeaponSpotionHealth::PrimaryAttack( void )
 // Purpose: 
 // Input  : *pOwner - 
 //-----------------------------------------------------------------------------
-void CWeaponSpotionHealth::DecrementAmmo( CBaseCombatCharacter *pOwner )
+void CWeaponSpotionHarming::DecrementAmmo( CBaseCombatCharacter *pOwner )
 {
 	pOwner->RemoveAmmo( 1, m_iPrimaryAmmoType );
 }
@@ -326,7 +314,7 @@ void CWeaponSpotionHealth::DecrementAmmo( CBaseCombatCharacter *pOwner )
 //-----------------------------------------------------------------------------
 // Purpose: 
 //-----------------------------------------------------------------------------
-void CWeaponSpotionHealth::ItemPostFrame( void )
+void CWeaponSpotionHarming::ItemPostFrame( void )
 {
 	if( m_fDrawbackFinished )
 	{
@@ -336,7 +324,7 @@ void CWeaponSpotionHealth::ItemPostFrame( void )
 		{
 			switch( m_AttackPaused )
 			{
-			case SPOTION_PAUSED_PRIMARY:
+			case SPOTION_HARMING_PAUSED_PRIMARY:
 				if( !(pOwner->m_nButtons & IN_ATTACK) )
 				{
 					SendWeaponAnim( ACT_VM_THROW );
@@ -344,7 +332,7 @@ void CWeaponSpotionHealth::ItemPostFrame( void )
 				}
 				break;
 
-			case SPOTION_PAUSED_SECONDARY:
+			case SPOTION_HARMING_PAUSED_SECONDARY:
 				if( !(pOwner->m_nButtons & IN_ATTACK2) )
 				{
 					//See if we're ducking
@@ -381,11 +369,11 @@ void CWeaponSpotionHealth::ItemPostFrame( void )
 }
 
 	// check a throw from vecSrc.  If not valid, move the position back along the line to vecEye
-void CWeaponSpotionHealth::CheckThrowPosition( CBasePlayer *pPlayer, const Vector &vecEye, Vector &vecSrc )
+void CWeaponSpotionHarming::CheckThrowPosition( CBasePlayer *pPlayer, const Vector &vecEye, Vector &vecSrc )
 {
 	trace_t tr;
 
-	UTIL_TraceHull( vecEye, vecSrc, -Vector(SPOTION_RADIUS+2,SPOTION_RADIUS+2,SPOTION_RADIUS+2), Vector(SPOTION_RADIUS+2,SPOTION_RADIUS+2,SPOTION_RADIUS+2), 
+	UTIL_TraceHull( vecEye, vecSrc, -Vector(SPOTION_HARMING_RADIUS+2,SPOTION_HARMING_RADIUS+2,SPOTION_HARMING_RADIUS+2), Vector(SPOTION_HARMING_RADIUS+2,SPOTION_HARMING_RADIUS+2,SPOTION_HARMING_RADIUS+2), 
 		pPlayer->PhysicsSolidMaskForEntity(), pPlayer, pPlayer->GetCollisionGroup(), &tr );
 	
 	if ( tr.DidHit() )
@@ -398,7 +386,7 @@ void CWeaponSpotionHealth::CheckThrowPosition( CBasePlayer *pPlayer, const Vecto
 // Purpose: 
 // Input  : *pPlayer - 
 //-----------------------------------------------------------------------------
-void CWeaponSpotionHealth::ThrowGrenade( CBasePlayer *pPlayer )
+void CWeaponSpotionHarming::ThrowGrenade( CBasePlayer *pPlayer )
 {
 	Vector	vecEye = pPlayer->EyePosition();
 	Vector	vForward, vRight;
@@ -412,10 +400,7 @@ void CWeaponSpotionHealth::ThrowGrenade( CBasePlayer *pPlayer )
 	Vector vecThrow;
 	pPlayer->GetVelocity( &vecThrow, NULL );
 	vecThrow += vForward * 1200;
-	//Spotionhealth_Create( vecSrc, vec3_angle, vecThrow, AngularImpulse(600,random->RandomInt(-1200,1200),0), pPlayer, SPOTION_TIMER, false );
-	//healthkit.Spawn;
-	//CreateHealthkit();
-	GiveHealthkit( pPlayer );
+	Fraggrenade_Create( vecSrc, vec3_angle, vecThrow, AngularImpulse(600,random->RandomInt(-1200,1200),0), pPlayer, SPOTION_HARMING_TIMER, false );
 
 	m_bRedraw = true;
 
@@ -429,7 +414,7 @@ void CWeaponSpotionHealth::ThrowGrenade( CBasePlayer *pPlayer )
 // Purpose: 
 // Input  : *pPlayer - 
 //-----------------------------------------------------------------------------
-void CWeaponSpotionHealth::LobGrenade( CBasePlayer *pPlayer )
+void CWeaponSpotionHarming::LobGrenade( CBasePlayer *pPlayer )
 {
 	Vector	vecEye = pPlayer->EyePosition();
 	Vector	vForward, vRight;
@@ -441,10 +426,7 @@ void CWeaponSpotionHealth::LobGrenade( CBasePlayer *pPlayer )
 	Vector vecThrow;
 	pPlayer->GetVelocity( &vecThrow, NULL );
 	vecThrow += vForward * 350 + Vector( 0, 0, 50 );
-	//Spotionhealth_Create( vecSrc, vec3_angle, vecThrow, AngularImpulse(200,random->RandomInt(-600,600),0), pPlayer, SPOTION_TIMER, false );
-	//healthkit.Spawn;
-	//CreateHealthkit();
-	GiveHealthkit( pPlayer );
+	Fraggrenade_Create( vecSrc, vec3_angle, vecThrow, AngularImpulse(200,random->RandomInt(-600,600),0), pPlayer, SPOTION_HARMING_TIMER, false );
 
 	WeaponSound( WPN_DOUBLE );
 
@@ -458,12 +440,12 @@ void CWeaponSpotionHealth::LobGrenade( CBasePlayer *pPlayer )
 // Purpose: 
 // Input  : *pPlayer - 
 //-----------------------------------------------------------------------------
-void CWeaponSpotionHealth::RollGrenade(CBasePlayer *pPlayer)
+void CWeaponSpotionHarming::RollGrenade( CBasePlayer *pPlayer )
 {
 	// BUGBUG: Hardcoded grenade width of 4 - better not change the model :)
 	Vector vecSrc;
-	pPlayer->CollisionProp()->NormalizedToWorldSpace(Vector(0.5f, 0.5f, 0.0f), &vecSrc);
-	vecSrc.z += SPOTION_RADIUS;
+	pPlayer->CollisionProp()->NormalizedToWorldSpace( Vector( 0.5f, 0.5f, 0.0f ), &vecSrc );
+	vecSrc.z += SPOTION_HARMING_RADIUS;
 
 	Vector vecFacing = pPlayer->BodyDirection2D( );
 	// no up/down direction
@@ -488,10 +470,7 @@ void CWeaponSpotionHealth::RollGrenade(CBasePlayer *pPlayer)
 	QAngle orientation(0,pPlayer->GetLocalAngles().y,-90);
 	// roll it
 	AngularImpulse rotSpeed(0,0,720);
-	//Spotionhealth_Create( vecSrc, orientation, vecThrow, rotSpeed, pPlayer, SPOTION_TIMER, false );
-	//healthkit.Spawn;
-	//CreateHealthkit();
-	GiveHealthkit( pPlayer );
+	Fraggrenade_Create( vecSrc, orientation, vecThrow, rotSpeed, pPlayer, SPOTION_HARMING_TIMER, false );
 
 	WeaponSound( SPECIAL1 );
 
@@ -501,87 +480,3 @@ void CWeaponSpotionHealth::RollGrenade(CBasePlayer *pPlayer)
 	gamestats->Event_WeaponFired( pPlayer, true, GetClassname() );
 }
 
-//-----------------------------------------------------------------------------
-// Purpose: Spawns a healthkit (hopefully, where the player is standing)
-// Input  : void 
-//-----------------------------------------------------------------------------
-void CWeaponSpotionHealth::CreateHealthkit( void ) {
-	// Mostly copy-pasted from baseentity.cpp
-	// Doesn't seem to work.
-	
-	MDLCACHE_CRITICAL_SECTION();
-
-	CBasePlayer *pPlayer = UTIL_GetCommandClient();
-	if (!pPlayer)
-	{
-		return;
-	}
-
-	// Don't allow regular users to create point_servercommand entities for the same reason as blocking ent_fire
-	/*if ( !Q_stricmp( args[1], "point_servercommand" ) )
-	{
-		if ( engine->IsDedicatedServer() )
-		{
-			// We allow people with disabled autokick to do it, because they already have rcon.
-			if ( pPlayer->IsAutoKickDisabled() == false )
-				return;
-		}
-		else if ( gpGlobals->maxClients > 1 )
-		{
-			// On listen servers with more than 1 player, only allow the host to create point_servercommand.
-			CBasePlayer *pHostPlayer = UTIL_GetListenServerHost();
-			if ( pPlayer != pHostPlayer )
-				return;
-		}
-	}/**/
-
-	bool allowPrecache = CBaseEntity::IsPrecacheAllowed();
-	CBaseEntity::SetAllowPrecache( true );
-
-	// Try to create entity
-	//CBaseEntity *entity = dynamic_cast< CBaseEntity * >( CreateEntityByName(args[1]) );
-	const char *ENTITY_NAME = "item_healthkit";
-	CBaseEntity *entity = dynamic_cast< CBaseEntity * >( CreateEntityByName(ENTITY_NAME) );
-	if (entity)
-	{
-		entity->Precache();
-
-		// Pass in any additional parameters.
-		/*for ( int i = 2; i + 1 < args.ArgC(); i += 2 )
-		{
-			const char *pKeyName = args[i];
-			const char *pValue = args[i+1];
-			entity->KeyValue( pKeyName, pValue );
-		}/**/
-
-		DispatchSpawn(entity);
-
-		// Now attempt to drop into the world
-		trace_t tr;
-		Vector forward;
-		pPlayer->EyeVectors( &forward );
-		UTIL_TraceLine(pPlayer->EyePosition(),
-			pPlayer->EyePosition() + forward * MAX_TRACE_LENGTH,MASK_SOLID, 
-			pPlayer, COLLISION_GROUP_NONE, &tr );
-		if ( tr.fraction != 1.0 )
-		{
-			// Raise the end position a little up off the floor, place the npc and drop him down
-			tr.endpos.z += 12;
-			entity->Teleport( &tr.endpos, NULL, NULL );
-			UTIL_DropToFloor( entity, MASK_SOLID );
-		}
-
-		entity->Activate();
-	}
-	CBaseEntity::SetAllowPrecache( allowPrecache );
-}
-
-void CWeaponSpotionHealth::GiveHealthkit( CBasePlayer *pPlayer ) {
-	// Inspiration taken from client.cpp:
-	// CON_COMMAND( give, "Give item to player.\n\tArguments: <item_name>" )
-
-	//CBaseCombatCharacter *pOwner = GetOwner();
-	//CBasePlayer *pPlayer = ToBasePlayer( pOwner );
-
-	pPlayer->GiveNamedItem( "item_healthkit" );
-}

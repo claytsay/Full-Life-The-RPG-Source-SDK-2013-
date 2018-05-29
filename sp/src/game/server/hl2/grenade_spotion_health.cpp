@@ -1,6 +1,7 @@
 //========= Copyright Valve Corporation, All rights reserved. ============//
 //
 // Purpose: A grenade that does negative damage instead of positive damage.
+//			This is quite outdated...
 //
 // $NoKeywords: $
 //=============================================================================//

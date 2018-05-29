@@ -39,7 +39,8 @@ STUB_WEAPON_CLASS( weapon_crowbar, WeaponCrowbar, C_BaseHLBludgeonWeapon );
 // New weapons
 STUB_WEAPON_CLASS( weapon_pistol2, WeaponPistol2, C_BaseHLCombatWeapon );
 STUB_WEAPON_CLASS( weapon_spotionhealth, WeaponSpotionHealth, C_BaseHLCombatWeapon );
-STUB_WEAPON_CLASS(weapon_magicblast, WeaponMagicBlast, C_BaseHLCombatWeapon);
+//STUB_WEAPON_CLASS( weapon_magicblast, WeaponMagicBlast, C_BaseHLCombatWeapon);
+STUB_WEAPON_CLASS( weapon_spotionharming, WeaponSpotionHarming, C_BaseHLCombatWeapon );
 
 #ifdef HL2_EPISODIC
 STUB_WEAPON_CLASS( weapon_hopwire, WeaponHopwire, C_BaseHLCombatWeapon );
