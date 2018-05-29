@@ -34,6 +34,12 @@
 # An attempt to exclude "everything.sdf"
 *.sdf
 
+# Excluding files with hard-coded directories
+*.vcxproj
+*.vpc_crc
+*.filters
+
+
 # Other files to exclude
 config.cfg
 Solution.VC.db
@@ -43,4 +49,3 @@ Browse.VC.db
 **/.idea
 **/save
 *.log
-*.vcxproj
