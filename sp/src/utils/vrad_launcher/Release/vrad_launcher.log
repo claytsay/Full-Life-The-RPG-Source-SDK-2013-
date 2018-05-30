@@ -1,5 +1,5 @@
-﻿Build started 2018-05-15 22:30:35.
-     1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\utils\vrad_launcher\vrad_launcher.vcxproj" on node 2 (Rebuild target(s)).
+﻿Build started 2018-05-25 22:37:32.
+     1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\utils\vrad_launcher\vrad_launcher.vcxproj" on node 5 (Rebuild target(s)).
      1>PreBuildEvent:
          if EXIST ..\..\..\game\bin\.\vrad.exe for /f "delims=" %%A in ('attrib "..\..\..\game\bin\.\vrad.exe"') do set valveTmpIsReadOnly="%%A"
          set valveTmpIsReadOnlyLetter=%valveTmpIsReadOnly:~6,1%
@@ -47,4 +47,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:03.93
+Time Elapsed 00:00:08.16

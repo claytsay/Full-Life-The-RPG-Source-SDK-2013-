@@ -1,7 +1,7 @@
 "GameInfo"
 {
 	game 		"Full-Life: The RPG"
-	title 		"HALF-LIFE'"
+	title 		"FULL-LIFE: THE RPG"
 	title2		""
 	supportsvr	1
 

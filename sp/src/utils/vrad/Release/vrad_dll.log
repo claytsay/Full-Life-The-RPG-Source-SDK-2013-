@@ -1,4 +1,4 @@
-﻿Build started 2018-05-15 22:29:45.
+﻿Build started 2018-05-25 22:36:44.
      1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\utils\vrad\vrad_dll.vcxproj" on node 4 (Rebuild target(s)).
      1>PreBuildEvent:
          if EXIST ..\..\..\game\bin\.\vrad_dll.dll for /f "delims=" %%A in ('attrib "..\..\..\game\bin\.\vrad_dll.dll"') do set valveTmpIsReadOnly="%%A"
@@ -10,10 +10,10 @@
          :VCEnd
        CustomBuild:
          Compiling pointeroverride.asm
+          Assembling: C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\public\tier0\pointeroverride.asm
          Microsoft (R) Macro Assembler Version 12.00.40629.0
          Copyright (C) Microsoft Corporation.  All rights reserved.
          
-          Assembling: C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\public\tier0\pointeroverride.asm
          Running VPC CRC Check - vrad_dll.vpc
        ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\..\common /I..\..\public /I..\..\public\tier0 /I..\..\public\tier1 /I..\common /I..\vmpi /I..\vmpi\mysql\mysqlpp\include /I..\vmpi\mysql\include /Zi /nologo /W4 /WX /MP /O2 /Ob2 /Oi /Ot /Oy- /D VPC /D RAD_TELEMETRY_DISABLED /D WIN32 /D _WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _ALLOW_RUNTIME_LIBRARY_MISMATCH /D _ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH /D _ALLOW_MSC_VER_MISMATCH /D _USING_V110_SDK71_ /D _WINDLL /D _MBCS /D COMPILER_MSVC32 /D COMPILER_MSVC32 /D COMPILER_MSVC /D _DLL_EXT=.dll /D DLLNAME=vrad_dll /D BINK_VIDEO /D AVI_VIDEO /D WMV_VIDEO /D DEV_BUILD /D FRAME_POINTER_OMISSION_DISABLED /D MPI /D PROTECTED_THINGS_DISABLE /D VRAD /D _EXTERNAL_DLL_EXT=.dll /D VPCGAMECAPS=VALVE /D "PROJECTDIR=C:\Users\Clay\Documents\School\2017-2018\AP Computer Science\Projects\Unit 10\FullLife-TheRPG-SDK2013\sp\src\utils\vrad" /D _DLL_EXT=.dll /D SOURCE1=1 /D VPCGAME=valve /GF /Gm- /MT /GS /Gy /arch:SSE /fp:fast /Zc:wchar_t /Zc:forScope /GR /Fo".\Release\.\/" /Fd".\Release\.\/vc120.pdb" /Gd /TP /wd4316 /analyze- /FC /errorReport:prompt /Zm200 /d2Zi+ /Gw ..\..\public\BSPTreeData.cpp ..\..\public\disp_common.cpp ..\..\public\disp_powerinfo.cpp disp_vrad.cpp imagepacker.cpp incremental.cpp leaf_ambient_lighting.cpp lightmap.cpp ..\..\public\loadcmdline.cpp ..\..\public\lumpfiles.cpp macro_texture.cpp ..\..\public\tier0\memoverride.cpp ..\common\mpi_stats.cpp mpivrad.cpp ..\common\MySqlDatabase.cpp ..\common\pacifier.cpp ..\common\physdll.cpp radial.cpp SampleHash.cpp trace.cpp ..\common\utilmatlib.cpp vismat.cpp ..\common\vmpi_tools_shared.cpp vrad.cpp VRAD_DispColl.cpp VradDetailProps.cpp VRadDisps.cpp vraddll.cpp VRadStaticProps.cpp ..\..\public\zip_utils.cpp ..\common\bsplib.cpp ..\..\public\builddisp.cpp ..\..\public\ChunkFile.cpp ..\common\cmdlib.cpp ..\..\public\DispColl_Common.cpp ..\common\map_shared.cpp ..\common\polylib.cpp ..\common\scriplib.cpp ..\common\threads.cpp ..\common\tools_minidump.cpp ..\..\public\CollisionUtils.cpp ..\..\public\filesystem_helpers.cpp ..\..\public\ScratchPad3D.cpp ..\..\public\ScratchPadUtils.cpp
@@ -139,4 +139,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:49.52
+Time Elapsed 00:00:52.65

@@ -275,6 +275,7 @@ Scheme
 				"weight"		"0"
 			}
 		}
+		
 		WeaponIcons
 		{
 			"1"
@@ -632,25 +633,25 @@ Scheme
 		{
 			"1"
 			{
-				"name"  "HalfLife2"
+				"name"  "Clay Sans Mk1" // Original: HalfLife2
 				"tall"			"32"
 				"tall_hidef"	"46"
 				"weight" "0"
 				"additive" "0"
 				"antialias" "1"
-				"custom"	"1" [$OSX]
+				"custom"	"3" [$OSX] // Original: 1
 			}
 		}
 		CreditsLogo
 		{
 			"1"
 			{
-				"name"		"HalfLife2"
+				"name"		"Clay Sans Mk1" // Original: HalfLife2
 				"tall"		"128"
 				"weight"	"0"
 				"antialias" "1"
 				"additive"	"1"
-				"custom"	"1"
+				"custom"	"3" // Original: 1
 			}
 		}
 		CreditsText
@@ -668,12 +669,12 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"HalfLife2"
+				"name"		"Clay Sans Mk1" // Original: HalfLife2
 				"tall"		"48"
 				"weight"	"0"
 				"antialias" "1"
 				"additive"	"1"
-				"custom"	"1"
+				"custom"	"3" // Original: 1
 			}
 		}
 		CreditsOutroText
@@ -792,8 +793,9 @@ Scheme
 	// specifies all the custom (non-system) font files that need to be loaded to service the above described fonts
 	CustomFontFiles
 	{
-		"1"		"resource/HALFLIFE2.ttf"
+		"1"		"resource/HalfLife2.ttf"
 		"2"		"resource/HL2crosshairs.ttf"
+		"3"		"resource/ClaySansMk1Regular.ttf"
 	}
 
 }

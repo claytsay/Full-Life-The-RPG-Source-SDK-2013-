@@ -1,36 +1,36 @@
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\mathlib\debug\vc120.pdb
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\mathlib\mathlib.vpc.sentinel
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\lib\public\mathlib.lib
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\mathlib\debug\3dnow.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\mathlib\debug\almostequal.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\mathlib\debug\anorms.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\mathlib\debug\bumpvects.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\mathlib\debug\color_conversion.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\mathlib\debug\halton.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\mathlib\debug\icekey.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\mathlib\debug\imagequant.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\mathlib\debug\lightdesc.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\mathlib\debug\mathlib_base.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\mathlib\debug\polyhedron.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\mathlib\debug\powsse.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\mathlib\debug\quantize.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\mathlib\debug\randsse.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\mathlib\debug\simdvectormatrix.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\mathlib\debug\sparse_convolution_noise.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\mathlib\debug\spherical.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\mathlib\debug\sse.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\mathlib\debug\sseconst.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\mathlib\debug\ssenoise.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\mathlib\debug\vector.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\mathlib\debug\vmatrix.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\mathlib\debug\vc120.idb
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\mathlib\..\lib\public\.\mathlib.lib
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\mathlib\debug\mathlib.tlog\cl.command.1.tlog
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\mathlib\debug\mathlib.tlog\cl.read.1.tlog
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\mathlib\debug\mathlib.tlog\cl.write.1.tlog
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\mathlib\debug\mathlib.tlog\custombuild.command.1.tlog
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\mathlib\debug\mathlib.tlog\custombuild.read.1.tlog
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\mathlib\debug\mathlib.tlog\custombuild.write.1.tlog
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\mathlib\debug\mathlib.tlog\lib-link.read.1.tlog
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\mathlib\debug\mathlib.tlog\lib-link.write.1.tlog
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\mathlib\debug\mathlib.tlog\lib.command.1.tlog
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\mathlib\debug\vc120.pdb
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\mathlib\mathlib.vpc.sentinel
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\lib\public\mathlib.lib
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\mathlib\debug\3dnow.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\mathlib\debug\almostequal.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\mathlib\debug\anorms.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\mathlib\debug\bumpvects.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\mathlib\debug\color_conversion.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\mathlib\debug\halton.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\mathlib\debug\icekey.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\mathlib\debug\imagequant.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\mathlib\debug\lightdesc.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\mathlib\debug\mathlib_base.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\mathlib\debug\polyhedron.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\mathlib\debug\powsse.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\mathlib\debug\quantize.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\mathlib\debug\randsse.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\mathlib\debug\simdvectormatrix.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\mathlib\debug\sparse_convolution_noise.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\mathlib\debug\spherical.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\mathlib\debug\sse.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\mathlib\debug\sseconst.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\mathlib\debug\ssenoise.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\mathlib\debug\vector.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\mathlib\debug\vmatrix.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\mathlib\debug\vc120.idb
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\mathlib\..\lib\public\.\mathlib.lib
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\mathlib\debug\mathlib.tlog\cl.command.1.tlog
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\mathlib\debug\mathlib.tlog\cl.read.1.tlog
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\mathlib\debug\mathlib.tlog\cl.write.1.tlog
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\mathlib\debug\mathlib.tlog\custombuild.command.1.tlog
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\mathlib\debug\mathlib.tlog\custombuild.read.1.tlog
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\mathlib\debug\mathlib.tlog\custombuild.write.1.tlog
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\mathlib\debug\mathlib.tlog\lib-link.read.1.tlog
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\mathlib\debug\mathlib.tlog\lib-link.write.1.tlog
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\mathlib\debug\mathlib.tlog\lib.command.1.tlog
