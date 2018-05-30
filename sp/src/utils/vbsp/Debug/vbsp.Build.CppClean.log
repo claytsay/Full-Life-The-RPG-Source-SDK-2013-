@@ -1,72 +1,72 @@
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\vc120.pdb
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\pointeroverride.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\vbsp.vpc.sentinel
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\vbsp.ilk
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\vbsp.exe
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\vbsp.pdb
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\vbsp.lib
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\vbsp.exp
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\boundbox.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\brushbsp.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\bsplib.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\builddisp.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\chunkfile.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\cmdlib.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\collisionutils.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\csg.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\cubemap.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\detail.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\detailobjects.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\disp_common.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\disp_ivp.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\disp_powerinfo.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\disp_vbsp.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\faces.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\filesystem_helpers.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\filesystem_init.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\filesystem_tools.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\glfile.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\ivp.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\leakfile.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\loadcmdline.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\lumpfiles.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\manifest.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\map.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\map_shared.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\materialpatch.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\materialsub.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\memoverride.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\mstristrip.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\nodraw.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\normals.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\overlay.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\pacifier.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\physdll.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\polylib.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\portals.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\prtfile.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\scratchpad3d.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\scratchpad_helpers.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\scriplib.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\staticprop.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\textures.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\threads.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\tools_minidump.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\tree.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\utilmatlib.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\vbsp.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\worldvertextransitionfixup.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\writebsp.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\zip_utils.obj
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\vc120.idb
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\.\debug\.\vbsp.exe
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\vbsp.tlog\cl.command.1.tlog
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\vbsp.tlog\cl.read.1.tlog
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\vbsp.tlog\cl.write.1.tlog
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\vbsp.tlog\custombuild.command.1.tlog
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\vbsp.tlog\custombuild.read.1.tlog
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\vbsp.tlog\custombuild.write.1.tlog
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\vbsp.tlog\link.command.1.tlog
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\vbsp.tlog\link.read.1.tlog
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\vbsp.tlog\link.write.1.tlog
-c:\users\clay\documents\school\2017-2018\ap computer science\projects\unit 10\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\vbsp.tlog\vbsp.write.1u.tlog
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\vc120.pdb
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\pointeroverride.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\vbsp.vpc.sentinel
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\vbsp.ilk
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\vbsp.exe
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\vbsp.pdb
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\vbsp.lib
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\vbsp.exp
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\boundbox.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\brushbsp.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\bsplib.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\builddisp.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\chunkfile.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\cmdlib.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\collisionutils.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\csg.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\cubemap.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\detail.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\detailobjects.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\disp_common.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\disp_ivp.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\disp_powerinfo.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\disp_vbsp.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\faces.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\filesystem_helpers.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\filesystem_init.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\filesystem_tools.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\glfile.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\ivp.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\leakfile.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\loadcmdline.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\lumpfiles.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\manifest.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\map.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\map_shared.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\materialpatch.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\materialsub.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\memoverride.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\mstristrip.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\nodraw.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\normals.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\overlay.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\pacifier.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\physdll.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\polylib.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\portals.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\prtfile.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\scratchpad3d.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\scratchpad_helpers.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\scriplib.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\staticprop.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\textures.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\threads.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\tools_minidump.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\tree.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\utilmatlib.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\vbsp.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\worldvertextransitionfixup.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\writebsp.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\zip_utils.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\vc120.idb
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\.\debug\.\vbsp.exe
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\vbsp.tlog\cl.command.1.tlog
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\vbsp.tlog\cl.read.1.tlog
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\vbsp.tlog\cl.write.1.tlog
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\vbsp.tlog\custombuild.command.1.tlog
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\vbsp.tlog\custombuild.read.1.tlog
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\vbsp.tlog\custombuild.write.1.tlog
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\vbsp.tlog\link.command.1.tlog
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\vbsp.tlog\link.read.1.tlog
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\vbsp.tlog\link.write.1.tlog
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\utils\vbsp\debug\vbsp.tlog\vbsp.write.1u.tlog

@@ -19,12 +19,13 @@
 #include "gamestats.h"
 
 // Does this work?
-#include "item_healthkit.cpp"
+// #include "item_healthkit.cpp"
 
 // memdbgon must be the last include file in a .cpp file!!!
 #include "tier0/memdbgon.h"
 
 // Health potion (or whatever's thrown/lobbed) explodes instantly
+// This probably is not needed later, depending on how the weapon is implemented
 #define SPOTION_TIMER	0.0f // Seconds
 
 #define SPOTION_PAUSED_NO			0
@@ -74,9 +75,10 @@ private:
 	int		m_AttackPaused;
 	bool	m_fDrawbackFinished;
 
-	void	CreateHealthkit( void );
+	//void	CreateHealthkit( void );
+	void	GiveHealthkit( CBasePlayer *pPlayer );
 
-	CHealthKit	healthkit;
+	//CHealthKit	healthkit;
 
 	DECLARE_ACTTABLE();
 
@@ -412,7 +414,8 @@ void CWeaponSpotionHealth::ThrowGrenade( CBasePlayer *pPlayer )
 	vecThrow += vForward * 1200;
 	//Spotionhealth_Create( vecSrc, vec3_angle, vecThrow, AngularImpulse(600,random->RandomInt(-1200,1200),0), pPlayer, SPOTION_TIMER, false );
 	//healthkit.Spawn;
-	CreateHealthkit();
+	//CreateHealthkit();
+	GiveHealthkit( pPlayer );
 
 	m_bRedraw = true;
 
@@ -440,7 +443,8 @@ void CWeaponSpotionHealth::LobGrenade( CBasePlayer *pPlayer )
 	vecThrow += vForward * 350 + Vector( 0, 0, 50 );
 	//Spotionhealth_Create( vecSrc, vec3_angle, vecThrow, AngularImpulse(200,random->RandomInt(-600,600),0), pPlayer, SPOTION_TIMER, false );
 	//healthkit.Spawn;
-	CreateHealthkit();
+	//CreateHealthkit();
+	GiveHealthkit( pPlayer );
 
 	WeaponSound( WPN_DOUBLE );
 
@@ -486,7 +490,8 @@ void CWeaponSpotionHealth::RollGrenade(CBasePlayer *pPlayer)
 	AngularImpulse rotSpeed(0,0,720);
 	//Spotionhealth_Create( vecSrc, orientation, vecThrow, rotSpeed, pPlayer, SPOTION_TIMER, false );
 	//healthkit.Spawn;
-	CreateHealthkit();
+	//CreateHealthkit();
+	GiveHealthkit( pPlayer );
 
 	WeaponSound( SPECIAL1 );
 
@@ -500,8 +505,10 @@ void CWeaponSpotionHealth::RollGrenade(CBasePlayer *pPlayer)
 // Purpose: Spawns a healthkit (hopefully, where the player is standing)
 // Input  : void 
 //-----------------------------------------------------------------------------
+/*
 void CWeaponSpotionHealth::CreateHealthkit( void ) {
 	// Mostly copy-pasted from baseentity.cpp
+	// Doesn't seem to work.
 	
 	MDLCACHE_CRITICAL_SECTION();
 
@@ -512,7 +519,7 @@ void CWeaponSpotionHealth::CreateHealthkit( void ) {
 	}
 
 	// Don't allow regular users to create point_servercommand entities for the same reason as blocking ent_fire
-	/*if ( !Q_stricmp( args[1], "point_servercommand" ) )
+	if ( !Q_stricmp( args[1], "point_servercommand" ) )
 	{
 		if ( engine->IsDedicatedServer() )
 		{
@@ -527,7 +534,7 @@ void CWeaponSpotionHealth::CreateHealthkit( void ) {
 			if ( pPlayer != pHostPlayer )
 				return;
 		}
-	}/**/
+	}
 
 	bool allowPrecache = CBaseEntity::IsPrecacheAllowed();
 	CBaseEntity::SetAllowPrecache( true );
@@ -541,12 +548,12 @@ void CWeaponSpotionHealth::CreateHealthkit( void ) {
 		entity->Precache();
 
 		// Pass in any additional parameters.
-		/*for ( int i = 2; i + 1 < args.ArgC(); i += 2 )
+		for ( int i = 2; i + 1 < args.ArgC(); i += 2 )
 		{
 			const char *pKeyName = args[i];
 			const char *pValue = args[i+1];
 			entity->KeyValue( pKeyName, pValue );
-		}/**/
+		}
 
 		DispatchSpawn(entity);
 
@@ -568,4 +575,15 @@ void CWeaponSpotionHealth::CreateHealthkit( void ) {
 		entity->Activate();
 	}
 	CBaseEntity::SetAllowPrecache( allowPrecache );
+}
+/**/
+
+void CWeaponSpotionHealth::GiveHealthkit( CBasePlayer *pPlayer ) {
+	// Inspiration taken from client.cpp:
+	// CON_COMMAND( give, "Give item to player.\n\tArguments: <item_name>" )
+
+	//CBaseCombatCharacter *pOwner = GetOwner();
+	//CBasePlayer *pPlayer = ToBasePlayer( pOwner );
+
+	pPlayer->GiveNamedItem( "item_healthkit" );
 }

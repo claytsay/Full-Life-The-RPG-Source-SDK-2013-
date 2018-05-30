@@ -1766,7 +1766,6 @@
     <ClInclude Include="toolframework_server.h">
       <Filter>Tools Framework</Filter>
     </ClInclude>
-    <ClInclude Include="hl2\grenade_spotion_health.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="gamedll_replay.cpp">
@@ -3435,8 +3434,8 @@
       <Filter>Tools Framework</Filter>
     </ClCompile>
     <ClCompile Include="hl2\weapon_pistol2.cpp" />
+    <ClCompile Include="hl2\weapon_spotionharming.cpp" />
     <ClCompile Include="hl2\weapon_spotionhealth.cpp" />
-    <ClCompile Include="hl2\grenade_spotion_health.cpp" />
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>

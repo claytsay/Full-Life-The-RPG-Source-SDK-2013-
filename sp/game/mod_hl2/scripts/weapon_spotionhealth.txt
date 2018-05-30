@@ -5,8 +5,8 @@ WeaponData
 	"viewmodel"			"models/weapons/v_grenade.mdl" // Change
 	"playermodel"			"models/items/grenadeAmmo.mdl" // Change
 	"anim_prefix"			"Grenade"
-	"bucket"			"4" // Change
-	"bucket_position"		"2" // Change
+	"bucket"			"5" // Change
+	"bucket_position"		"0" // Change
 	"bucket_360"			"3"
 	"bucket_position_360"		"0"
 
