@@ -75,7 +75,7 @@ private:
 	int		m_AttackPaused;
 	bool	m_fDrawbackFinished;
 
-	void	CreateHealthkit( void );
+	//void	CreateHealthkit( void );
 	void	GiveHealthkit( CBasePlayer *pPlayer );
 
 	//CHealthKit	healthkit;
@@ -505,6 +505,7 @@ void CWeaponSpotionHealth::RollGrenade(CBasePlayer *pPlayer)
 // Purpose: Spawns a healthkit (hopefully, where the player is standing)
 // Input  : void 
 //-----------------------------------------------------------------------------
+/*
 void CWeaponSpotionHealth::CreateHealthkit( void ) {
 	// Mostly copy-pasted from baseentity.cpp
 	// Doesn't seem to work.
@@ -518,7 +519,7 @@ void CWeaponSpotionHealth::CreateHealthkit( void ) {
 	}
 
 	// Don't allow regular users to create point_servercommand entities for the same reason as blocking ent_fire
-	/*if ( !Q_stricmp( args[1], "point_servercommand" ) )
+	if ( !Q_stricmp( args[1], "point_servercommand" ) )
 	{
 		if ( engine->IsDedicatedServer() )
 		{
@@ -533,7 +534,7 @@ void CWeaponSpotionHealth::CreateHealthkit( void ) {
 			if ( pPlayer != pHostPlayer )
 				return;
 		}
-	}/**/
+	}
 
 	bool allowPrecache = CBaseEntity::IsPrecacheAllowed();
 	CBaseEntity::SetAllowPrecache( true );
@@ -547,12 +548,12 @@ void CWeaponSpotionHealth::CreateHealthkit( void ) {
 		entity->Precache();
 
 		// Pass in any additional parameters.
-		/*for ( int i = 2; i + 1 < args.ArgC(); i += 2 )
+		for ( int i = 2; i + 1 < args.ArgC(); i += 2 )
 		{
 			const char *pKeyName = args[i];
 			const char *pValue = args[i+1];
 			entity->KeyValue( pKeyName, pValue );
-		}/**/
+		}
 
 		DispatchSpawn(entity);
 
@@ -575,6 +576,7 @@ void CWeaponSpotionHealth::CreateHealthkit( void ) {
 	}
 	CBaseEntity::SetAllowPrecache( allowPrecache );
 }
+/**/
 
 void CWeaponSpotionHealth::GiveHealthkit( CBasePlayer *pPlayer ) {
 	// Inspiration taken from client.cpp:
