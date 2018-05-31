@@ -1,4 +1,4 @@
-﻿Build started 2018-05-29 16:27:09.
+﻿Build started 2018-05-30 23:19:38.
      1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\utils\height2normal\height2normal.vcxproj" on node 4 (Rebuild target(s)).
      1>PreBuildEvent:
          if EXIST ..\..\..\game\bin\.\height2normal.exe for /f "delims=" %%A in ('attrib "..\..\..\game\bin\.\height2normal.exe"') do set valveTmpIsReadOnly="%%A"
@@ -47,4 +47,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:04.92
+Time Elapsed 00:00:07.81

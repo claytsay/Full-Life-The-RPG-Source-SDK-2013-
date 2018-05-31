@@ -15,7 +15,7 @@ WeaponData
 	"default_clip"			"1"
 	"default_clip2"			"-1"
 
-	"primary_ammo"			"grenade"
+	"primary_ammo"			"mana"
 	"secondary_ammo"		"None"
 
 	"weight"			"1"

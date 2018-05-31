@@ -6150,7 +6150,7 @@ void CBasePlayer::CheatImpulseCommands( int iImpulse )
 		GiveAmmo( 16,	"XBowBolt" );
 
 		// New ammo types!
-		GiveAmmo( 5,	"Spotion_Health" );
+		GiveAmmo( 9000,	"Mana" );
 
 #ifdef HL2_EPISODIC
 		GiveAmmo( 5,	"Hopwire" );
@@ -6170,6 +6170,7 @@ void CBasePlayer::CheatImpulseCommands( int iImpulse )
 		// New weapons!
 		GiveNamedItem( "weapon_pistol2" );
 		GiveNamedItem( "weapon_spotionhealth" );
+		GiveNamedItem( "weapon_spotionharming" );
 
 #ifdef HL2_EPISODIC
 		// GiveNamedItem( "weapon_magnade" );
