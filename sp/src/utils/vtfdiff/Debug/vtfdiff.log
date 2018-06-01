@@ -1,27 +1,32 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿Build started 5/31/2018 11:58:28 PM.
      1>Project "C:\Users\Zane\Documents\GitHub\Full-Life-The-RPG-Source-SDK-2013-\sp\src\utils\vtfdiff\vtfdiff.vcxproj" on node 3 (Rebuild target(s)).
 =======
 ﻿Build started 2018-05-31 23:35:37.
      1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\utils\vtfdiff\vtfdiff.vcxproj" on node 3 (Rebuild target(s)).
 >>>>>>> cd248c7fdaa49abadfa61e9480cfc8dd5d536010
+=======
+﻿Build started 2018-05-29 16:33:10.
+     1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\utils\vtfdiff\vtfdiff.vcxproj" on node 2 (Rebuild target(s)).
+>>>>>>> parent of 728da1f... Added Weapon files for magic blast
      1>PreBuildEvent:
          if EXIST ..\..\..\game\bin\.\vtfdiff.exe for /f "delims=" %%A in ('attrib "..\..\..\game\bin\.\vtfdiff.exe"') do set valveTmpIsReadOnly="%%A"
          set valveTmpIsReadOnlyLetter=%valveTmpIsReadOnly:~6,1%
-         if "%valveTmpIsReadOnlyLetter%"=="R" del /q "C:\Users\Zane\Documents\GitHub\Full-Life-The-RPG-Source-SDK-2013-\sp\src\utils\vtfdiff\Debug\"vtfdiff.exe
+         if "%valveTmpIsReadOnlyLetter%"=="R" del /q "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\utils\vtfdiff\Debug\"vtfdiff.exe
          if exist "..\..\devtools\bin\vpc.exe" "..\..\devtools\bin\vpc.exe" -crc2 "vtfdiff.vcxproj"
          if ERRORLEVEL 1 exit /b 1
          
          :VCEnd
        CustomBuild:
          Compiling pointeroverride.asm
-          Assembling: C:\Users\Zane\Documents\GitHub\Full-Life-The-RPG-Source-SDK-2013-\sp\src\public\tier0\pointeroverride.asm
+          Assembling: C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\public\tier0\pointeroverride.asm
          Microsoft (R) Macro Assembler Version 12.00.40629.0
          Copyright (C) Microsoft Corporation.  All rights reserved.
          
          Running VPC CRC Check - vtfdiff.vpc
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\..\common /I..\..\public /I..\..\public\tier0 /I..\..\public\tier1 /ZI /nologo /W4 /WX- /MP /Od /Oy- /D VPC /D RAD_TELEMETRY_DISABLED /D _HAS_ITERATOR_DEBUGGING=0 /D WIN32 /D _WIN32 /D _DEBUG /D DEBUG /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _ALLOW_RUNTIME_LIBRARY_MISMATCH /D _ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH /D _ALLOW_MSC_VER_MISMATCH /D _USING_V110_SDK71_ /D _MBCS /D COMPILER_MSVC32 /D COMPILER_MSVC32 /D COMPILER_MSVC /D EXENAME=vtfdiff /D _DLL_EXT=.dll /D DEV_BUILD /D FRAME_POINTER_OMISSION_DISABLED /D _EXTERNAL_DLL_EXT=.dll /D VPCGAMECAPS=VALVE /D "PROJECTDIR=C:\Users\Zane\Documents\GitHub\Full-Life-The-RPG-Source-SDK-2013-\sp\src\utils\vtfdiff" /D _DLL_EXT=.dll /D SOURCE1=1 /D VPCGAME=valve /GF /Gm- /MTd /GS /arch:SSE /fp:fast /Zc:wchar_t /Zc:forScope /GR /openmp- /Fo".\Debug\.\/" /Fd".\Debug\.\/vc120.pdb" /Gd /TP /wd4316 /analyze- /FC /errorReport:prompt  /Gw ..\..\public\tier0\memoverride.cpp vtfdiff.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\..\common /I..\..\public /I..\..\public\tier0 /I..\..\public\tier1 /ZI /nologo /W4 /WX /MP /Od /Oy- /D VPC /D RAD_TELEMETRY_DISABLED /D _HAS_ITERATOR_DEBUGGING=0 /D WIN32 /D _WIN32 /D _DEBUG /D DEBUG /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _ALLOW_RUNTIME_LIBRARY_MISMATCH /D _ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH /D _ALLOW_MSC_VER_MISMATCH /D _USING_V110_SDK71_ /D _MBCS /D COMPILER_MSVC32 /D COMPILER_MSVC32 /D COMPILER_MSVC /D EXENAME=vtfdiff /D _DLL_EXT=.dll /D DEV_BUILD /D FRAME_POINTER_OMISSION_DISABLED /D _EXTERNAL_DLL_EXT=.dll /D VPCGAMECAPS=VALVE /D "PROJECTDIR=C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\utils\vtfdiff" /D _DLL_EXT=.dll /D SOURCE1=1 /D VPCGAME=valve /GF /Gm- /MTd /GS /arch:SSE /fp:fast /Zc:wchar_t /Zc:forScope /GR /openmp- /Fo".\Debug\.\/" /Fd".\Debug\.\/vc120.pdb" /Gd /TP /wd4316 /analyze- /FC /errorReport:prompt  /Gw ..\..\public\tier0\memoverride.cpp vtfdiff.cpp
          memoverride.cpp
          vtfdiff.cpp
        Link:
@@ -35,27 +40,31 @@
          ..\..\lib\public\tier2.lib
          ..\..\lib\public\vstdlib.lib
          ..\..\lib\public\vtf.lib
-         vtfdiff.vcxproj -> C:\Users\Zane\Documents\GitHub\Full-Life-The-RPG-Source-SDK-2013-\sp\src\utils\vtfdiff\.\Debug\.\vtfdiff.exe
+         vtfdiff.vcxproj -> C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\utils\vtfdiff\.\Debug\.\vtfdiff.exe
        PostBuildEvent:
-         copy "C:\Users\Zane\Documents\GitHub\Full-Life-The-RPG-Source-SDK-2013-\sp\src\utils\vtfdiff\Debug\"vtfdiff.exe ..\..\..\game\bin\.\vtfdiff.exe >nul
+         copy "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\utils\vtfdiff\Debug\"vtfdiff.exe ..\..\..\game\bin\.\vtfdiff.exe >nul
          if ERRORLEVEL 1 goto BuildEventFailed
-         if exist "C:\Users\Zane\Documents\GitHub\Full-Life-The-RPG-Source-SDK-2013-\sp\src\utils\vtfdiff\Debug\"vtfdiff.map copy "C:\Users\Zane\Documents\GitHub\Full-Life-The-RPG-Source-SDK-2013-\sp\src\utils\vtfdiff\Debug\"vtfdiff.map ..\..\..\game\bin\.\vtfdiff.map >nul
-         copy "C:\Users\Zane\Documents\GitHub\Full-Life-The-RPG-Source-SDK-2013-\sp\src\utils\vtfdiff\Debug\"vtfdiff.pdb ..\..\..\game\bin\.\vtfdiff.pdb >nul
+         if exist "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\utils\vtfdiff\Debug\"vtfdiff.map copy "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\utils\vtfdiff\Debug\"vtfdiff.map ..\..\..\game\bin\.\vtfdiff.map >nul
+         copy "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\utils\vtfdiff\Debug\"vtfdiff.pdb ..\..\..\game\bin\.\vtfdiff.pdb >nul
          if ERRORLEVEL 1 goto BuildEventFailed
          goto BuildEventOK
          :BuildEventFailed
          echo *** ERROR! PostBuildStep FAILED for Vtfdiff! EXE or DLL is probably running. ***
-         del /q "C:\Users\Zane\Documents\GitHub\Full-Life-The-RPG-Source-SDK-2013-\sp\src\utils\vtfdiff\Debug\"vtfdiff.exe
+         del /q "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\utils\vtfdiff\Debug\"vtfdiff.exe
          exit 1
          :BuildEventOK
          
          :VCEnd
-     1>Done Building Project "C:\Users\Zane\Documents\GitHub\Full-Life-The-RPG-Source-SDK-2013-\sp\src\utils\vtfdiff\vtfdiff.vcxproj" (Rebuild target(s)).
+     1>Done Building Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\utils\vtfdiff\vtfdiff.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 Time Elapsed 00:00:07.42
 =======
 Time Elapsed 00:00:10.17
 >>>>>>> cd248c7fdaa49abadfa61e9480cfc8dd5d536010
+=======
+Time Elapsed 00:00:05.54
+>>>>>>> parent of 728da1f... Added Weapon files for magic blast

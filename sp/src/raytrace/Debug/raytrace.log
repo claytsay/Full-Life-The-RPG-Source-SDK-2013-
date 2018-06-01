@@ -1,10 +1,15 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿Build started 5/31/2018 11:49:38 PM.
      1>Project "C:\Users\Zane\Documents\GitHub\Full-Life-The-RPG-Source-SDK-2013-\sp\src\raytrace\raytrace.vcxproj" on node 4 (Rebuild target(s)).
 =======
 ﻿Build started 2018-05-31 23:26:05.
      1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\raytrace\raytrace.vcxproj" on node 4 (Rebuild target(s)).
 >>>>>>> cd248c7fdaa49abadfa61e9480cfc8dd5d536010
+=======
+﻿Build started 2018-05-29 16:26:18.
+     1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\raytrace\raytrace.vcxproj" on node 5 (Rebuild target(s)).
+>>>>>>> parent of 728da1f... Added Weapon files for magic blast
      1>PreBuildEvent:
          if EXIST ..\lib\public\.\raytrace.lib ( for /f "delims=" %%A in ('attrib "..\lib\public\.\raytrace.lib"') do set valveTmpIsReadOnly="%%A"
          ) else ( if not EXIST ..\lib\public\. mkdir ..\lib\public\. )
@@ -21,7 +26,7 @@
        CustomBuild:
          Running VPC CRC Check - raytrace.vpc
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\common /I..\public /I..\public\tier0 /I..\public\tier1 /I..\utils\common /ZI /nologo /W4 /WX- /MP /Od /Oy- /D VPC /D RAD_TELEMETRY_DISABLED /D _HAS_ITERATOR_DEBUGGING=0 /D WIN32 /D _WIN32 /D _DEBUG /D DEBUG /D _LIB /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _ALLOW_RUNTIME_LIBRARY_MISMATCH /D _ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH /D _ALLOW_MSC_VER_MISMATCH /D _USING_V110_SDK71_ /D _MBCS /D COMPILER_MSVC32 /D COMPILER_MSVC32 /D COMPILER_MSVC /D _DLL_EXT=.dll /D LIBNAME=raytrace /D BINK_VIDEO /D AVI_VIDEO /D WMV_VIDEO /D DEV_BUILD /D FRAME_POINTER_OMISSION_DISABLED /D _EXTERNAL_DLL_EXT=.dll /D VPCGAMECAPS=VALVE /D "PROJECTDIR=C:\Users\Zane\Documents\GitHub\Full-Life-The-RPG-Source-SDK-2013-\sp\src\raytrace" /D _DLL_EXT=.dll /D VPCGAME=valve /D SOURCE1=1 /GF /Gm- /MTd /GS /arch:SSE /fp:fast /Zc:wchar_t /Zc:forScope /GR /openmp- /Fo".\Debug\.\/" /Fd".\Debug\.\/vc120.pdb" /Gd /TP /wd4316 /analyze- /FC /errorReport:prompt  /Gw raytrace.cpp trace2.cpp trace3.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\common /I..\public /I..\public\tier0 /I..\public\tier1 /I..\utils\common /ZI /nologo /W4 /WX /MP /Od /Oy- /D VPC /D RAD_TELEMETRY_DISABLED /D _HAS_ITERATOR_DEBUGGING=0 /D WIN32 /D _WIN32 /D _DEBUG /D DEBUG /D _LIB /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _ALLOW_RUNTIME_LIBRARY_MISMATCH /D _ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH /D _ALLOW_MSC_VER_MISMATCH /D _USING_V110_SDK71_ /D _MBCS /D COMPILER_MSVC32 /D COMPILER_MSVC32 /D COMPILER_MSVC /D _DLL_EXT=.dll /D LIBNAME=raytrace /D BINK_VIDEO /D AVI_VIDEO /D WMV_VIDEO /D DEV_BUILD /D FRAME_POINTER_OMISSION_DISABLED /D _EXTERNAL_DLL_EXT=.dll /D VPCGAMECAPS=VALVE /D "PROJECTDIR=C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\raytrace" /D _DLL_EXT=.dll /D VPCGAME=valve /D SOURCE1=1 /GF /Gm- /MTd /GS /arch:SSE /fp:fast /Zc:wchar_t /Zc:forScope /GR /openmp- /Fo".\Debug\.\/" /Fd".\Debug\.\/vc120.pdb" /Gd /TP /wd4316 /analyze- /FC /errorReport:prompt  /Gw raytrace.cpp trace2.cpp trace3.cpp
          raytrace.cpp
          trace2.cpp
          trace3.cpp
@@ -29,13 +34,17 @@
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"..\lib\public\.\raytrace.lib" /NOLOGO  /ignore:4221 .\Debug\.\/raytrace.obj
          .\Debug\.\/trace2.obj
          .\Debug\.\/trace3.obj
-         raytrace.vcxproj -> C:\Users\Zane\Documents\GitHub\Full-Life-The-RPG-Source-SDK-2013-\sp\src\raytrace\..\lib\public\.\raytrace.lib
-     1>Done Building Project "C:\Users\Zane\Documents\GitHub\Full-Life-The-RPG-Source-SDK-2013-\sp\src\raytrace\raytrace.vcxproj" (Rebuild target(s)).
+         raytrace.vcxproj -> C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\raytrace\..\lib\public\.\raytrace.lib
+     1>Done Building Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\raytrace\raytrace.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 Time Elapsed 00:00:11.83
 =======
 Time Elapsed 00:00:09.65
 >>>>>>> cd248c7fdaa49abadfa61e9480cfc8dd5d536010
+=======
+Time Elapsed 00:00:07.56
+>>>>>>> parent of 728da1f... Added Weapon files for magic blast

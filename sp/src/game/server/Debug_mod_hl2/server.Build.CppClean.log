@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\game\server\debug_mod_hl2\server.pch
 c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\game\server\debug_mod_hl2\vc120.pdb
 c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\game\server\debug_mod_hl2\vc120.idb
@@ -576,18 +577,32 @@ c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\game\se
 c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\game\server\debug_mod_hl2\server (hl2).tlog\link.write.1.tlog
 c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\game\server\debug_mod_hl2\server (hl2).tlog\server (hl2).write.1u.tlog
 =======
+=======
+>>>>>>> parent of 728da1f... Added Weapon files for magic blast
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\server.pch
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\vc120.pdb
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\vc120.idb
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\stdafx.obj
+<<<<<<< HEAD
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\achievementmgr.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_basenpc.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_behavior_lead.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_event.obj
+=======
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\achievement_saverestore.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_basehumanoid.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_basenpc_flyer.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_basenpc_squad.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_behavior_assault.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_behavior_standoff.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_criteria.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_default.obj
+>>>>>>> parent of 728da1f... Added Weapon files for magic blast
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_hint.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_motor.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_network.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_pathfinder.obj
+<<<<<<< HEAD
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_route.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_schedule.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_senses.obj
@@ -615,6 +630,24 @@ c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\fourwheelvehiclephysics.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\func_lod.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\func_occluder.obj
+=======
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_responsesystem.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_scriptconditions.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_speech.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_tacticalservices.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_utils.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\baseanimatingoverlay.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\basecombatweapon_shared.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\baseentity.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\beam_shared.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\cbase.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\colorcorrection.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\commentarysystem.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\entitylist.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\fourwheelvehiclephysics.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\func_ladder_endpoint.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\func_movelinear.obj
+>>>>>>> parent of 728da1f... Added Weapon files for magic blast
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\func_smokevolume.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\gamerules.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\gib.obj
@@ -622,6 +655,7 @@ c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\globalstate.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\grenadethrown.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\weapon_pistol2.obj
+<<<<<<< HEAD
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\igamesystem.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\intermission.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\lights.obj
@@ -844,6 +878,35 @@ c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_behavior_assault.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_behavior_rappel.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_concommands.obj
+=======
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\info_overlay_accessor.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\lights.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\logic_navigation.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\logicentities.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\modelsoundscache.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\obstacle_pushaway.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\particle_light.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\particle_parse.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\phys_controller.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\physics_cannister.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\physics_main_shared.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\physobj.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\player_pickup.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\playerlocaldata.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\point_playermoveconstraint.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\point_spotlight.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\pointangularvelocitysensor.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\predictableid.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\querycache.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\achievements_hlx.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_baseactor.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_basenpc_movement.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_basenpc_physicsflyer.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_behavior.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_behavior_follow.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_blended_movement.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_condition.obj
+>>>>>>> parent of 728da1f... Added Weapon files for magic blast
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_dynamiclink.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_goalentity.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_looktarget.obj
@@ -856,6 +919,7 @@ c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_squad.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_task.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_waypoint.obj
+<<<<<<< HEAD
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ammodef.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\animation.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\base_transmit_proxy.obj
@@ -867,20 +931,111 @@ c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\bmodels.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\client.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\decals.obj
+=======
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\animation.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\base_playeranimstate.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\basecombatcharacter.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\basegrenade_contact.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\basegrenade_timed.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\basemultiplayerplayer.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\baseprojectile.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\baseviewmodel.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\bitstring.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\bmodels.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\client.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\effectsserver.obj
+>>>>>>> parent of 728da1f... Added Weapon files for magic blast
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ehandle.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\entitydissolve.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\entitylist_base.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\entityparticletrail_shared.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\env_debughistory.obj
+<<<<<<< HEAD
+=======
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\env_entity_maker.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\env_screenoverlay.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\env_tonemap_controller.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\envbeam.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\envmicrophone.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\envspark.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\eventlist.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\filters.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\func_areaportal.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\func_break.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\func_lod.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\func_monitor.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\func_reflective_glass.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\gameinterface.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\haptic_msgs.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\haptic_utils.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\hintmessage.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\hltvdirector.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\info_camera_link.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\item_world.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\mapentities.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\movement.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\mp_shareddefs.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\multiplay_gamerules.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\particlesystemquery.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\physics_bone_follower.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\physics_fx.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\physics_main.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\physics_saverestore.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\player_command.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\player_lagcompensation.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\plugin_check.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\point_bonusmaps_accessor.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\point_devshot_camera.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\point_template.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\pointhurt.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\precache_register.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\props_shared.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\achievementmgr.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_basenpc.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_behavior_lead.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_event.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_hull.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_initutils.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_moveshoot.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_networkmanager.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_relationship.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_saverestore.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_squadslot.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_trackpather.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ammodef.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\base_gameinterface.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\base_transmit_proxy.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\baseachievement.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\basecombatcharacter_shared.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\basecombatweapon.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\baseflex.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\baseviewmodel_shared.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\buttons.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\collisionproperty.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\controlentities.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\damagemodifier.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\debugoverlay_shared.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\doors.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\dynamiclight.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\entityblocker.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\entityflame.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\entityparticletrail.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\env_detail_controller.obj
+>>>>>>> parent of 728da1f... Added Weapon files for magic blast
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\env_particlescript.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\env_player_surface_trigger.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\env_texturetoggle.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\env_zoom.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\envhudhint.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\envmessage.obj
+<<<<<<< HEAD
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\eventlog.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\fire.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\fish.obj
+=======
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\explode.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\fogcontroller.obj
+>>>>>>> parent of 728da1f... Added Weapon files for magic blast
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\func_areaportalbase.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\func_breakablesurf.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\gamemovement.obj
@@ -890,6 +1045,7 @@ c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\gameweaponmanager.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\genericactor.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\guntarget.obj
+<<<<<<< HEAD
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\weapon_spotionhealth.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\h_ai.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\haptic_utils.obj
@@ -897,10 +1053,20 @@ c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\hltvdirector.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\info_overlay_accessor.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\item_world.obj
+=======
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\weapon_spotionharming.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\hierarchy.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\hintsystem.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\igamesystem.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\intermission.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\lightglow.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\logic_achievement.obj
+>>>>>>> parent of 728da1f... Added Weapon files for magic blast
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\logicauto.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\mapentities_shared.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\maprules.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\modelentities.obj
+<<<<<<< HEAD
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\monstermaker.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\particle_parse.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\physconstraint.obj
@@ -1011,22 +1177,83 @@ c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\entityblocker.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\entityflame.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\entityparticletrail.obj
+=======
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\movehelper_server.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\movevars_shared.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ndebugoverlay.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\npc_vehicledriver.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\pathcorner.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\pathtrack.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\physics.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\physics_prop_ragdoll.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\player_resource.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\playerinfomanager.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\point_camera.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\point_posecontroller.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\pointanglesensor.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\pointteleport.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\gamedll_replay.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\activitylist.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_activity.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_basenpc_flyer_new.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_basenpc_schedule.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_behavior_fear.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_behavior_rappel.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_concommands.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_eventresponse.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_interest_target.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_link.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_localnavigator.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_moveprobe.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_node.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_planesolver.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_route.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_schedule.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_senses.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\ai_speechfilter.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\baseanimating.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\baseentity_shared.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\basegrenade_concussion.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\basegrenade_shared.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\baseparticleentity.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\baseplayer_shared.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\colorcorrectionvolume.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\cplane.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\cragdollmagnet.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\death_pose.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\decals.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\effect_dispatch_data.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\effects.obj
+>>>>>>> parent of 728da1f... Added Weapon files for magic blast
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\env_effectsscript.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\env_projectedtexture.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\env_wind_shared.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\envfade.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\envlaser.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\envshake.obj
+<<<<<<< HEAD
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\eventlist.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\filters.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\func_break.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\func_ladder_endpoint.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\func_monitor.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\func_reflective_glass.obj
+=======
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\eventlog.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\fire.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\fire_smoke.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\fish.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\func_areaportalwindow.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\func_dust.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\func_ladder.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\func_occluder.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\game.obj
+>>>>>>> parent of 728da1f... Added Weapon files for magic blast
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\game_ui.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\gamerules_register.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\gamestats.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\genericmonster.obj
+<<<<<<< HEAD
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\weapon_spotionharming.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\haptic_msgs.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\hierarchy.obj
@@ -1145,14 +1372,33 @@ c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\server.lib
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\server.exp
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\.\debug_mod_hl2\server.dll
+=======
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\h_ai.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\h_cycler.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\logic_measure_movement.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\logicrelay.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\materialmodifycontrol.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\message_entity.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\monstermaker.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\particle_system.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\physconstraint.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\physics_impact_damage.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\physics_npc_solver.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\physics_shared.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\pointeroverride.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\server_hl2.vpc.sentinel
+>>>>>>> parent of 728da1f... Added Weapon files for magic blast
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\server (hl2).tlog\cl.command.1.tlog
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\server (hl2).tlog\cl.read.1.tlog
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\server (hl2).tlog\cl.write.1.tlog
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\server (hl2).tlog\custombuild.command.1.tlog
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\server (hl2).tlog\custombuild.read.1.tlog
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\server (hl2).tlog\custombuild.write.1.tlog
+<<<<<<< HEAD
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\server (hl2).tlog\link.command.1.tlog
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\server (hl2).tlog\link.read.1.tlog
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\server (hl2).tlog\link.write.1.tlog
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\server\debug_mod_hl2\server (hl2).tlog\server (hl2).write.1u.tlog
 >>>>>>> cd248c7fdaa49abadfa61e9480cfc8dd5d536010
+=======
+>>>>>>> parent of 728da1f... Added Weapon files for magic blast

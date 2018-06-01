@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\game\client\debug_mod_episodic\client.pch
 c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\game\client\debug_mod_episodic\vc120.pdb
 c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\game\client\debug_mod_episodic\vc120.idb
@@ -528,10 +529,13 @@ c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\game\cl
 c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\game\client\debug_mod_episodic\client (.353a799f.tlog\link.read.1.tlog
 c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\game\client\debug_mod_episodic\client (.353a799f.tlog\link.write.1.tlog
 =======
+=======
+>>>>>>> parent of 728da1f... Added Weapon files for magic blast
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\client.pch
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\vc120.pdb
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\vc120.idb
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\stdafx.obj
+<<<<<<< HEAD
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\achievement_notification_panel.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\baseentity_shared.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\basegrenade_shared.obj
@@ -553,10 +557,30 @@ c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_playerresource.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_point_commentary_node.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_sun.obj
+=======
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\replaycamera.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\achievementmgr.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\basepresence.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\baseviewmodel_shared.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_ai_basenpc.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_basecombatweapon.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_baseplayer.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_func_occluder.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_func_smokevolume.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_info_overlay_accessor.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_particle_system.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_plasma.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_props.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_shadowcontrol.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_slideshow_display.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_spotlight_end.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_sprite.obj
+>>>>>>> parent of 728da1f... Added Weapon files for magic blast
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_team_objectiveresource.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_vote_controller.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\cl_mat_stub.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\classmap.obj
+<<<<<<< HEAD
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\client_thinklist.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\cliententitylist.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\clientmode_shared.obj
@@ -580,23 +604,71 @@ c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\particle_proxies.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\particle_simple3d.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\particles_attractor.obj
+=======
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\client_virtualreality.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\clientshadowmgr.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\collisionproperty.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\colorcorrectionmgr.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\death_pose.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\debugoverlay_shared.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\decals.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\detailobjectsystem.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\ehandle.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\entitylist_base.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\entityoriginmaterialproxy.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\env_wind_shared.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\functionproxy.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\fx_blood.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\fx_interpvalue.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\fx_quad.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\fx_staticline.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\fx_water.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\gamestringpool.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\glow_outline_effect.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\glow_overlay.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\haptic_utils.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\history_resource.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\hud_basechat.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\hud_element_helper.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\hud_filmdemo.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\hud_numericdisplay.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\hud_weapon.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\isnpcproxy.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\lampbeamproxy.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\matrixproxy.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\message.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\particle_parse.obj
+>>>>>>> parent of 728da1f... Added Weapon files for magic blast
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\particles_localspace.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\particles_simple.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\particlesystemquery.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\physics_main_client.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\physics_saverestore.obj
+<<<<<<< HEAD
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\point_posecontroller.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\prediction.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\sceneentity_shared.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\sequence_transitioner.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\simple_keys.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\singleplay_gamerules.obj
+=======
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\point_bonusmaps_accessor.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\precache_register.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\predictableid.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\prediction.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\screenspaceeffects.obj
+>>>>>>> parent of 728da1f... Added Weapon files for magic blast
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\soundparametersinternal.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\splinepatch.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\sprite.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\studio_shared.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\studio_stats.obj
+<<<<<<< HEAD
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\toggletextureproxy.obj
+=======
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\timematerialproxy.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\usercmd.obj
+>>>>>>> parent of 728da1f... Added Weapon files for magic blast
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\usermessages.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\vehicle_viewblend_shared.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\vgui_basepanel.obj
@@ -604,6 +676,7 @@ c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\vgui_game_viewport.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\vgui_grid.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\vgui_messagechars.obj
+<<<<<<< HEAD
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\vgui_video.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\view_beams.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\view_scene.obj
@@ -646,6 +719,94 @@ c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\replaycamera.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\achievementmgr.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\baseplayer_shared.obj
+=======
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\vgui_slideshow_display_screen.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\view.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\viewdebug.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\voice_banmgr.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\voice_status.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\worlddimsproxy.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\mp3player.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\achievements_hlx.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\alphamaterialproxy.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\ammodef.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\animatedentitytextureproxy.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\animatedoffsettextureproxy.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\animatedtextureproxy.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\animatespecifictextureproxy.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\animation.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\baseachievement.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\beam_shared.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_basecombatcharacter.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_basedoor.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_baseflex.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_env_fog_controller.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_env_projectedtexture.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_fire_smoke.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_func_lod.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_func_reflective_glass.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_gib.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_materialmodifycontrol.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_physmagnet.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_playerresource.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_point_commentary_node.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_sun.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_tesla.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_user_message_register.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_vehicle_jeep.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_waterbullet.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_world.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\cdll_bounded_cvars.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\cdll_util.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\client_factorylist.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\client_thinklist.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\clienteffectprecachesystem.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\cliententitylist.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\clientmode_shared.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\eventlist.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\func_ladder.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\fx_explosion.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\fx_shelleject.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\fx_trail.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\gamerules_register.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\gamestats.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\hud_autoaim.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\hud_bitmapnumericdisplay.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\hud_crosshair.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\hud_hdrdemo.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\hud_pdump.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\igamesystem.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\in_camera.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\in_main.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\obstacle_pushaway.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\panelmetaclassmgr.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\physics_main_shared.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\proxyentity.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\proxyhealth.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\proxypupil.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\ragdoll_shared.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\sceneentity_shared.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\simtimer.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\singleplay_gamerules.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\soundenvelope.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\spritetrail.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\takedamageinfo.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\teamplayroundbased_gamerules.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\vgui_bitmapimage.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\vgui_centerstringpanel.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\vgui_loadingdiscpanel.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\vgui_schemevisualizer.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\view_effects.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\viewconeimage.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\waterlodmaterialproxy.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\weapon_parse_default.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\weapon_selection.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\achievement_notification_panel.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\baseentity_shared.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\baseparticleentity.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\baseprojectile.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\beamdraw.obj
+>>>>>>> parent of 728da1f... Added Weapon files for magic blast
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\bone_accessor.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\bone_merge_cache.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_baseanimatingoverlay.obj
@@ -655,6 +816,7 @@ c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_colorcorrection.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_colorcorrectionvolume.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_entityparticletrail.obj
+<<<<<<< HEAD
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_env_screenoverlay.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_fire_smoke.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_func_occluder.obj
@@ -684,10 +846,42 @@ c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\fx_fleck.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\fx_impact.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\fx_staticline.obj
+=======
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_env_particlescript.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_env_tonemap_controller.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_func_areaportalwindow.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_func_conveyor.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_func_dust.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_hairball.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_physicsprop.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_point_camera.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_ragdoll_manager.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_rope.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_soundscape.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_sprite_perfmonitor.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_team.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_test_proxytoggle.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_vehicle_choreo_generic.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_waterlodcontrol.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\cam_thirdperson.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\camomaterialproxy.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\cdll_client_int.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\dummyproxy.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\effect_dispatch_data.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\effectsclient.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\entityparticletrail_shared.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\env_detail_controller.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\flashlighteffect.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\fx_cube.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\fx_fleck.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\fx_impact.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\fx_tracer.obj
+>>>>>>> parent of 728da1f... Added Weapon files for magic blast
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\gamemovement.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\gametrace_client.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\gamevars_shared.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\geiger.obj
+<<<<<<< HEAD
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\hltvcamera.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\hud_autoaim.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\hud_bitmapnumericdisplay.obj
@@ -697,12 +891,20 @@ c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\hud_numericdisplay.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\hud_vehicle.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\isnpcproxy.obj
+=======
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\hud.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\hud_chat.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\hud_hintdisplay.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\hud_redraw.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\in_joystick.obj
+>>>>>>> parent of 728da1f... Added Weapon files for magic blast
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\mapentities_shared.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\mathproxy.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\movehelper_client.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\movevars_shared.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\mp_shareddefs.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\multiplay_gamerules.obj
+<<<<<<< HEAD
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\panelmetaclassmgr.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\physics_main_shared.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\proxyhealth.obj
@@ -894,11 +1096,44 @@ c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\animatedoffsettextureproxy.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\animatedtextureproxy.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\animatespecifictextureproxy.obj
+=======
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\particle_collision.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\particle_litsmokeemitter.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\particle_property.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\particlemgr.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\physics_shared.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\playerandobjectenumerator.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\playerspawncache.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\point_posecontroller.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\predictioncopy.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\proxyplayer.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\ragdoll.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\sequence_transitioner.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\simple_keys.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\soundemittersystem.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\text_message.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\toggletextureproxy.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\util_shared.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\vgui_avatarimage.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\vgui_debugoverlaypanel.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\vgui_int.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\vgui_video.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\view_beams.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\viewangleanim.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\viewpostprocess.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\warp_overlay.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\weapon_parse.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\weapons_resource.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\cdll_replay.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\achievement_saverestore.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\activitylist.obj
+>>>>>>> parent of 728da1f... Added Weapon files for magic blast
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\base_playeranimstate.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\baseanimatedtextureproxy.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\baseclientrendertargets.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\basecombatcharacter_shared.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\basecombatweapon_shared.obj
+<<<<<<< HEAD
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\baseparticleentity.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\basepresence.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\beam_shared.obj
@@ -914,16 +1149,40 @@ c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_sceneentity.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_vguiscreen.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\clienteffectprecachesystem.obj
+=======
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\basegrenade_shared.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\baseplayer_shared.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_ai_basehumanoid.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_baseanimating.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_dynamiclight.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_entitydissolve.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_env_screenoverlay.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_fish.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_func_breakablesurf.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_func_monitor.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_func_rotating.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_func_tracktrain.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_lightglow.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_physbox.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_pixel_visibility.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_rumble.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_sceneentity.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\c_vguiscreen.obj
+>>>>>>> parent of 728da1f... Added Weapon files for magic blast
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\clientleafsystem.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\clientsideeffects.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\clientsideeffects_test.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\clientsteamcontext.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\commentary_modelviewer.obj
+<<<<<<< HEAD
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\fx_tracer.obj
+=======
+>>>>>>> parent of 728da1f... Added Weapon files for magic blast
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\gamerules.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\haptic_msgs.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\hintmessage.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\hintsystem.obj
+<<<<<<< HEAD
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\hud.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\hud_chat.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\hud_hintdisplay.obj
@@ -941,11 +1200,32 @@ c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\precache_register.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\predictableid.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\predictioncopy.obj
+=======
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\hltvcamera.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\hud_animationinfo.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\hud_basetimer.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\hud_closecaption.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\hud_msg.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\hud_vehicle.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\initializer.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\interpolatedvar.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\lamphaloproxy.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\menu.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\particle_proxies.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\particle_simple3d.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\particles_attractor.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\particles_ez.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\particles_new.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\perfvisualbenchmark.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\physics.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\physpropclientside.obj
+>>>>>>> parent of 728da1f... Added Weapon files for magic blast
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\props_shared.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\recvproxy.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\rope_helpers.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\saverestore.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\spritemodel.obj
+<<<<<<< HEAD
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\takedamageinfo.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\teamplayroundbased_gamerules.obj
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\vgui_bitmapbutton.obj
@@ -1057,3 +1337,23 @@ c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\client (.353a799f.tlog\link.read.1.tlog
 c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\client (.353a799f.tlog\link.write.1.tlog
 >>>>>>> cd248c7fdaa49abadfa61e9480cfc8dd5d536010
+=======
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\teamplay_gamerules.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\test_ehandle.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\texturescrollmaterialproxy.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\train.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\vgui_bitmapbutton.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\vgui_consolepanel.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\vgui_fpspanel.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\vgui_netgraphpanel.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\vgui_video_player.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\view_scene.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\pointeroverride.obj
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\client_episodic.vpc.sentinel
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\client (.353a799f.tlog\cl.command.1.tlog
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\client (.353a799f.tlog\cl.read.1.tlog
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\client (.353a799f.tlog\cl.write.1.tlog
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\client (.353a799f.tlog\custombuild.command.1.tlog
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\client (.353a799f.tlog\custombuild.read.1.tlog
+c:\users\clay\documents\github\fulllife-therpg-sdk2013\sp\src\game\client\debug_mod_episodic\client (.353a799f.tlog\custombuild.write.1.tlog
+>>>>>>> parent of 728da1f... Added Weapon files for magic blast

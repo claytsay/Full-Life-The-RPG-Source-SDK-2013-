@@ -1,10 +1,15 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿Build started 5/31/2018 11:49:51 PM.
      1>Project "C:\Users\Zane\Documents\GitHub\Full-Life-The-RPG-Source-SDK-2013-\sp\src\vgui2\vgui_controls\vgui_controls.vcxproj" on node 2 (Rebuild target(s)).
 =======
 ﻿Build started 2018-05-31 23:26:15.
      1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\vgui2\vgui_controls\vgui_controls.vcxproj" on node 2 (Rebuild target(s)).
 >>>>>>> cd248c7fdaa49abadfa61e9480cfc8dd5d536010
+=======
+﻿Build started 2018-05-29 16:26:26.
+     1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\vgui2\vgui_controls\vgui_controls.vcxproj" on node 2 (Rebuild target(s)).
+>>>>>>> parent of 728da1f... Added Weapon files for magic blast
      1>PreBuildEvent:
          if EXIST ..\..\lib\public\.\vgui_controls.lib ( for /f "delims=" %%A in ('attrib "..\..\lib\public\.\vgui_controls.lib"') do set valveTmpIsReadOnly="%%A"
          ) else ( if not EXIST ..\..\lib\public\. mkdir ..\..\lib\public\. )
@@ -21,7 +26,7 @@
        CustomBuild:
          Running VPC CRC Check - vgui_controls.vpc
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\..\common /I..\..\public /I..\..\public\tier0 /I..\..\public\tier1 /Igenerated_proto /I"..\..\thirdparty\protobuf-2.3.0\src" /I..\..\thirdparty /I..\..\thirdparty\cef /Igenerated_proto /ZI /nologo /W4 /WX- /MP /Od /Oy- /D VPC /D RAD_TELEMETRY_DISABLED /D _HAS_ITERATOR_DEBUGGING=0 /D WIN32 /D _WIN32 /D _DEBUG /D DEBUG /D _LIB /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _ALLOW_RUNTIME_LIBRARY_MISMATCH /D _ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH /D _ALLOW_MSC_VER_MISMATCH /D _USING_V110_SDK71_ /D _MBCS /D COMPILER_MSVC32 /D COMPILER_MSVC32 /D COMPILER_MSVC /D _DLL_EXT=.dll /D LIBNAME=vgui_controls /D BINK_VIDEO /D AVI_VIDEO /D WMV_VIDEO /D DEV_BUILD /D FRAME_POINTER_OMISSION_DISABLED /D _EXTERNAL_DLL_EXT=.dll /D VPCGAMECAPS=VALVE /D "PROJECTDIR=C:\Users\Zane\Documents\GitHub\Full-Life-The-RPG-Source-SDK-2013-\sp\src\vgui2\vgui_controls" /D _DLL_EXT=.dll /D SOURCE1=1 /D VPCGAME=valve /GF /Gm- /MTd /GS /arch:SSE /fp:fast /Zc:wchar_t /Zc:forScope /GR /openmp- /Fo".\Debug\.\/" /Fd".\Debug\.\/vc120.pdb" /Gd /TP /wd4316 /analyze- /FC /errorReport:prompt  /Gw AnalogBar.cpp AnimatingImagePanel.cpp AnimationController.cpp BitmapImagePanel.cpp BuildFactoryHelper.cpp BuildGroup.cpp BuildModeDialog.cpp Button.cpp CheckButton.cpp CheckButtonList.cpp CircularProgressBar.cpp ComboBox.cpp consoledialog.cpp ControllerMap.cpp controls.cpp CvarToggleCheckButton.cpp DirectorySelectDialog.cpp Divider.cpp EditablePanel.cpp ExpandButton.cpp FileOpenDialog.cpp FileOpenStateMachine.cpp ..\..\public\filesystem_helpers.cpp FocusNavGroup.cpp Frame.cpp GraphPanel.cpp HTML.cpp Image.cpp ImageList.cpp ImagePanel.cpp InputDialog.cpp KeyBindingHelpDialog.cpp KeyBoardEditorDialog.cpp KeyRepeat.cpp Label.cpp ListPanel.cpp ListViewPanel.cpp Menu.cpp MenuBar.cpp MenuButton.cpp MenuItem.cpp MessageBox.cpp MessageDialog.cpp Panel.cpp PanelListPanel.cpp PerforceFileExplorer.cpp PerforceFileList.cpp perforcefilelistframe.cpp ProgressBar.cpp ProgressBox.cpp PropertyDialog.cpp PropertyPage.cpp PropertySheet.cpp QueryBox.cpp RadioButton.cpp RichText.cpp RotatingProgressBar.cpp savedocumentquery.cpp ScalableImagePanel.cpp ScrollableEditablePanel.cpp ScrollBar.cpp ScrollBarSlider.cpp SectionedListPanel.cpp Slider.cpp Splitter.cpp subrectimage.cpp TextEntry.cpp TextImage.cpp ToggleButton.cpp Tooltip.cpp ToolWindow.cpp TreeView.cpp TreeViewListControl.cpp URLLabel.cpp ..\..\vgui2\src\vgui_key_translation.cpp WizardPanel.cpp WizardSubPanel.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\..\common /I..\..\public /I..\..\public\tier0 /I..\..\public\tier1 /Igenerated_proto /I"..\..\thirdparty\protobuf-2.3.0\src" /I..\..\thirdparty /I..\..\thirdparty\cef /Igenerated_proto /ZI /nologo /W4 /WX /MP /Od /Oy- /D VPC /D RAD_TELEMETRY_DISABLED /D _HAS_ITERATOR_DEBUGGING=0 /D WIN32 /D _WIN32 /D _DEBUG /D DEBUG /D _LIB /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _ALLOW_RUNTIME_LIBRARY_MISMATCH /D _ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH /D _ALLOW_MSC_VER_MISMATCH /D _USING_V110_SDK71_ /D _MBCS /D COMPILER_MSVC32 /D COMPILER_MSVC32 /D COMPILER_MSVC /D _DLL_EXT=.dll /D LIBNAME=vgui_controls /D BINK_VIDEO /D AVI_VIDEO /D WMV_VIDEO /D DEV_BUILD /D FRAME_POINTER_OMISSION_DISABLED /D _EXTERNAL_DLL_EXT=.dll /D VPCGAMECAPS=VALVE /D "PROJECTDIR=C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\vgui2\vgui_controls" /D _DLL_EXT=.dll /D SOURCE1=1 /D VPCGAME=valve /GF /Gm- /MTd /GS /arch:SSE /fp:fast /Zc:wchar_t /Zc:forScope /GR /openmp- /Fo".\Debug\.\/" /Fd".\Debug\.\/vc120.pdb" /Gd /TP /wd4316 /analyze- /FC /errorReport:prompt  /Gw AnalogBar.cpp AnimatingImagePanel.cpp AnimationController.cpp BitmapImagePanel.cpp BuildFactoryHelper.cpp BuildGroup.cpp BuildModeDialog.cpp Button.cpp CheckButton.cpp CheckButtonList.cpp CircularProgressBar.cpp ComboBox.cpp consoledialog.cpp ControllerMap.cpp controls.cpp CvarToggleCheckButton.cpp DirectorySelectDialog.cpp Divider.cpp EditablePanel.cpp ExpandButton.cpp FileOpenDialog.cpp FileOpenStateMachine.cpp ..\..\public\filesystem_helpers.cpp FocusNavGroup.cpp Frame.cpp GraphPanel.cpp HTML.cpp Image.cpp ImageList.cpp ImagePanel.cpp InputDialog.cpp KeyBindingHelpDialog.cpp KeyBoardEditorDialog.cpp KeyRepeat.cpp Label.cpp ListPanel.cpp ListViewPanel.cpp Menu.cpp MenuBar.cpp MenuButton.cpp MenuItem.cpp MessageBox.cpp MessageDialog.cpp Panel.cpp PanelListPanel.cpp PerforceFileExplorer.cpp PerforceFileList.cpp perforcefilelistframe.cpp ProgressBar.cpp ProgressBox.cpp PropertyDialog.cpp PropertyPage.cpp PropertySheet.cpp QueryBox.cpp RadioButton.cpp RichText.cpp RotatingProgressBar.cpp savedocumentquery.cpp ScalableImagePanel.cpp ScrollableEditablePanel.cpp ScrollBar.cpp ScrollBarSlider.cpp SectionedListPanel.cpp Slider.cpp Splitter.cpp subrectimage.cpp TextEntry.cpp TextImage.cpp ToggleButton.cpp Tooltip.cpp ToolWindow.cpp TreeView.cpp TreeViewListControl.cpp URLLabel.cpp ..\..\vgui2\src\vgui_key_translation.cpp WizardPanel.cpp WizardSubPanel.cpp
          AnalogBar.cpp
          AnimatingImagePanel.cpp
          AnimationController.cpp
@@ -31,41 +36,26 @@
          BuildModeDialog.cpp
          Button.cpp
          CheckButton.cpp
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\tier1\utlsortvector.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (BuildModeDialog.cpp)
          CheckButtonList.cpp
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\tier1\utlsortvector.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (CheckButton.cpp)
          CircularProgressBar.cpp
          ComboBox.cpp
          consoledialog.cpp
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\tier1\utlsortvector.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (CheckButtonList.cpp)
          ControllerMap.cpp
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\tier1\utlsortvector.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (ComboBox.cpp)
          controls.cpp
          CvarToggleCheckButton.cpp
          DirectorySelectDialog.cpp
          Divider.cpp
          EditablePanel.cpp
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\tier1\utlsortvector.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (CvarToggleCheckButton.cpp)
          ExpandButton.cpp
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\tier1\utlsortvector.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (EditablePanel.cpp)
          FileOpenDialog.cpp
          FileOpenStateMachine.cpp
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\tier1\utlsortvector.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (ExpandButton.cpp)
          filesystem_helpers.cpp
          FocusNavGroup.cpp
          Frame.cpp
          GraphPanel.cpp
          HTML.cpp
          Image.cpp
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\tier1\utlsortvector.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (Frame.cpp)
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\tier1\utlsortvector.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (HTML.cpp)
          ImageList.cpp
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\steam\isteamclient.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (HTML.cpp)
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\steam\steamclientpublic.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (HTML.cpp)
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\steam\steamuniverse.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (HTML.cpp)
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\steam\isteamutils.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (HTML.cpp)
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\steam\matchmakingtypes.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (HTML.cpp)
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\steam\isteamremotestorage.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (HTML.cpp)
          ImagePanel.cpp
          InputDialog.cpp
          KeyBindingHelpDialog.cpp
@@ -73,36 +63,16 @@
          KeyRepeat.cpp
          Label.cpp
          ListPanel.cpp
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\tier1\utlsortvector.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (Label.cpp)
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\tier1\utlsortvector.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (KeyRepeat.cpp)
          ListViewPanel.cpp
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\steam\isteamclient.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (KeyRepeat.cpp)
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\steam\steamclientpublic.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (KeyRepeat.cpp)
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\steam\steamuniverse.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (KeyRepeat.cpp)
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\steam\isteamutils.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (KeyRepeat.cpp)
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\steam\matchmakingtypes.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (KeyRepeat.cpp)
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\steam\isteamremotestorage.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (KeyRepeat.cpp)
          Menu.cpp
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\tier1\utlsortvector.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (ListPanel.cpp)
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\tier1\utlsortvector.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (ListViewPanel.cpp)
          MenuBar.cpp
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\tier1\utlsortvector.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (Menu.cpp)
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\steam\isteamclient.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (Menu.cpp)
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\steam\steamclientpublic.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (Menu.cpp)
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\steam\steamuniverse.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (Menu.cpp)
          MenuButton.cpp
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\steam\isteamutils.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (Menu.cpp)
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\steam\matchmakingtypes.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (Menu.cpp)
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\steam\isteamremotestorage.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (Menu.cpp)
          MenuItem.cpp
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\tier1\utlsortvector.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (MenuButton.cpp)
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\tier1\utlsortvector.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (MenuItem.cpp)
          MessageBox.cpp
          MessageDialog.cpp
          Panel.cpp
          PanelListPanel.cpp
          PerforceFileExplorer.cpp
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\tier1\utlsortvector.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (Panel.cpp)
          PerforceFileList.cpp
          perforcefilelistframe.cpp
          ProgressBar.cpp
@@ -113,19 +83,9 @@
          QueryBox.cpp
          RadioButton.cpp
          RichText.cpp
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\tier1\utlsortvector.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (PropertySheet.cpp)
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\tier1\utlsortvector.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (RadioButton.cpp)
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\tier1\utlsortvector.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (QueryBox.cpp)
          RotatingProgressBar.cpp
          savedocumentquery.cpp
          ScalableImagePanel.cpp
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\tier1\utlsortvector.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (RichText.cpp)
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\steam\isteamclient.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (RichText.cpp)
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\steam\steamclientpublic.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (RichText.cpp)
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\steam\steamuniverse.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (RichText.cpp)
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\steam\isteamutils.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (RichText.cpp)
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\steam\matchmakingtypes.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (RichText.cpp)
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\steam\isteamremotestorage.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (RichText.cpp)
          ScrollableEditablePanel.cpp
          ScrollBar.cpp
          ScrollBarSlider.cpp
@@ -133,21 +93,15 @@
          Slider.cpp
          Splitter.cpp
          subrectimage.cpp
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\tier1\utlsortvector.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (SectionedListPanel.cpp)
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\tier1\utlsortvector.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (Slider.cpp)
          TextEntry.cpp
          TextImage.cpp
          ToggleButton.cpp
          Tooltip.cpp
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\tier1\utlsortvector.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (TextImage.cpp)
          ToolWindow.cpp
          TreeView.cpp
          TreeViewListControl.cpp
          URLLabel.cpp
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\tier1\utlsortvector.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (TreeView.cpp)
          vgui_key_translation.cpp
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\tier1\utlsortvector.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (TreeViewListControl.cpp)
-     1>c:\users\zane\documents\github\full-life-the-rpg-source-sdk-2013-\sp\src\public\tier1\utlsortvector.h : warning C4819: The file contains a character that cannot be represented in the current code page (932). Save the file in Unicode format to prevent data loss (URLLabel.cpp)
          WizardPanel.cpp
          WizardSubPanel.cpp
        Lib:
@@ -228,13 +182,17 @@
          .\Debug\.\/vgui_key_translation.obj
          .\Debug\.\/WizardPanel.obj
          .\Debug\.\/WizardSubPanel.obj
-         vgui_controls.vcxproj -> C:\Users\Zane\Documents\GitHub\Full-Life-The-RPG-Source-SDK-2013-\sp\src\vgui2\vgui_controls\..\..\lib\public\.\vgui_controls.lib
-     1>Done Building Project "C:\Users\Zane\Documents\GitHub\Full-Life-The-RPG-Source-SDK-2013-\sp\src\vgui2\vgui_controls\vgui_controls.vcxproj" (Rebuild target(s)).
+         vgui_controls.vcxproj -> C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\vgui2\vgui_controls\..\..\lib\public\.\vgui_controls.lib
+     1>Done Building Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\vgui2\vgui_controls\vgui_controls.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 Time Elapsed 00:00:42.34
 =======
 Time Elapsed 00:00:57.68
 >>>>>>> cd248c7fdaa49abadfa61e9480cfc8dd5d536010
+=======
+Time Elapsed 00:01:11.81
+>>>>>>> parent of 728da1f... Added Weapon files for magic blast
