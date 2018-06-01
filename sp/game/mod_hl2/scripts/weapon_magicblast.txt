@@ -1,12 +1,13 @@
+
 WeaponData
 {
 	// Weapon data is loaded by both the Game and Client DLLs.
-	"printname"			"#HL2_Magic_Blast"
-	"viewmodel"			"models/magicblast/models/weapons/v_magicblast.mdl"
-	"playermodel"			"models/magicblast/models/weapons/w_magicblast.mdl"
+	"printname"			"#HL2_MagicBlast"
+	"viewmodel"			"models/weapons/v_bugbait.mdl"
+	"playermodel"			"models/weapons/w_bugbait.mdl"
 	"anim_prefix"			"Grenade"
 	"bucket"			"5"
-	"bucket_position"		"2"
+	"bucket_position"		"0"
 	"bucket_360"			"3"
 	"bucket_position_360"	"2"
 

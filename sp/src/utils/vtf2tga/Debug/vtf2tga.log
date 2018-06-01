@@ -1,15 +1,5 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-﻿Build started 5/31/2018 11:58:23 PM.
-     1>Project "C:\Users\Zane\Documents\GitHub\Full-Life-The-RPG-Source-SDK-2013-\sp\src\utils\vtf2tga\vtf2tga.vcxproj" on node 2 (Rebuild target(s)).
-=======
 ﻿Build started 2018-05-31 23:35:31.
      1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\utils\vtf2tga\vtf2tga.vcxproj" on node 2 (Rebuild target(s)).
->>>>>>> cd248c7fdaa49abadfa61e9480cfc8dd5d536010
-=======
-﻿Build started 2018-05-29 16:33:06.
-     1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\utils\vtf2tga\vtf2tga.vcxproj" on node 2 (Rebuild target(s)).
->>>>>>> parent of 728da1f... Added Weapon files for magic blast
      1>PreBuildEvent:
          if EXIST ..\..\..\game\bin\.\vtf2tga.exe for /f "delims=" %%A in ('attrib "..\..\..\game\bin\.\vtf2tga.exe"') do set valveTmpIsReadOnly="%%A"
          set valveTmpIsReadOnlyLetter=%valveTmpIsReadOnly:~6,1%
@@ -20,14 +10,6 @@
          :VCEnd
        CustomBuild:
          Compiling pointeroverride.asm
-<<<<<<< HEAD
-<<<<<<< HEAD
-          Assembling: C:\Users\Zane\Documents\GitHub\Full-Life-The-RPG-Source-SDK-2013-\sp\src\public\tier0\pointeroverride.asm
-=======
->>>>>>> cd248c7fdaa49abadfa61e9480cfc8dd5d536010
-=======
-          Assembling: C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\public\tier0\pointeroverride.asm
->>>>>>> parent of 728da1f... Added Weapon files for magic blast
          Microsoft (R) Macro Assembler Version 12.00.40629.0
          Copyright (C) Microsoft Corporation.  All rights reserved.
          
@@ -68,12 +50,4 @@
 
 Build succeeded.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-Time Elapsed 00:00:08.96
-=======
 Time Elapsed 00:00:05.08
->>>>>>> cd248c7fdaa49abadfa61e9480cfc8dd5d536010
-=======
-Time Elapsed 00:00:04.07
->>>>>>> parent of 728da1f... Added Weapon files for magic blast

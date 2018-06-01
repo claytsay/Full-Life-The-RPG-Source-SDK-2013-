@@ -35,9 +35,9 @@
 *.sdf
 
 # Excluding files with hard-coded directories
-//*.vcxproj
-//*.vpc_crc
-//*.filters
+*.vcxproj
+*.vpc_crc
+*.filters
 
 
 # Other files to exclude

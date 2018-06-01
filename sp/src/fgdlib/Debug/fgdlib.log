@@ -1,15 +1,5 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-﻿Build started 5/31/2018 11:49:38 PM.
-     1>Project "C:\Users\Zane\Documents\GitHub\Full-Life-The-RPG-Source-SDK-2013-\sp\src\fgdlib\fgdlib.vcxproj" on node 3 (Rebuild target(s)).
-=======
 ﻿Build started 2018-05-31 23:26:04.
      1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\fgdlib\fgdlib.vcxproj" on node 3 (Rebuild target(s)).
->>>>>>> cd248c7fdaa49abadfa61e9480cfc8dd5d536010
-=======
-﻿Build started 2018-05-29 16:26:17.
-     1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\fgdlib\fgdlib.vcxproj" on node 2 (Rebuild target(s)).
->>>>>>> parent of 728da1f... Added Weapon files for magic blast
      1>PreBuildEvent:
          if EXIST ..\lib\public\.\fgdlib.lib ( for /f "delims=" %%A in ('attrib "..\lib\public\.\fgdlib.lib"') do set valveTmpIsReadOnly="%%A"
          ) else ( if not EXIST ..\lib\public\. mkdir ..\lib\public\. )
@@ -43,12 +33,4 @@
 
 Build succeeded.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-Time Elapsed 00:00:18.24
-=======
 Time Elapsed 00:00:17.33
->>>>>>> cd248c7fdaa49abadfa61e9480cfc8dd5d536010
-=======
-Time Elapsed 00:01:17.79
->>>>>>> parent of 728da1f... Added Weapon files for magic blast
