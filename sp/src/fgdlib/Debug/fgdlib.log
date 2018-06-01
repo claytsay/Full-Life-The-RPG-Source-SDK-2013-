@@ -1,5 +1,5 @@
-﻿Build started 2018-05-29 16:26:17.
-     1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\fgdlib\fgdlib.vcxproj" on node 2 (Rebuild target(s)).
+﻿Build started 5/31/2018 11:49:38 PM.
+     1>Project "C:\Users\Zane\Documents\GitHub\Full-Life-The-RPG-Source-SDK-2013-\sp\src\fgdlib\fgdlib.vcxproj" on node 3 (Rebuild target(s)).
      1>PreBuildEvent:
          if EXIST ..\lib\public\.\fgdlib.lib ( for /f "delims=" %%A in ('attrib "..\lib\public\.\fgdlib.lib"') do set valveTmpIsReadOnly="%%A"
          ) else ( if not EXIST ..\lib\public\. mkdir ..\lib\public\. )
@@ -16,7 +16,7 @@
        CustomBuild:
          Running VPC CRC Check - fgdlib.vpc
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\common /I..\public /I..\public\tier0 /I..\public\tier1 /I..\utils\common /ZI /nologo /W4 /WX /MP /Od /Oy- /D VPC /D RAD_TELEMETRY_DISABLED /D _HAS_ITERATOR_DEBUGGING=0 /D WIN32 /D _WIN32 /D _DEBUG /D DEBUG /D _LIB /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _ALLOW_RUNTIME_LIBRARY_MISMATCH /D _ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH /D _ALLOW_MSC_VER_MISMATCH /D _USING_V110_SDK71_ /D _MBCS /D COMPILER_MSVC32 /D COMPILER_MSVC32 /D COMPILER_MSVC /D _DLL_EXT=.dll /D LIBNAME=fgdlib /D BINK_VIDEO /D AVI_VIDEO /D WMV_VIDEO /D DEV_BUILD /D FRAME_POINTER_OMISSION_DISABLED /D _EXTERNAL_DLL_EXT=.dll /D VPCGAMECAPS=VALVE /D "PROJECTDIR=C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\fgdlib" /D _DLL_EXT=.dll /D VPCGAME=valve /D SOURCE1=1 /GF /Gm- /MTd /GS /arch:SSE /fp:fast /Zc:wchar_t /Zc:forScope /GR /openmp- /Fo".\Debug\.\/" /Fd".\Debug\.\/vc120.pdb" /Gd /TP /wd4316 /analyze- /FC /errorReport:prompt  /Gw gamedata.cpp gdclass.cpp gdvar.cpp inputoutput.cpp wckeyvalues.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\common /I..\public /I..\public\tier0 /I..\public\tier1 /I..\utils\common /ZI /nologo /W4 /WX- /MP /Od /Oy- /D VPC /D RAD_TELEMETRY_DISABLED /D _HAS_ITERATOR_DEBUGGING=0 /D WIN32 /D _WIN32 /D _DEBUG /D DEBUG /D _LIB /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _ALLOW_RUNTIME_LIBRARY_MISMATCH /D _ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH /D _ALLOW_MSC_VER_MISMATCH /D _USING_V110_SDK71_ /D _MBCS /D COMPILER_MSVC32 /D COMPILER_MSVC32 /D COMPILER_MSVC /D _DLL_EXT=.dll /D LIBNAME=fgdlib /D BINK_VIDEO /D AVI_VIDEO /D WMV_VIDEO /D DEV_BUILD /D FRAME_POINTER_OMISSION_DISABLED /D _EXTERNAL_DLL_EXT=.dll /D VPCGAMECAPS=VALVE /D "PROJECTDIR=C:\Users\Zane\Documents\GitHub\Full-Life-The-RPG-Source-SDK-2013-\sp\src\fgdlib" /D _DLL_EXT=.dll /D SOURCE1=1 /D VPCGAME=valve /GF /Gm- /MTd /GS /arch:SSE /fp:fast /Zc:wchar_t /Zc:forScope /GR /openmp- /Fo".\Debug\.\/" /Fd".\Debug\.\/vc120.pdb" /Gd /TP /wd4316 /analyze- /FC /errorReport:prompt  /Gw gamedata.cpp gdclass.cpp gdvar.cpp inputoutput.cpp wckeyvalues.cpp
          gamedata.cpp
          gdclass.cpp
          gdvar.cpp
@@ -28,9 +28,9 @@
          .\Debug\.\/gdvar.obj
          .\Debug\.\/inputoutput.obj
          .\Debug\.\/wckeyvalues.obj
-         fgdlib.vcxproj -> C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\fgdlib\..\lib\public\.\fgdlib.lib
-     1>Done Building Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\fgdlib\fgdlib.vcxproj" (Rebuild target(s)).
+         fgdlib.vcxproj -> C:\Users\Zane\Documents\GitHub\Full-Life-The-RPG-Source-SDK-2013-\sp\src\fgdlib\..\lib\public\.\fgdlib.lib
+     1>Done Building Project "C:\Users\Zane\Documents\GitHub\Full-Life-The-RPG-Source-SDK-2013-\sp\src\fgdlib\fgdlib.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:01:17.79
+Time Elapsed 00:00:18.24
