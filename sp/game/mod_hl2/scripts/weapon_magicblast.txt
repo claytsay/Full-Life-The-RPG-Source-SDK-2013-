@@ -5,7 +5,7 @@ WeaponData
 	"viewmodel"			"models/magicblast/models/weapons/v_magicblast.mdl"
 	"playermodel"			"models/magicblast/models/weapons/w_magicblast.mdl"
 	"anim_prefix"			"Grenade"
-	"bucket"			"4"
+	"bucket"			"5"
 	"bucket_position"		"2"
 	"bucket_360"			"3"
 	"bucket_position_360"	"2"
