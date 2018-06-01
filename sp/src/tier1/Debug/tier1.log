@@ -1,4 +1,4 @@
-﻿Build started 2018-05-30 23:18:20.
+﻿Build started 2018-05-31 23:26:05.
      1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\tier1\tier1.vcxproj" on node 5 (Rebuild target(s)).
      1>PreBuildEvent:
          if EXIST ..\lib\public\.\tier1.lib ( for /f "delims=" %%A in ('attrib "..\lib\public\.\tier1.lib"') do set valveTmpIsReadOnly="%%A"
@@ -98,4 +98,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:41.62
+Time Elapsed 00:00:28.90

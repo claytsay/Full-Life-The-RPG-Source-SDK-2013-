@@ -589,6 +589,42 @@ public:
 
 LINK_ENTITY_TO_CLASS( item_ammo_ar2_altfire, CItem_AR2AltFireRound );
 
+// ========================================================================
+//	>> CItem_ManaCell
+// ========================================================================
+class CItem_ManaCell : public CItem
+{
+public:
+	DECLARE_CLASS(CItem_ManaCell, CItem);
+
+	void Precache(void)
+	{
+		PrecacheModel("models/items/manacell.mdl");
+	}
+
+	void Spawn(void)
+	{
+		Precache();
+		SetModel("models/items/manacell.mdl");
+		BaseClass::Spawn();
+	}
+
+	bool MyTouch(CBasePlayer *pPlayer)
+	{
+		if (ITEM_GiveAmmo(pPlayer, SIZE_AMMO_MANACELL, "Mana"))
+		{
+			if (g_pGameRules->ItemShouldRespawn(this) == GR_ITEM_RESPAWN_NO)
+			{
+				UTIL_Remove(this);
+			}
+			return true;
+		}
+		return false;
+	}
+};
+
+LINK_ENTITY_TO_CLASS( item_manacell, CItem_ManaCell );
+
 // ==================================================================
 // Ammo crate which will supply infinite ammo of the specified type
 // ==================================================================

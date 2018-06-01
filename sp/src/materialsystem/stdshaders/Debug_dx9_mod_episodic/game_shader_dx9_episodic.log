@@ -1,4 +1,4 @@
-﻿Build started 2018-05-30 23:19:20.
+﻿Build started 2018-05-31 23:27:09.
      1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\materialsystem\stdshaders\game_shader_dx9_episodic.vcxproj" on node 5 (Rebuild target(s)).
      1>PreBuildEvent:
          if EXIST ..\..\..\game\mod_episodic\bin\.\game_shader_dx9.dll for /f "delims=" %%A in ('attrib "..\..\..\game\mod_episodic\bin\.\game_shader_dx9.dll"') do set valveTmpIsReadOnly="%%A"
@@ -10,10 +10,10 @@
          :VCEnd
        CustomBuild:
          Compiling pointeroverride.asm
-          Assembling: C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\public\tier0\pointeroverride.asm
          Microsoft (R) Macro Assembler Version 12.00.40629.0
          Copyright (C) Microsoft Corporation.  All rights reserved.
          
+          Assembling: C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\public\tier0\pointeroverride.asm
          Running VPC CRC Check - game_shader_dx9_episodic.vpc
        ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\..\common /I..\..\public /I..\..\public\tier0 /I..\..\public\tier1 /Ifxctmp9 /Ivshtmp9 /ZI /nologo /W4 /WX /MP /Od /Oy- /D VPC /D RAD_TELEMETRY_DISABLED /D _HAS_ITERATOR_DEBUGGING=0 /D WIN32 /D _WIN32 /D _DEBUG /D DEBUG /D _WINDOWS /D _USRDLL /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _ALLOW_RUNTIME_LIBRARY_MISMATCH /D _ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH /D _ALLOW_MSC_VER_MISMATCH /D _USING_V110_SDK71_ /D _WINDLL /D _MBCS /D COMPILER_MSVC32 /D COMPILER_MSVC32 /D COMPILER_MSVC /D _DLL_EXT=.dll /D DLLNAME=game_shader_dx9 /D BINK_VIDEO /D AVI_VIDEO /D WMV_VIDEO /D DEV_BUILD /D FRAME_POINTER_OMISSION_DISABLED /D STDSHADER_DX9_DLL_EXPORT /D FAST_MATERIALVAR_ACCESS /D GAME_SHADER_DLL /D USE_ACTUAL_DX /D _EXTERNAL_DLL_EXT=.dll /D VPCGAMECAPS=VALVE /D "PROJECTDIR=C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\materialsystem\stdshaders" /D _DLL_EXT=.dll /D SOURCE1=1 /D VPCGAME=valve /GF /Gm- /MTd /GS /arch:SSE /fp:fast /Zc:wchar_t /Zc:forScope /GR /Fo"Debug_dx9_mod_episodic\/" /Fd"Debug_dx9_mod_episodic\/vc120.pdb" /Gd /TP /wd4316 /analyze- /FC /errorReport:prompt /Zm200 /Gw BaseVSShader.cpp Bloom.cpp example_model_dx9.cpp example_model_dx9_helper.cpp ..\..\public\tier0\memoverride.cpp screenspace_general.cpp
@@ -59,4 +59,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:18.17
+Time Elapsed 00:00:15.11

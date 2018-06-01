@@ -6138,19 +6138,19 @@ void CBasePlayer::CheatImpulseCommands( int iImpulse )
 		EquipSuit();
 
 		// Give the player everything!
-		GiveAmmo( 255,	"Pistol");
-		GiveAmmo( 255,	"AR2");
-		GiveAmmo( 5,	"AR2AltFire");
-		GiveAmmo( 255,	"SMG1");
-		GiveAmmo( 255,	"Buckshot");
-		GiveAmmo( 3,	"smg1_grenade");
-		GiveAmmo( 3,	"rpg_round");
-		GiveAmmo( 5,	"grenade");
-		GiveAmmo( 32,	"357" );
-		GiveAmmo( 16,	"XBowBolt" );
+		GiveAmmo( 9000,	"Pistol");
+		GiveAmmo( 9000,	"AR2");
+		GiveAmmo( 9000,	"AR2AltFire");
+		GiveAmmo( 9000,	"SMG1");
+		GiveAmmo( 9000,	"Buckshot");
+		GiveAmmo( 9000,	"smg1_grenade");
+		GiveAmmo( 9000,	"rpg_round");
+		GiveAmmo( 9000,	"grenade");
+		GiveAmmo( 9000,	"357" );
+		GiveAmmo( 9000,	"XBowBolt" );
 
 		// New ammo types!
-		GiveAmmo( 9000,	"Mana" );
+		GiveAmmo( 9001,	"Mana" );
 
 #ifdef HL2_EPISODIC
 		GiveAmmo( 5,	"Hopwire" );
