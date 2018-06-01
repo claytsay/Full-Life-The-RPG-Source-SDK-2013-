@@ -5,29 +5,22 @@ WeaponData
 	"viewmodel"			"models/magicblast/models/weapons/v_magicblast.mdl"
 	"playermodel"			"models/magicblast/models/weapons/w_magicblast.mdl"
 	"anim_prefix"			"Grenade"
-	"bucket"			"5"
-	"bucket_position"		"1"
+	"bucket"			"4"
+	"bucket_position"		"2"
 	"bucket_360"			"3"
-	"bucket_position_360"		"0"
+	"bucket_position_360"	"2"
 
-	"clip_size"			"-1"
-	"clip2_size"			"-1"
-	"default_clip"			"1"
-	"default_clip2"			"-1"
-
-	"primary_ammo"			"mana"
+	"clip_size"			"0"
+	"clip2_size"			"0"
+	"primary_ammo"			"None"
 	"secondary_ammo"		"None"
+	"default_clip"			"0"
+	"default_clip2"			"0"
 
-	"weight"			"1"
-	"item_flags"			"18"	// ITEM_FLAG_NOAUTORELOAD | ITEM_FLAG_EXHAUSTIBLE
-
-	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
-	SoundData
-	{
-		"special1"		"WeaponFrag.Roll"
-		"double_shot"		"common/null.wav"
-		"single_shot"		"common/null.wav"
-	}
+	"autoswitchto"			"0"
+	"autoswitchfrom"		"0"
+	"weight"			"0"
+	"item_flags"			"0"
 
 	// Weapon Sprite data is loaded by the Client DLL.
 	TextureData
@@ -35,22 +28,17 @@ WeaponData
 		"weapon"
 		{
 				"font"		"WeaponIcons"
-				"character"	"k"
+				"character"	"j"
 		}
 		"weapon_s"
 		{	
 				"font"		"WeaponIconsSelected"
-				"character"	"k"
-		}
-		"weapon_small"
-		{
-				"font"		"WeaponIconsSmall"
-				"character"	"k"
+				"character"	"j"
 		}
 		"ammo"
 		{
-				"font"		"WeaponIconsSmall"
-				"character"	"v"
+				"font"		"WeaponIcons"
+				"character"	"j"
 		}
 		"crosshair"
 		{
