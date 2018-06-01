@@ -17,8 +17,15 @@
 #include "soundent.h"
 #include "gamestats.h"
 
+// Some more #includes!
+#include "prop_combine_ball.h"
+
 // memdbgon must be the last include file in a .cpp file!!!
 #include "tier0/memdbgon.h"
+
+ConVar sk_weapon_spotionharming_alt_fire_radius("sk_weapon_spotionharming_alt_fire_radius", "10");
+ConVar sk_weapon_spotionharming_alt_fire_duration("sk_weapon_spotionharming_alt_fire_duration", "2");
+ConVar sk_weapon_spotionharming_alt_fire_mass("sk_weapon_spotionharming_alt_fire_mass", "150");
 
 #define SPOTION_HARMING_TIMER	3.0f //Seconds
 
@@ -68,6 +75,8 @@ private:
 	int		m_AttackPaused;
 	bool	m_fDrawbackFinished;
 
+	void	ThrowCombineBall( CBasePlayer *pPlayer );
+
 	DECLARE_ACTTABLE();
 
 	DECLARE_DATADESC();
@@ -114,6 +123,8 @@ void CWeaponSpotionHarming::Precache( void )
 
 	PrecacheScriptSound( "WeaponFrag.Throw" );
 	PrecacheScriptSound( "WeaponFrag.Roll" );
+
+	UTIL_PrecacheOther( "prop_combine_ball" );
 }
 
 //-----------------------------------------------------------------------------
@@ -400,7 +411,8 @@ void CWeaponSpotionHarming::ThrowGrenade( CBasePlayer *pPlayer )
 	Vector vecThrow;
 	pPlayer->GetVelocity( &vecThrow, NULL );
 	vecThrow += vForward * 1200;
-	Fraggrenade_Create( vecSrc, vec3_angle, vecThrow, AngularImpulse(600,random->RandomInt(-1200,1200),0), pPlayer, SPOTION_HARMING_TIMER, false );
+	//Fraggrenade_Create( vecSrc, vec3_angle, vecThrow, AngularImpulse(600,random->RandomInt(-1200,1200),0), pPlayer, SPOTION_HARMING_TIMER, false );
+	ThrowCombineBall(pPlayer);
 
 	m_bRedraw = true;
 
@@ -426,7 +438,8 @@ void CWeaponSpotionHarming::LobGrenade( CBasePlayer *pPlayer )
 	Vector vecThrow;
 	pPlayer->GetVelocity( &vecThrow, NULL );
 	vecThrow += vForward * 350 + Vector( 0, 0, 50 );
-	Fraggrenade_Create( vecSrc, vec3_angle, vecThrow, AngularImpulse(200,random->RandomInt(-600,600),0), pPlayer, SPOTION_HARMING_TIMER, false );
+	//Fraggrenade_Create( vecSrc, vec3_angle, vecThrow, AngularImpulse(200,random->RandomInt(-600,600),0), pPlayer, SPOTION_HARMING_TIMER, false );
+	ThrowCombineBall(pPlayer);
 
 	WeaponSound( WPN_DOUBLE );
 
@@ -470,7 +483,8 @@ void CWeaponSpotionHarming::RollGrenade( CBasePlayer *pPlayer )
 	QAngle orientation(0,pPlayer->GetLocalAngles().y,-90);
 	// roll it
 	AngularImpulse rotSpeed(0,0,720);
-	Fraggrenade_Create( vecSrc, orientation, vecThrow, rotSpeed, pPlayer, SPOTION_HARMING_TIMER, false );
+	//Fraggrenade_Create( vecSrc, orientation, vecThrow, rotSpeed, pPlayer, SPOTION_HARMING_TIMER, false );
+	ThrowCombineBall(pPlayer);
 
 	WeaponSound( SPECIAL1 );
 
@@ -478,5 +492,57 @@ void CWeaponSpotionHarming::RollGrenade( CBasePlayer *pPlayer )
 
 	m_iPrimaryAttacks++;
 	gamestats->Event_WeaponFired( pPlayer, true, GetClassname() );
+}
+
+void CWeaponSpotionHarming::ThrowCombineBall( CBasePlayer *pPlayer ) {
+
+	CBasePlayer *pOwner = pPlayer;
+
+	if (pOwner == NULL)
+		return;
+
+	// TODO: These should be made to work...
+	//WeaponSound(WPN_DOUBLE);
+	//pOwner->RumbleEffect(RUMBLE_SHOTGUN_DOUBLE, 0, RUMBLE_FLAG_RESTART);
+
+	// Fire the bullets
+	Vector vecSrc = pOwner->Weapon_ShootPosition();
+	Vector vecAiming = pOwner->GetAutoaimVector(AUTOAIM_SCALE_DEFAULT);
+	Vector impactPoint = vecSrc + (vecAiming * MAX_TRACE_LENGTH);
+
+	// Fire the bullets
+	Vector vecVelocity = vecAiming * 1000.0f;
+
+	// Fire the combine ball
+	CreateCombineBall(vecSrc,
+		vecVelocity,
+		sk_weapon_spotionharming_alt_fire_radius.GetFloat(),
+		sk_weapon_spotionharming_alt_fire_mass.GetFloat(),
+		sk_weapon_spotionharming_alt_fire_duration.GetFloat(),
+		pOwner);
+
+	// View effects
+	color32 white = { 255, 255, 255, 64 };
+	UTIL_ScreenFade(pOwner, white, 0.1, 0, FFADE_IN);
+
+	//Disorient the player
+	QAngle angles = pOwner->GetLocalAngles();
+
+	angles.x += random->RandomInt(-4, 4);
+	angles.y += random->RandomInt(-4, 4);
+	angles.z = 0;
+
+	pOwner->SnapEyeAngles(angles);
+
+	pOwner->ViewPunch(QAngle(random->RandomInt(-8, -12), random->RandomInt(1, 2), 0));
+
+	// Decrease ammo
+	//pOwner->RemoveAmmo(1, m_iSecondaryAmmoType);
+
+	// Can shoot again immediately
+	//m_flNextPrimaryAttack = gpGlobals->curtime + 0.5f;
+
+	// Can blow up after a short delay (so have time to release mouse button)
+	//m_flNextSecondaryAttack = gpGlobals->curtime + 1.0f;
 }
 

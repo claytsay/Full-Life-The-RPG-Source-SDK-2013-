@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 ﻿Build started 5/31/2018 11:50:33 PM.
      1>Project "C:\Users\Zane\Documents\GitHub\Full-Life-The-RPG-Source-SDK-2013-\sp\src\game\client\client_hl2.vcxproj" on node 2 (Rebuild target(s)).
+=======
+﻿Build started 2018-05-31 23:27:13.
+     1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\game\client\client_hl2.vcxproj" on node 2 (Rebuild target(s)).
+>>>>>>> cd248c7fdaa49abadfa61e9480cfc8dd5d536010
      1>PreBuildEvent:
          if EXIST ..\..\..\game\mod_hl2\bin\.\client.dll for /f "delims=" %%A in ('attrib "..\..\..\game\mod_hl2\bin\.\client.dll"') do set valveTmpIsReadOnly="%%A"
          set valveTmpIsReadOnlyLetter=%valveTmpIsReadOnly:~6,1%
@@ -10,10 +15,14 @@
          :VCEnd
        CustomBuild:
          Compiling pointeroverride.asm
+          Assembling: C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\public\tier0\pointeroverride.asm
          Microsoft (R) Macro Assembler Version 12.00.40629.0
          Copyright (C) Microsoft Corporation.  All rights reserved.
          
+<<<<<<< HEAD
           Assembling: C:\Users\Zane\Documents\GitHub\Full-Life-The-RPG-Source-SDK-2013-\sp\src\public\tier0\pointeroverride.asm
+=======
+>>>>>>> cd248c7fdaa49abadfa61e9480cfc8dd5d536010
          Running VPC CRC Check - client_hl2.vpc
        ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I.\hl2 /I.\hl2\elements /I..\..\game\shared\hl2 /I.\ /I..\..\common /I..\..\public /I..\..\public\tier0 /I..\..\public\tier1 /I..\..\game\client\generated_proto_mod_hl2 /I"..\..\thirdparty\protobuf-2.3.0\src" /I..\..\vgui2\include /I..\..\vgui2\controls /I..\..\game\shared /I.\game_controls /I..\..\thirdparty\sixensesdk\include /ZI /nologo /W4 /WX- /MP /Od /Oy- /D VPC /D RAD_TELEMETRY_DISABLED /D _HAS_ITERATOR_DEBUGGING=0 /D WIN32 /D _WIN32 /D _DEBUG /D DEBUG /D _WINDOWS /D _USRDLL /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _ALLOW_RUNTIME_LIBRARY_MISMATCH /D _ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH /D _ALLOW_MSC_VER_MISMATCH /D _USING_V110_SDK71_ /D _WINDLL /D _MBCS /D COMPILER_MSVC32 /D COMPILER_MSVC32 /D COMPILER_MSVC /D _DLL_EXT=.dll /D DLLNAME=client /D BINK_VIDEO /D AVI_VIDEO /D WMV_VIDEO /D DEV_BUILD /D FRAME_POINTER_OMISSION_DISABLED /D NO_STRING_T /D CLIENT_DLL /D VECTOR /D VERSION_SAFE_STEAM_API_INTERFACES /D PROTECTED_THINGS_ENABLE /D strncpy=use_Q_strncpy_instead /D _snprintf=use_Q_snprintf_instead /D ENABLE_CHROMEHTMLWINDOW /D fopen=dont_use_fopen /D HL2_CLIENT_DLL /D _EXTERNAL_DLL_EXT=.dll /D VPCGAMECAPS=VALVE /D "PROJECTDIR=C:\Users\Zane\Documents\GitHub\Full-Life-The-RPG-Source-SDK-2013-\sp\src\game\client" /D _DLL_EXT=.dll /D VPCGAME=valve /D SOURCE1=1 /GF /Gm- /MTd /GS /arch:SSE /fp:fast /Zc:wchar_t /Zc:forScope /GR /Yc"cbase.h" /Fp".\Debug_mod_hl2\/client.pch" /Fo".\Debug_mod_hl2\/" /Fd".\Debug_mod_hl2\/vc120.pdb" /Gd /TP /wd4316 /analyze- /FC /errorReport:prompt /Zm200 /Gw stdafx.cpp
@@ -1187,4 +1196,8 @@
 
 Build succeeded.
 
+<<<<<<< HEAD
 Time Elapsed 00:05:30.17
+=======
+Time Elapsed 00:06:20.63
+>>>>>>> cd248c7fdaa49abadfa61e9480cfc8dd5d536010

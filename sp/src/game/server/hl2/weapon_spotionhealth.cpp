@@ -10,7 +10,7 @@
 #include "player.h"
 #include "gamerules.h"
 // #include "grenade_frag.h" //(?_?)
-#include "grenade_spotion.h" //(?_?)
+#include "grenade_spotion.h" //(?_?) Is this necessary?
 #include "npcevent.h"
 #include "engine/IEngineSound.h"
 #include "items.h"

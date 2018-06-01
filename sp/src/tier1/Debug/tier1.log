@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 ﻿Build started 5/31/2018 11:49:38 PM.
      1>Project "C:\Users\Zane\Documents\GitHub\Full-Life-The-RPG-Source-SDK-2013-\sp\src\tier1\tier1.vcxproj" on node 5 (Rebuild target(s)).
+=======
+﻿Build started 2018-05-31 23:26:05.
+     1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\tier1\tier1.vcxproj" on node 5 (Rebuild target(s)).
+>>>>>>> cd248c7fdaa49abadfa61e9480cfc8dd5d536010
      1>PreBuildEvent:
          if EXIST ..\lib\public\.\tier1.lib ( for /f "delims=" %%A in ('attrib "..\lib\public\.\tier1.lib"') do set valveTmpIsReadOnly="%%A"
          ) else ( if not EXIST ..\lib\public\. mkdir ..\lib\public\. )
@@ -99,4 +104,8 @@
 
 Build succeeded.
 
+<<<<<<< HEAD
 Time Elapsed 00:00:29.93
+=======
+Time Elapsed 00:00:28.90
+>>>>>>> cd248c7fdaa49abadfa61e9480cfc8dd5d536010

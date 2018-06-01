@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 ﻿Build started 5/31/2018 11:57:02 PM.
      1>Project "C:\Users\Zane\Documents\GitHub\Full-Life-The-RPG-Source-SDK-2013-\sp\src\utils\vrad\vrad_dll.vcxproj" on node 5 (Rebuild target(s)).
+=======
+﻿Build started 2018-05-31 23:34:29.
+     1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\utils\vrad\vrad_dll.vcxproj" on node 5 (Rebuild target(s)).
+>>>>>>> cd248c7fdaa49abadfa61e9480cfc8dd5d536010
      1>PreBuildEvent:
          if EXIST ..\..\..\game\bin\.\vrad_dll.dll for /f "delims=" %%A in ('attrib "..\..\..\game\bin\.\vrad_dll.dll"') do set valveTmpIsReadOnly="%%A"
          set valveTmpIsReadOnlyLetter=%valveTmpIsReadOnly:~6,1%
@@ -10,7 +15,11 @@
          :VCEnd
        CustomBuild:
          Compiling pointeroverride.asm
+<<<<<<< HEAD
           Assembling: C:\Users\Zane\Documents\GitHub\Full-Life-The-RPG-Source-SDK-2013-\sp\src\public\tier0\pointeroverride.asm
+=======
+          Assembling: C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\public\tier0\pointeroverride.asm
+>>>>>>> cd248c7fdaa49abadfa61e9480cfc8dd5d536010
          Microsoft (R) Macro Assembler Version 12.00.40629.0
          Copyright (C) Microsoft Corporation.  All rights reserved.
          
@@ -139,4 +148,8 @@
 
 Build succeeded.
 
+<<<<<<< HEAD
 Time Elapsed 00:01:29.18
+=======
+Time Elapsed 00:01:07.86
+>>>>>>> cd248c7fdaa49abadfa61e9480cfc8dd5d536010

@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 ﻿Build started 5/31/2018 11:49:51 PM.
      1>Project "C:\Users\Zane\Documents\GitHub\Full-Life-The-RPG-Source-SDK-2013-\sp\src\vgui2\vgui_controls\vgui_controls.vcxproj" on node 2 (Rebuild target(s)).
+=======
+﻿Build started 2018-05-31 23:26:15.
+     1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\vgui2\vgui_controls\vgui_controls.vcxproj" on node 2 (Rebuild target(s)).
+>>>>>>> cd248c7fdaa49abadfa61e9480cfc8dd5d536010
      1>PreBuildEvent:
          if EXIST ..\..\lib\public\.\vgui_controls.lib ( for /f "delims=" %%A in ('attrib "..\..\lib\public\.\vgui_controls.lib"') do set valveTmpIsReadOnly="%%A"
          ) else ( if not EXIST ..\..\lib\public\. mkdir ..\..\lib\public\. )
@@ -228,4 +233,8 @@
 
 Build succeeded.
 
+<<<<<<< HEAD
 Time Elapsed 00:00:42.34
+=======
+Time Elapsed 00:00:57.68
+>>>>>>> cd248c7fdaa49abadfa61e9480cfc8dd5d536010

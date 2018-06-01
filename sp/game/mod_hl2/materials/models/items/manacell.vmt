@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/items/manacell"
+	"$selfillum" 1
+}

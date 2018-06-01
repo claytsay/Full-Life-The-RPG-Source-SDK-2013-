@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 ﻿Build started 5/31/2018 11:50:31 PM.
      1>Project "C:\Users\Zane\Documents\GitHub\Full-Life-The-RPG-Source-SDK-2013-\sp\src\utils\captioncompiler\captioncompiler.vcxproj" on node 3 (Rebuild target(s)).
+=======
+﻿Build started 2018-05-31 23:27:09.
+     1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\utils\captioncompiler\captioncompiler.vcxproj" on node 4 (Rebuild target(s)).
+>>>>>>> cd248c7fdaa49abadfa61e9480cfc8dd5d536010
      1>PreBuildEvent:
          if EXIST ..\..\..\game\bin\.\captioncompiler.exe for /f "delims=" %%A in ('attrib "..\..\..\game\bin\.\captioncompiler.exe"') do set valveTmpIsReadOnly="%%A"
          set valveTmpIsReadOnlyLetter=%valveTmpIsReadOnly:~6,1%
@@ -67,4 +72,8 @@
 
 Build succeeded.
 
+<<<<<<< HEAD
 Time Elapsed 00:00:18.17
+=======
+Time Elapsed 00:00:17.65
+>>>>>>> cd248c7fdaa49abadfa61e9480cfc8dd5d536010

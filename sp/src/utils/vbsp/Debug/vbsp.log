@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 ﻿Build started 5/31/2018 11:56:34 PM.
      1>Project "C:\Users\Zane\Documents\GitHub\Full-Life-The-RPG-Source-SDK-2013-\sp\src\utils\vbsp\vbsp.vcxproj" on node 4 (Rebuild target(s)).
+=======
+﻿Build started 2018-05-31 23:33:57.
+     1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\utils\vbsp\vbsp.vcxproj" on node 4 (Rebuild target(s)).
+>>>>>>> cd248c7fdaa49abadfa61e9480cfc8dd5d536010
      1>PreBuildEvent:
          if EXIST ..\..\..\game\bin\.\vbsp.exe for /f "delims=" %%A in ('attrib "..\..\..\game\bin\.\vbsp.exe"') do set valveTmpIsReadOnly="%%A"
          set valveTmpIsReadOnlyLetter=%valveTmpIsReadOnly:~6,1%
@@ -151,4 +156,8 @@
 
 Build succeeded.
 
+<<<<<<< HEAD
 Time Elapsed 00:01:49.42
+=======
+Time Elapsed 00:01:34.21
+>>>>>>> cd248c7fdaa49abadfa61e9480cfc8dd5d536010
