@@ -1,4 +1,4 @@
-﻿Build started 2018-05-31 23:27:34.
+﻿Build started 2018-06-01 13:34:25.
      1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\utils\motionmapper\motionmapper.vcxproj" on node 5 (Rebuild target(s)).
      1>PreBuildEvent:
          if EXIST ..\..\..\game\bin\.\motionmapper.exe for /f "delims=" %%A in ('attrib "..\..\..\game\bin\.\motionmapper.exe"') do set valveTmpIsReadOnly="%%A"
@@ -59,4 +59,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:20.03
+Time Elapsed 00:00:12.19

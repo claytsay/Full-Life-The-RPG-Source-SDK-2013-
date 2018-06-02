@@ -1,5 +1,5 @@
-﻿Build started 2018-05-31 23:26:04.
-     1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\fgdlib\fgdlib.vcxproj" on node 3 (Rebuild target(s)).
+﻿Build started 2018-06-01 13:33:34.
+     1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\fgdlib\fgdlib.vcxproj" on node 2 (Rebuild target(s)).
      1>PreBuildEvent:
          if EXIST ..\lib\public\.\fgdlib.lib ( for /f "delims=" %%A in ('attrib "..\lib\public\.\fgdlib.lib"') do set valveTmpIsReadOnly="%%A"
          ) else ( if not EXIST ..\lib\public\. mkdir ..\lib\public\. )
@@ -33,4 +33,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:17.33
+Time Elapsed 00:01:19.52

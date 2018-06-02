@@ -1,4 +1,4 @@
-﻿Build started 2018-05-31 23:34:12.
+﻿Build started 2018-06-01 13:39:25.
      1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\utils\vice\vice.vcxproj" on node 2 (Rebuild target(s)).
      1>PreBuildEvent:
          if EXIST ..\..\..\game\bin\.\vice.exe for /f "delims=" %%A in ('attrib "..\..\..\game\bin\.\vice.exe"') do set valveTmpIsReadOnly="%%A"
@@ -56,4 +56,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:16.36
+Time Elapsed 00:00:12.00
