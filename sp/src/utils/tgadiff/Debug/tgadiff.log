@@ -1,5 +1,5 @@
-﻿Build started 2018-05-29 16:32:26.
-     1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\utils\tgadiff\tgadiff.vcxproj" on node 5 (Rebuild target(s)).
+﻿Build started 2018-05-31 23:33:49.
+     1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\utils\tgadiff\tgadiff.vcxproj" on node 3 (Rebuild target(s)).
      1>PreBuildEvent:
          if EXIST ..\..\..\game\bin\.\tgadiff.exe for /f "delims=" %%A in ('attrib "..\..\..\game\bin\.\tgadiff.exe"') do set valveTmpIsReadOnly="%%A"
          set valveTmpIsReadOnlyLetter=%valveTmpIsReadOnly:~6,1%
@@ -9,10 +9,10 @@
          
          :VCEnd
        CustomBuild:
-         Compiling pointeroverride.asm
          Microsoft (R) Macro Assembler Version 12.00.40629.0
          Copyright (C) Microsoft Corporation.  All rights reserved.
          
+         Compiling pointeroverride.asm
           Assembling: C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\public\tier0\pointeroverride.asm
          Running VPC CRC Check - tgadiff.vpc
        ClCompile:
@@ -49,4 +49,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:04.21
+Time Elapsed 00:00:07.50
