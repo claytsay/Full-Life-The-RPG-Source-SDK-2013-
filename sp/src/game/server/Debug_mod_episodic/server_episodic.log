@@ -1,5 +1,5 @@
-﻿Build started 2018-05-31 23:27:56.
-     1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\game\server\server_episodic.vcxproj" on node 4 (Rebuild target(s)).
+﻿Build started 2018-06-01 13:34:54.
+     1>Project "C:\Users\Clay\Documents\GitHub\FullLife-TheRPG-SDK2013\sp\src\game\server\server_episodic.vcxproj" on node 3 (Rebuild target(s)).
      1>PreBuildEvent:
          if EXIST ..\..\..\game\mod_episodic\bin\.\server.dll for /f "delims=" %%A in ('attrib "..\..\..\game\mod_episodic\bin\.\server.dll"') do set valveTmpIsReadOnly="%%A"
          set valveTmpIsReadOnlyLetter=%valveTmpIsReadOnly:~6,1%
@@ -1201,4 +1201,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:08:20.70
+Time Elapsed 00:06:18.92
